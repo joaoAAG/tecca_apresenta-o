@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configurar on Lotus Docs Exemple de Site</title>
+    <link>//localhost:1313/pt/docs/setup/</link>
+    <description>Recent content in Configurar on Lotus Docs Exemple de Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Sat, 20 Apr 2024 18:19:36 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/pt/docs/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup - Explanation</title>
+      <link>//localhost:1313/pt/docs/setup/setup-explanation/</link>
+      <pubDate>Sat, 20 Apr 2024 18:51:35 +0100</pubDate>
+      <guid>//localhost:1313/pt/docs/setup/setup-explanation/</guid>
+      <description>Aqui vamos falar sobre como a página de Configuração foi criada&#xA;Lista linkPara a parte da lista, é simples, basta colocar o caractere &amp;ldquo;-&amp;rdquo; antes da frase e a lista será formada:&#xA;- git&#xD;- Go ≥ v1.19&#xD;- Hugo ≥ v0.117.0 (Versão Extendida) Tags linkNas secções 2.1 e 3, foram utilizadas tags de código curto. Estas tags permitem criar um menu que oferece diferentes informações sobre o mesmo tema. No nosso caso, utilizamos tags de código curto para apresentar as diferentes formas de instalar automaticamente o Lotus Docs em diferentes sistemas operativos.</description>
+    </item>
+    <item>
+      <title>Configurar</title>
+      <link>//localhost:1313/pt/docs/setup/setup/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:36 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/setup/setup/</guid>
+      <description>Requisitos do Sistema link git Go ≥ v1.19 Hugo ≥ v0.117.0 (Versão Estendida) Instalação linkInstalação Automática linkInstale a Hugo CLI, seguindo as instruções específicas para o seu sistema operativo abaixo:&#xA;Linux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) O gestor de pacotes da sua distribuição Linux pode incluir o Hugo. Se for o caso, instale-o diretamente usando o gestor de pacotes da sua distribuição - por exemplo, no Ubuntu, execute o seguinte comando.</description>
+    </item>
+  </channel>
+</rss>

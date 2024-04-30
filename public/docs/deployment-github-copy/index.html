@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <title>GitHub Pages Deployment | Building a Technical Documentation Website</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição para a pagina">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="http://localhost:1313/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="http://localhost:1313/site.webmanifest">
+<meta property="og:title" content="GitHub Pages Deployment" />
+<meta property="og:description" content="Descrição para a pagina" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/deployment-github-copy/" /><meta property="og:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_2791185861322609900.png"/><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-03-20T18:20:03+00:00" />
+<meta property="article:modified_time" content="2024-03-20T18:20:03+00:00" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_2791185861322609900.png"/>
+<meta name="twitter:title" content="GitHub Pages Deployment"/>
+<meta name="twitter:description" content="Descrição para a pagina"/>
+
+    
+    <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
+    
+    
+            
+                <script type="text/javascript" src="http://localhost:1313/docs/js/flexsearch.bundle.js"></script>
+            
+        
+    
+    
+
+    <link rel="stylesheet" href="/docs/scss/style.css" crossorigin="anonymous">
+    
+    
+    </head><body>
+    <div class="content">
+        <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/' aria-label="HomePage" alt="HomePage">
+            
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/about/">
+                                
+                                About
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/pt/sobre/">
+                                
+                                Sobre
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/example-page/">
+                                
+                                Quickstart
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/pt/pagina_exemplo/">
+                                
+                                Quickstart
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/pt/customizacao/">
+                                
+                                Customização
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/customization/">
+                                
+                                Customization
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/setup/">
+                                
+                                Setup
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/pt/deployment/">
+                                
+                                Deployment
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="current">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/deployment-github-copy/">
+                                
+                                GitHub Pages Deployment
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/deployment-gitlab/">
+                                
+                                GitLab Pages Deployment
+                            </a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="http://localhost:1313/docs/pt/setup/">
+                                
+                                Setup
+                            </a>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                <main class="page-content bg-transparent">
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            
+            
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+            </ul>
+            <button id="mode" class="btn btn-icon btn-default ms-2" type="button" aria-label="Toggle user interface mode">
+                <span class="toggle-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"/></svg>
+                </span>
+                <span class="toggle-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"/></svg>
+                </span>
+            </button>
+            
+        </div>
+    </div>
+    
+    
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
+    
+    
+</div>
+<div class="container-fluid">
+                            <div class="layout-spacing">
+                                
+                                    <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">GitHub Pages Deployment</span>
+                <meta itemprop="position" content='2' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                
+                                <div class="row flex-xl-nowrap">
+                                    
+                                    <div class="docs-toc col-xl-3    d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-overview">1. Overview</a></li>
+    <li><a href="#2-prerequisites">2. Prerequisites</a></li>
+    <li><a href="#3-procedure">3. Procedure</a>
+      <ul>
+        <li><a href="#31-create-a-new-repository-on-github">3.1. Create a new repository on GitHub</a></li>
+        <li><a href="#32-change-github-pages-source-to-github-actions">3.2. Change GitHub Pages Source to GitHub Actions</a></li>
+        <li><a href="#33-create-a-hugo-server-locally">3.3. Create a Hugo server locally</a></li>
+        <li><a href="#4-create-an-example-page">4. Create an example page</a></li>
+        <li><a href="#5-create-an-empty-hugoyaml-file-in-your-local-repository">5. Create an empty hugo.yaml file in your local repository</a></li>
+        <li><a href="#6-copy-and-paste-the-yaml-below-into-the-hugoyaml-you-created-change-the-branch-name-and-hugo-version-as-needed">6. Copy and paste the YAML below into the hugo.yaml you created. Change the branch name and Hugo version as needed.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </toc></div>
+                                    
+                                    
+                                    <div class="docs-toc-mobile    d-print-none d-xl-none">
+                                        <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                            Table of Contents
+                                        </button>
+<nav id="toc-mobile">
+  <ul class="dropdown-menu">
+    <li><a href="#1-overview">1. Overview</a></li>
+    <li><a href="#2-prerequisites">2. Prerequisites</a></li>
+    <li><a href="#3-procedure">3. Procedure</a>
+      <ul>
+        <li><a href="#31-create-a-new-repository-on-github">3.1. Create a new repository on GitHub</a></li>
+        <li><a href="#32-change-github-pages-source-to-github-actions">3.2. Change GitHub Pages Source to GitHub Actions</a></li>
+        <li><a href="#33-create-a-hugo-server-locally">3.3. Create a Hugo server locally</a></li>
+        <li><a href="#4-create-an-example-page">4. Create an example page</a></li>
+        <li><a href="#5-create-an-empty-hugoyaml-file-in-your-local-repository">5. Create an empty hugo.yaml file in your local repository</a></li>
+        <li><a href="#6-copy-and-paste-the-yaml-below-into-the-hugoyaml-you-created-change-the-branch-name-and-hugo-version-as-needed">6. Copy and paste the YAML below into the hugo.yaml you created. Change the branch name and Hugo version as needed.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                                    <div class="docs-content col-12 col-xl-9 mt-0">
+                                        <div class="mb-0 d-flex">
+                                            
+                                            <h1 class="content-title mb-0">
+                                                GitHub Pages Deployment
+                                                
+                                            </h1>
+                                        </div>
+                                        
+                                        <div id="content" class="main-content" >
+                                            
+    
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        <h2 id="1-overview">1. Overview <a href="#1-overview" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><p>GitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.</p>
+<h2 id="2-prerequisites">2. Prerequisites <a href="#2-prerequisites" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><ul>
+<li>A GitHub Account</li>
+<li>Git</li>
+<li>Create a Hugo site using the Lotus Docs theme</li>
+</ul>
+<h2 id="3-procedure">3. Procedure <a href="#3-procedure" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h2><h3 id="31-create-a-new-repository-on-github">3.1. Create a new repository on GitHub <a href="#31-create-a-new-repository-on-github" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Create a new repository on GitHub, e.g., <a href="https://github.com/joaoAAG/Tecaa.git" rel="external" target="_blank">https://github.com/joaoAAG/Tecaa.git<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M14 5c-.552 0-1-.448-1-1s.448-1 1-1h6c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1s-1-.448-1-1v-3.586l-7.293 7.293c-.391.39-1.024.39-1.414 0-.391-.391-.391-1.024 0-1.414l7.293-7.293h-3.586zm-9 2c-.552 0-1 .448-1 1v11c0 .552.448 1 1 1h11c.552 0 1-.448 1-1v-4.563c0-.552.448-1 1-1s1 .448 1 1v4.563c0 1.657-1.343 3-3 3h-11c-1.657 0-3-1.343-3-3v-11c0-1.657 1.343-3 3-3h4.563c.552 0 1 .448 1 1s-.448 1-1 1h-4.563z"/></svg></a></p>
+<h3 id="32-change-github-pages-source-to-github-actions">3.2. Change GitHub Pages Source to GitHub Actions <a href="#32-change-github-pages-source-to-github-actions" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3><p>Visit your GitHub repository and navigate to <code>Settings &gt; Pages</code>. Change the Source to GitHub Actions.</p>
+<p>
+
+
+
+
+
+  
+
+
+
+  
+</p>
+<h3 id="33-create-a-hugo-server-locally">3.3. Create a Hugo server locally <a href="#33-create-a-hugo-server-locally" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site collinwilson.github.io
+</span></span><span style="display:flex;"><span>cd colinwilson.github.io</span></span></code></pre></div>
+
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active"
+		   id="baefcdTab" data-bs-toggle="tab" data-bs-target="#baefcd"
+		   type="button" role="tab" aria-controls="baefcd" aria-selected="true">Hugo.toml</a>
+
+		
+
+		<a class="nav-link "
+		   id="aedbcfTab" data-bs-toggle="tab" data-bs-target="#aedbcf"
+		   type="button" role="tab" aria-controls="aedbcf" aria-selected="true">Hugo.yaml</a>
+
+		
+
+		<a class="nav-link "
+		   id="fadbecTab" data-bs-toggle="tab" data-bs-target="#fadbec"
+		   type="button" role="tab" aria-controls="fadbec" aria-selected="true">Hugo.json</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="baefcd" role="tabpanel" aria-labelledby="nav-1">
+
+	
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://colinwilson.github.io&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Hugo Site&#39;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">module</span>]
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/colinwilson/lotusdocs&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">imports</span>]]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">path</span> = <span style="color:#e6db74">&#34;github.com/gohugoio/hugo-mod-bootstrap-scss/v5&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">disable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">primary</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span>  = <span style="color:#e6db74">&#34;Docs&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/docs/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span></span></span></code></pre></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="aedbcf" role="tabpanel" aria-labelledby="nav-1">
+
+	
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">baseURL</span>: <span style="color:#e6db74">&#39;https://colinwilson.github.io&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">languageCode</span>: <span style="color:#ae81ff">en-us</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#ae81ff">My New Hugo Site</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">module</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">imports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">path</span>: <span style="color:#ae81ff">github.com/colinwilson/lotusdocs</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">disable</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">path</span>: <span style="color:#ae81ff">github.com/gohugoio/hugo-mod-bootstrap-scss/v5</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">disable</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">markup</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">goldmark</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">renderer</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unsafe</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">primary</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Docs</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/docs/</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">identifier</span>: <span style="color:#ae81ff">docs</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">10</span></span></span></code></pre></div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="fadbec" role="tabpanel" aria-labelledby="nav-1">
+
+	
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;baseURL&#34;</span>: <span style="color:#e6db74">&#34;https://colinwilson.github.io&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;languageCode&#34;</span>: <span style="color:#e6db74">&#34;en-us&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;module&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;imports&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;github.com/colinwilson/lotusdocs&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;disable&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;github.com/gohugoio/hugo-mod-bootstrap-scss/ v5&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;disable&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;markup&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;goldmark&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;renderer&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;unsafe&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;menu&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;primary&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Docs&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;/docs/&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;identifier&#34;</span>: <span style="color:#e6db74">&#34;docs&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+
+</div>
+
+
+</div>
+<h3 id="4-create-an-example-page">4. Create an example page <a href="#4-create-an-example-page" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new docs/example-page.md</span></span></code></pre></div>
+<p>If <strong>draft</strong> is true, make it false</p>
+
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Example Page&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">date</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">2023-08-25T23:36:29+01:00</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">draft</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span></span></span></code></pre></div>
+<h3 id="5-create-an-empty-hugoyaml-file-in-your-local-repository">5. Create an empty hugo.yaml file in your local repository <a href="#5-create-an-empty-hugoyaml-file-in-your-local-repository" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.github/workflows/hugo.yaml</span></span></code></pre></div>
+<h3 id="6-copy-and-paste-the-yaml-below-into-the-hugoyaml-you-created-change-the-branch-name-and-hugo-version-as-needed">6. Copy and paste the YAML below into the hugo.yaml you created. Change the branch name and Hugo version as needed. <a href="#6-copy-and-paste-the-yaml-below-into-the-hugoyaml-you-created-change-the-branch-name-and-hugo-version-as-needed" class="anchor" aria-hidden="true"><i class="material-icons align-middle">link</i></a></h3>
+
+    
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo site to Pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Runs on pushes targeting the default branch</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">workflow_dispatch</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">permissions</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">contents</span>: <span style="color:#ae81ff">read</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pages</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id-token</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">concurrency</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">group</span>: <span style="color:#e6db74">&#34;pages&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cancel-in-progress</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default to bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">defaults</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">shell</span>: <span style="color:#ae81ff">bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Build job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.118.2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Hugo CLI</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &amp;&amp; sudo dpkg -i ${{ runner.temp }}/hugo.deb</span>        
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v4</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">submodules</span>: <span style="color:#ae81ff">recursive</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">id</span>: <span style="color:#ae81ff">pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/configure-pages@v3</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Node.js dependencies</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: <span style="color:#e6db74">&#34;[[ -f package-lock.json || -f npm-shrinkwrap. json ]] &amp;&amp; npm ci || true&#34;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build with Hugo</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># For maximum backward compatibility with Hugo modules</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">HUGO_ENVIRONMENT</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">HUGO_ENV</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        hugo \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --gc \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --minify \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34;</span>        
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Upload artifact</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/upload-pages-artifact@v1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">path</span>: <span style="color:#ae81ff">./public</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Deployment job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">github-pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">${{ steps.deployment.outputs.page_url }}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">needs</span>: <span style="color:#ae81ff">build</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">id</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/deploy-pages@v2</span></span></span></code></pre></div>
+
+    </div>
+
+    
+
+    
+                                        </div>
+                                        <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+
+	<div class="row flex-xl-nowrap ">
+	<div class="col-sm-6 pt-2 doc-next">
+		<a href="/docs/pt/deployment/">
+			<div class="card h-100 my-1">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0"><i class="material-icons align-middle">navigate_before</i> Deployment</p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	<div class="col-sm-6 pt-2 doc-prev">
+		<a class="ms-auto" href="/docs/deployment-gitlab/">
+			<div class="card h-100 my-1 text-end">
+				<div class="card-body py-2">
+                    <p class="card-title fs-5 fw-semibold lh-base mb-0">GitLab Pages Deployment <i class="material-icons align-middle">navigate_next</i></p>
+					
+				</div>
+			</div>
+		</a>
+        </div>
+	</div>
+</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+        </div>
+    </div>
+
+    
+    
+    <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+    
+    
+
+    
+    
+        <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+    
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    <script src="/docs/js/bootstrap.js" defer></script>
+
+
+    <script type="text/javascript" src="http://localhost:1313/docs/js/bundle.js" defer></script>
+    
+
+    
+    <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/about\/",
+                title: "About",
+                description: "About Description",
+                content: "This website’s objective is to provide comprehensive assistance for individuals and teams engaged in the creation of technical documentation websites utilizing Hugo. This platform has been meticuslously crafted to empower users with the knowledge and tools necessary to effectively leverage Hugo in their documentation projects. Additionally, we highlight some of Hugo’s most useful features, enabling users to maximize the potential of this powerful tool in their website development endeavors.\nContent linkThe website is composed of several key pages, each designed to provide comprehensive insights into various aspects of technical documentation website development with Hugo. These pages are:\nSetup Features Customization Deployment Setup Features Customization Deployment Windows Content\nExample content specific to Windows operating systems\nMacOS Content\nExample content specific to Mac operating systems\nLinux Content\nExample content specific to Linux operating systems\nLinux Content\nExample content specific to Linux operating systems\nTeam linkIntroduce the team behind the tool and its documentation. Provide insights into the expertise and background of the team members.\nContributors linkProvide brief profiles of each team member, highlighting their roles, skills, and contributions to the project. This adds a personal touch and helps build credibility.\n"
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/pt\/sobre\/",
+                title: "Sobre",
+                description: "Flowchart linkflowchart LR\rA[Hard] --\u003e|Text| B(Round)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result 1]\rC --\u003e|Two| E[Result 2] Sequence diagram linksequenceDiagram\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003e\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts!\rJohn--\u003e\u003eAlice: Great!\rJohn-\u003e\u003eBob: How about you?\rBob--\u003e\u003eJohn: Jolly good! Gnatt Chart linkgantt\rsection Section\rCompleted :done, des1, 2014-01-06,2014-01-08\rActive :active, des2, 2014-01-07, 3d\rParallel 1 : des3, after des1, 1d\rParallel 2 : des4, after des1, 1d\rParallel 3 : des5, after des3, 1d\rParallel 4 : des6, after des4, 1d Class diagram linkclassDiagram\rClass01 \u003c|-- AveryLongClass : Cool\r\u003c\u003e Class01\rClass09 --\u003e C2 : Where am i?",
+                content: "Flowchart linkflowchart LR\rA[Hard] --\u003e|Text| B(Round)\rB --\u003e C{Decision}\rC --\u003e|One| D[Result 1]\rC --\u003e|Two| E[Result 2] Sequence diagram linksequenceDiagram\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003e\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts!\rJohn--\u003e\u003eAlice: Great!\rJohn-\u003e\u003eBob: How about you?\rBob--\u003e\u003eJohn: Jolly good! Gnatt Chart linkgantt\rsection Section\rCompleted :done, des1, 2014-01-06,2014-01-08\rActive :active, des2, 2014-01-07, 3d\rParallel 1 : des3, after des1, 1d\rParallel 2 : des4, after des1, 1d\rParallel 3 : des5, after des3, 1d\rParallel 4 : des6, after des4, 1d Class diagram linkclassDiagram\rClass01 \u003c|-- AveryLongClass : Cool\r\u003c\u003e Class01\rClass09 --\u003e C2 : Where am i?\rClass09 --* C3\rClass09 --|\u003e Class07\rClass07 : equals()\rClass07 : Object[] elementData\rClass01 : size()\rClass01 : int chimp\rClass01 : int gorilla\rclass Class10 {\r\u003e\u003eservice\u003e\u003e\rint id\rsize()\r} State diagram linkstateDiagram-v2\r[*] --\u003e Still\rStill --\u003e [*]\rStill --\u003e Moving\rMoving --\u003e Still\rMoving --\u003e Crash\rCrash --\u003e [*] Pie Chart linkpie\r\"Dogs\" : 386\r\"Cats\" : 85.9\r\"Rats\" : 15 Git Graph link gitGraph\rcommit\rcommit\rbranch develop\rcheckout develop\rcommit\rcommit\rcheckout main\rmerge develop\rcommit\rcommit Bar chart (using gantt chart) linkgantt\rtitle Git Issues - days since last update\rdateFormat X\raxisFormat %s\rsection Issue19062\r71 : 0, 71\rsection Issue19401\r36 : 0, 36\rsection Issue193\r34 : 0, 34\rsection Issue7441\r9 : 0, 9\rsection Issue1300\r5 : 0, 5 User Journey diagram link journey\rtitle My working day\rsection Go to work\rMake tea: 5: Me\rGo upstairs: 3: Me\rDo work: 1: Me, Cat\rsection Go home\rGo downstairs: 5: Me\rSit down: 3: Me C4 diagram linkC4Context\rtitle System Context diagram for Internet Banking System\rPerson(customerA, \"Banking Customer A\", \"A customer of the bank, with personal bank accounts.\")\rPerson(customerB, \"Banking Customer B\")\rPerson_Ext(customerC, \"Banking Customer C\")\rSystem(SystemAA, \"Internet Banking System\", \"Allows customers to view information about their bank accounts, and make payments.\")\rPerson(customerD, \"Banking Customer D\", \"A customer of the bank, with personal bank accounts.\")\rEnterprise_Boundary(b1, \"BankBoundary\") {\rSystemDb_Ext(SystemE, \"Mainframe Banking System\", \"Stores all of the core banking information about customers, accounts, transactions, etc.\")\rSystem_Boundary(b2, \"BankBoundary2\") {\rSystem(SystemA, \"Banking System A\")\rSystem(SystemB, \"Banking System B\", \"A system of the bank, with personal bank accounts.\")\r}\rSystem_Ext(SystemC, \"E-mail system\", \"The internal Microsoft Exchange e-mail system.\")\rSystemDb(SystemD, \"Banking System D Database\", \"A system of the bank, with personal bank accounts.\")\rBoundary(b3, \"BankBoundary3\", \"boundary\") {\rSystemQueue(SystemF, \"Banking System F Queue\", \"A system of the bank, with personal bank accounts.\")\rSystemQueue_Ext(SystemG, \"Banking System G Queue\", \"A system of the bank, with personal bank accounts.\")\r}\r}\rBiRel(customerA, SystemAA, \"Uses\")\rBiRel(SystemAA, SystemE, \"Uses\")\rRel(SystemAA, SystemC, \"Sends e-mails\", \"SMTP\")\rRel(SystemC, customerA, \"Sends e-mails to\") Code Block Examples linkCode block language examples\nGo link package main import \"fmt\" func main() { fmt.Println(\"hello world\") } HTML link \u003c!DOCTYPE html\u003e \u003chtml\u003e \u003cbody\u003e \u003ch1\u003eMy First Heading\u003c/h1\u003e \u003cp\u003eMy first paragraph.\u003c/p\u003e \u003c/body\u003e \u003c/html\u003e Markdown link # H1 heading **Some bold text** *Italic text example* Requirements link git Go ≥ v1.19 Hugo ≥ v0.100.0 (Extended Version) Install Hugo linkInstall the Hugo CLI, using the specific instructions for your operating system below:\nLinux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) Your Linux distro’s package manager may include Hugo. If this is the case, install it directly using your distro’s package manager – for instance, in Ubuntu, run the following command. This will install the extended edition of Hugo:\nsudo apt install hugo If you use the package manager Homebrew, run the brew install command in your terminal to install Hugo:\nbrew install hugo If you use the package manager Chocolatey, run the choco install command in your terminal to install Hugo:\nchoco install hugo --confirm If you use the package manager Scoop, run the scoop install command in your terminal to install Hugo:\nscoop install hugo Manual Installation linkThe Hugo GitHub repository contains pre-built versions of the Hugo command-line tool for various operating systems, which can be found on the Releases page\nFor more instruction on installing these releases, refer to Hugo’s documentation\nCreate a New Lotus Docs Site linkWith Hugo installed, create a new Hugo project using the hugo new command:\nhugo new site my-docs-site \u0026\u0026 cd my-docs-site Now initialize your project as a Hugo Module using the hugo mod init command:\nhugo mod init my-docs-site You can now choose your preferred method for adding the Lotus Docs theme to your new site from the options below:\nAdd as a Hugo Module Add as a Git submodule Clone theme files Edit the hugo.toml configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines 5 to 11 below):\n1 2 3 4 5 6 7 8 9 10 11 baseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false Initialize Git and clone the Lotus Docs theme repository as a submodule:\ngit init git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs Update your existing hugo.toml config file with the configuration below:\n1 2 3 4 5 6 7 8 9 10 11 baseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false In cases where you prefer to customise and maintain the Lotus Docs theme yourself, you can clone the theme into your project’s themes subdirectory.\nRun the following command from your project’s root directory to clone the Lotus Docs theme into your themes subdirectory:\ngit clone https://github.com/colinwilson/lotusdocs themes/lotusdocs Edit the hugo.toml configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines 5 to 11 below):\n1 2 3 4 5 6 7 8 9 10 11 baseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:\nhugo new docs/example-page.md This will create a markdown file named example-page.md with the following default front matter:\n+++ title = \"Example Page\" description = \"\" icon = \"article\" date = \"2023-05-22T00:27:57+01:00\" lastmod = \"2023-05-22T00:27:57+01:00\" draft = false toc = true weight = 999 +++ Modify the options to suit your needs.\nThe code below shows the front matter code used to create this page, along with a portion of markdown from the body:\n+++\rweight = 100\rdate = \"2023-05-03T22:37:22+01:00\"\rdraft = true\rauthor = \"Colin Wilson\"\rtitle = \"Quickstart\"\ricon = \"rocket_launch\"\rtoc = true\rdescription = \"A quickstart guide to creating new content in Lotus Docs\"\rpublishdate = \"2023-05-03T22:37:22+01:00\"\rtags = [\"Beginners\"]\r+++\r## Create New Content\rNavigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:\r```shell\rhugo new docs/examplepage.md\r```\r...\rPreview your Site linkNow that you’ve created some sample content you can preview your new Lotus Docs site using the huge server command:\nhugo server -D Navigate to localhost:1313/docs and you should see a card link to the Example Page created earlier:\nOrdering Content linkLotus Docs uses a simple weighting method for ordering content and creating menus.\nThe front matter weight variable is used to order all content and auto-generate the menu structure (including the sidebar menu and page navigation buttons). Lower weight values take higher precedence. So content with lower weights come first and are so ordered in the menu.\nAuto-Generated Menu linkAs mentioned, Lotus Docs auto-generates menus and navigation links using the front matter weight variable. For example, Navigate to the content/docs directory and create two content files, doc-one.md and doc-two.md, then edit the weight values to 100 and 200 respectively:\nnotifications It’s good practice to increment the weight of your posts by a factor of 100. This ensures plenty of room to insert new posts between existing items should you need to. Your directory structure should now look like this:\ncontent/\r└── docs/\r├── doc-one.md\r└── doc-two.md Links to both posts are now visible in the sidebar menu where doc-one.md will come before and be placed above doc-two.md:\ninfo The option to manually configure a predefined menu structure in hugo.toml as opposed to an auto-generated one is part of the Lotus Docs roadmap. Second Level Menu Items linkSecond level menu items can be generated by first creating a ‘parent’ directory containing an _index.md file, e.g.:\nhugo new docs/parent-directory/_index.md The above command creates an _index.md file inside a directory named parent-directory under content/docs:\ncontent/\r└── docs/\r├── parent-directory/\r│ └── _index.md\r├── doc-one.md\r├── doc-two.md\r└── _index.md You can now create second level items inside the parent-directory as normal. Run the hugo new command again to create a post inside the newly created parent-directory:\nhugo new docs/parent-directory/doc-three.md Your directory/file structure should now look like this:\ncontent/\r└── docs/\r├── parent-directory/\r│ ├── _index.md\r│ └── doc-three.md\r├── doc-one.md\r├── doc-two.md\r└── _index.md This is reflected in the sidebar menu with parent-directory functioning as a dropdown menu containing a link to the Doc Three post:\n"
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/example-page\/",
+                title: "Quickstart",
+                description: "A quickstart guide to creating new content in Lotus Docs",
+                content: "Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:\nhugo new docs/examplepage.md …\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/pt\/pagina_exemplo\/",
+                title: "Quickstart",
+                description: "A quickstart guide to creating new content in Lotus Docs",
+                content: "Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:\nhugo new docs/examplepage.md …\n"
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/pt\/customizacao\/",
+                title: "Customização",
+                description: "Welcome to the customization guide for your Hugo documentation site! This guide provides comprehensive instructions on how to customize and personalize your documentation site in Lotus Docs to better suit your requirements.\nBefore you begin customizing your Hugo documentation site, its is important to have basic understanding of HTML, CSS, and Markdown.\n1. Introduction linkLotus Docs provides a flexible platform for creating and managing documentation. With its customization options, users can tailor the appearance and functionality of their documentation site to align with their brand identity and user preferences.",
+                content: "Welcome to the customization guide for your Hugo documentation site! This guide provides comprehensive instructions on how to customize and personalize your documentation site in Lotus Docs to better suit your requirements.\nBefore you begin customizing your Hugo documentation site, its is important to have basic understanding of HTML, CSS, and Markdown.\n1. Introduction linkLotus Docs provides a flexible platform for creating and managing documentation. With its customization options, users can tailor the appearance and functionality of their documentation site to align with their brand identity and user preferences. In first glance it is possible to use the site in Dark or Ligth Mode\n2. Customization Options link2.1 Theme Customization linkCustomize the color scheme, typography, and layout of your Lotus Docs site to reflect your brand’s identity and improve readability.\n2.2 Logo and Branding linkAdd your company logo and customize the branding elements to create a cohesive and professional look for your documentation site.\n2.3 Navigation linkOrganize and customize the navigation menu to improve accessibility and guide users to relevant content quickly.\n2.4 Content Customization linkCustomize the content layout, styling, and formatting to enhance readability and usability for your audience.\n3. Getting Started link3.1 Prerequisites linkBefore customizing your Lotus Docs site, ensure that you have administrative access and familiarity with the platform.\n3.2 Accessing Customization Settings linkLogin to your Lotus Docs admin dashboard and navigate to the customization settings section to access the customization options.\n4. Step-by-Step Instructions linkFollow these step-by-step instructions to customize various aspects of your Lotus Docs site:\n4.1 Theme Customization link Navigate to the “Theme Settings” section in the admin dashboard. Select the desired color scheme and typography options. Adjust the layout settings to optimize the visual presentation of your documentation site. 4.2 Logo and Branding link Upload your company logo in the “Branding” section. Customize the header and footer elements to incorporate your brand colors and design elements. 4.3 Navigation link Edit the navigation menu in the “Navigation Settings” section. Rearrange menu items and add/remove links to streamline navigation for users. 4.4 Content Customization link Customize the default styling of headings, paragraphs, and other text elements in the “Content Settings” section. Use custom CSS to further personalize the appearance of your documentation site. 5. Best Practices link Keep the customization consistent with your brand identity. Test the changes across different devices and browsers to ensure compatibility. Solicit feedback from users to iterate and improve the customization. 6. Troubleshooting linkIf you encounter any issues during the customization process, refer to the troubleshooting section in the Lotus Docs documentation or reach out to our support team for assistance.\n7. Conclusion linkCustomizing your Lotus Docs site allows you to create a unique and engaging documentation experience for your users. By following the guidelines outlined in this document, you can effectively tailor the site to meet your specific requirements and enhance user satisfaction.\n8. Additional Resources link Lotus Docs Documentation Community Forums Developer API 9. FAQs linkQ: Can I revert back to the default settings after customization? A: Yes, you can revert back to the default settings at any time from the customization settings menu.\n"
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/customization\/",
+                title: "Customization",
+                description: "Welcome to the customization guide for your Hugo documentation site! This guide provides comprehensive instructions on how to customize and personalize your documentation site in Lotus Docs to better suit your requirements.\nBefore you begin customizing your Hugo documentation site, its is important to have basic understanding of HTML, CSS, and Markdown.\n1. Introduction linkLotus Docs provides a flexible platform for creating and managing documentation. With its customization options, users can tailor the appearance and functionality of their documentation site to align with their brand identity and user preferences.",
+                content: "Welcome to the customization guide for your Hugo documentation site! This guide provides comprehensive instructions on how to customize and personalize your documentation site in Lotus Docs to better suit your requirements.\nBefore you begin customizing your Hugo documentation site, its is important to have basic understanding of HTML, CSS, and Markdown.\n1. Introduction linkLotus Docs provides a flexible platform for creating and managing documentation. With its customization options, users can tailor the appearance and functionality of their documentation site to align with their brand identity and user preferences. In first glance it is possible to use the site in Dark or Ligth Mode\n2. Customization Options link2.1 Theme Customization linkCustomize the color scheme, typography, and layout of your Lotus Docs site to reflect your brand’s identity and improve readability.\n2.2 Logo and Branding linkAdd your company logo and customize the branding elements to create a cohesive and professional look for your documentation site.\n2.3 Navigation linkOrganize and customize the navigation menu to improve accessibility and guide users to relevant content quickly.\n2.4 Content Customization linkCustomize the content layout, styling, and formatting to enhance readability and usability for your audience.\n3. Getting Started link3.1 Prerequisites linkBefore customizing your Lotus Docs site, ensure that you have administrative access and familiarity with the platform.\n3.2 Accessing Customization Settings linkLogin to your Lotus Docs admin dashboard and navigate to the customization settings section to access the customization options.\n4. Step-by-Step Instructions linkFollow these step-by-step instructions to customize various aspects of your Lotus Docs site:\n4.1 Theme Customization link Navigate to the “Theme Settings” section in the admin dashboard. Select the desired color scheme and typography options. Adjust the layout settings to optimize the visual presentation of your documentation site. 4.2 Logo and Branding link Upload your company logo in the “Branding” section. Customize the header and footer elements to incorporate your brand colors and design elements. 4.3 Navigation link Edit the navigation menu in the “Navigation Settings” section. Rearrange menu items and add/remove links to streamline navigation for users. 4.4 Content Customization link Customize the default styling of headings, paragraphs, and other text elements in the “Content Settings” section. Use custom CSS to further personalize the appearance of your documentation site. 5. Best Practices link Keep the customization consistent with your brand identity. Test the changes across different devices and browsers to ensure compatibility. Solicit feedback from users to iterate and improve the customization. 6. Troubleshooting linkIf you encounter any issues during the customization process, refer to the troubleshooting section in the Lotus Docs documentation or reach out to our support team for assistance.\n7. Conclusion linkCustomizing your Lotus Docs site allows you to create a unique and engaging documentation experience for your users. By following the guidelines outlined in this document, you can effectively tailor the site to meet your specific requirements and enhance user satisfaction.\n8. Additional Resources link Lotus Docs Documentation Community Forums Developer API 9. FAQs linkQ: Can I revert back to the default settings after customization? A: Yes, you can revert back to the default settings at any time from the customization settings menu.\n"
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/setup\/",
+                title: "Setup",
+                description: "A quick start guide to get started in Lotus Doc and how this page was made",
+                content: "1. System Requirements link git Go ≥ v1.19 Hugo ≥ v0.117.0 (Extended Version) 2. Installation link2.1 Auto Installation linkInstall the Hugo CLI, using the specific instructions for your operating system below:\nLinux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) Your Linux distro’s package manager may include Hugo. If this is the case, install it directly using your distro’s package manager – for instance, in Ubuntu, run the following command. This will install the extended edition of Hugo:\nsudo apt install hugo If you use the package manager Homebrew, run the brew install command in your terminal to install Hugo:\nbrew install hugo If you use the package manager Chocolatey, run the choco install command in your terminal to install Hugo:\nchoco install hugo --confirm If you use the package manager Scoop, run the scoop install command in your terminal to install Hugo:\nscoop install hugo 2.2 Manual Installation linkThe Hugo GitHub repository contains pre-built versions of the Hugo command-line tool for various operating systems, which can be found on the Releases page\nFor more instruction on installing these releases, refer to Hugo’s documentation\n3. Create a New Lotus Docs Site link(Explicar como criar novas paginas e com as configuras inicialmente)\nWith Hugo installed, create a new Hugo project using the hugo new command:\nhugo new site my-docs-site \u0026\u0026 cd my-docs-site Now use the hugo mod init command to initialize your project as a Hugo Module:\nhugo mod init my-docs-site info Note: You may initialize your site using the path to its git repository, for example, hugo mod init github.com///, if it already has one. From the choices below, select your chosen way to apply the Lotus Docs theme to your newly created website:\nAdd as a Hugo Module Add as a Git submodule Clone theme files Lines 5 through 11 below need be edited to add the Hugo Bootstrap module and the Lotus Docs theme to the hugo.toml configuration file:\nbaseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false Set up Git and create a submodule by cloning the Lotus Docs theme repository:\ngit init git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs Replace the configuration in your current hugo.toml config file with the following:\nbaseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] # uncomment line below for temporary local development of module # or when using a 'theme' as a git submodule replacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\" [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false You can clone the Lotus Docs theme into the themes subfolder of your project if you would rather modify and update the theme on your own.\nTo clone the Lotus Docs theme into your themes subfolder, use the following command from the root directory of your project:\ngit clone https://github.com/colinwilson/lotusdocs themes/lotusdocs Lines 5 through 14 below need be edited to include the Hugo Bootstrap module and the Lotus Docs theme to the hugo.toml configuration file:\nbaseURL = 'http://example.org/' languageCode = 'en-us' title = 'My New Hugo Site' [module] # uncomment line below for temporary local development of module, # when using a 'theme' as a git submodule or git cloned files replacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\" [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false info Hugo ≥ v0.110.0 introduced hugo.toml as the default config base filename. Consider rename your config.toml file to hugo.toml if you’re using a previous version of Hugo. 4. Create New Content linkCreate a file in the content/docs directory by navigating to the root of your Hugo project and using the hugo new command:\nhugo new docs/new-page.md This will produce the new-page.md markdown file with the default front matter as follows:\n--- weight: 999 title: \"New Page\" icon: \"article\" date: \"2024-04-17T18:19:36Z\" lastmod: \"2024-04-17T18:19:36Z\" description: \"This new page has the Lotus Documents theme\" draft: true toc: true --- The front matter code that was used to generate this page is displayed in the code below, along with some markdown from the body:\n---\rweight: 200\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Beginners\"]\r---\r## Create New Content\rNavigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:\r```shell\rhugo new docs/examplepage.md\r```\r...\r5. Preview your Site linkUsing the hugo server -D command, you can now examine your new Lotus Documents website after creating some sample content:\nhugo server -D When you go to localhost:1313/docs/, a card link to the previously generated New Page should appear: 6. Configure Content link6.1 Ordering Content linkFor content ordering and menu creation, Lotus Docs use a straightforward weighting system.\nAll content is arranged in a certain sequence and the menu structure (which includes the sidebar menu and page navigation buttons) is automatically generated using the front matter weight variable. Higher priority is assigned to lower weight values. Lower weight items are prioritized and arranged in this manner on the menu.\nFor example:\nNew Page:\n--- weight: 200 title: \"New Page\" icon: \"article\" date: \"2024-04-17T18:19:36Z\" lastmod: \"2024-04-17T18:19:36Z\" description: \"This new page has the Lotus Documents theme\" draft: true toc: true tags: [\"Beginners\"] publishdate: \"2023-05-03T22:37:22+01:00\" --- New Page 2:\n--- weight: 100 title: \"New Page 2\" icon: \"article\" date: \"2024-04-17T18:19:36Z\" lastmod: \"2024-04-17T18:19:36Z\" description: \"This new page has the Lotus Documents theme\" draft: true toc: true tags: [\"Beginners\"] publishdate: \"2023-05-03T22:37:22+01:00\" --- Result: 6.2 Content description linkIt is imperative that the website provides readers with an understandable summary of its contents, complete with an educational headline and succinct explanation. The ’title’ and ‘description’ variables can be changed to do this based on the theme of your website. For instance, the website may look something like this if its goal is to demonstrate how to use Lotus Docs to build up a basic configuration for documentation:\n--- weight: 300 title: \"Setup\" icon: \"rocket_launch\" date: \"2024-03-20T18:19:36Z\" lastmod: \"2024-03-20T18:19:36Z\" description: \"A quick start guide to get started in Lotus Doc and how this page was made\" draft: true toc: true --- And this would be the result: 6.3 Content icon linkYou may alter the symbol that shows up in your page’s layout to make it stand out from the rest and make the pages easier to distinguish from one another.\n--- weight: 300 title: \"Setup\" icon: \"rocket_launch\" date: \"2024-03-20T18:19:36Z\" lastmod: \"2024-03-20T18:19:36Z\" description: \"A quick start guide to get started in Lotus Doc and how this page was made\" draft: true toc: true --- And this would be the result: 7. Document title linkYou can create a file called “_index.md” if you need to rename your document’s title from the “Docs” default to something more pertinent:\nhugo new docs/_index.md And now all you have to do is access the file _index.md and change the title:\n--- weight: 999 title: \"New Docs Title\" description: \"\" icon: \"article\" date: \"2024-04-19T16:14:44+01:00\" lastmod: \"2024-04-19T16:14:44+01:00\" draft: true toc: true --- And this is how it appears visually: info Keep in mind that _index.md files are only meant to be used to modify header settings. It won’t make a difference if you add any material that isn’t among the variables allowed in the header. 8. Second Level Menu Items link8.1 Create Second Level linkTo build second level menu items, first create a directory called “parent” that has a file called _index.md. For example:\nhugo new docs/parent-directory/_index.md An _index.md file is created by the aforementioned command within the content/docs/parent-directory directory:\ncontent/\r└── docs/\r├── parent-directory/\r│ └── _index.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md 8.2 Add new page to second level linkAs before, second level items can now be created inside the parent directory. To make a post within the newly established parent-directory, use the hugo new command once more:\nhugo new docs/parent-directory/new-page-3.md Your directory/file structure should now look like this:\ncontent/\r└── docs/\r├── parent-directory/\r│ ├── _index.md\r│ └── new-page-3.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md And visually it will look like this:\nOverall: In the parent-directory directory: 8.3 Config second level content linkTo configure content for the second level, the process is similar to that for the first level. Simply access the second level’s _index.md file and adjust the title and description to provide more information about the specific content present at that level, helping the user with navigation and location.\n--- weight: 999 title: \"New Parent Directory\" description: \"This is an example of how to create a second level\" icon: \"article\" date: \"2024-04-19T15:22:56+01:00\" lastmod: \"2024-04-19T15:22:56+01:00\" draft: true toc: true --- And the result is like this: And to order the second level menu items is the same way as for the other contents, just change the weight of the _index.md file:\n--- weight: 150 title: \"New Parent Directory\" description: \"This is an example of how to create a second level\" icon: \"article\" date: \"2024-04-19T15:22:56+01:00\" lastmod: \"2024-04-19T15:22:56+01:00\" draft: true toc: true --- And with that, it changes position in the menu items 9. Publish pages linkDuring the earlier stages of the process, we worked with draft pages. However, once a page is finished, you need to transform it from a draft into a ready-to-publish version. This process is simple: just modify the draft variable to false or, alternatively, remove this variable completely. This ensures that the page is ready to publish.\nShowing an example with the Setup page:\n--- weight: 300 title: \"Setup\" icon: \"rocket_launch\" date: \"2024-03-20T18:19:36Z\" lastmod: \"2024-03-20T18:19:36Z\" description: \"A quick start guide to get started in Lotus Doc and how this page was made\" draft: false toc: true --- From this moment on, the page will be considered published. This means that when viewing the site preview, it will no longer be necessary to enter the hugo server -D command. Now, you can use the hugo server command to view all published pages, excluding those that are in draft.\nBefore proceeding, it is important to confirm that you have made changes to the first level _index.md file. If you have changed it, make sure the draft variable is set to false. In our example, since we changed the title and the draft is marked as true, we will need to modify this variable as well.\n--- weight: 999 title: \"New Docs Title\" description: \"\" icon: \"article\" date: \"2024-04-19T16:14:44+01:00\" lastmod: \"2024-04-19T16:14:44+01:00\" draft: false toc: true --- info Note: If you did not create a _index.md file for the first level because you did not need to modify any information, you do not need to create it to set the draft to false, as this is already the default value if _index.md does not have been created. Showing what the page preview looks like:\nWhen doing hugo server -D: Here you can see that DRAFT has already disappeared from the setup page content, as well as from the document title\nWhen doing hugo server: This is a very important step to later be able to Deployed your document\n10. License linkLotus Docs is available under a dual license from Protocol Labs, which means you can choose between two main licenses to use the code: Apache 2.0 and MIT. This approach offers flexibility, allowing you to select the license that best aligns with your needs and legal requirements. These licenses, known as the Permissive License Stack, are well established and widely used in the software development community due to their open and permissive nature.\n11. Additional Resources link Lotus Docs Lotus Docs GitHub 12. FAQs link1. Question: How do I install Lotus Docs?\nAnswer: You can install Lotus Docs by following the instructions provided in the installation section of the documentation. Make sure to meet the system requirements and follow the appropriate installation method for your operating system.\n2. Question: How do I create a new site using Lotus Docs?\nAnswer: The process of creating a new site with Lotus Docs is detailed in the “Create a New Lotus Docs Site” section. Follow the provided steps, including installing Hugo, initializing the project, and applying the Lotus Docs theme.\n3. Question: How do I add new content to my Lotus Docs site?\nAnswer: You can add new content to your Lotus Docs site by creating new Markdown files in the content/docs folder. Use the hugo new command followed by the file path to create new content.\n4. Question: How can I customize the appearance of my Lotus Docs site?\nAnswer: This question can be answered by viewing the Customization page.\n5. Question: How do I publish a page on my Lotus Docs site?\nAnswer: Once a page is ready to be published, you need to change the draft variable to false in the corresponding Markdown file. This marks the page as ready for publishing and is detailed in the “Publish pages” section of the documentation.\n6. Question: How was this page made?\nAnswer: You can see how this page was made by turning on the page: Creation process Setup\n"
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/pt\/deployment\/",
+                title: "Deployment",
+                description: "",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/docs\/deployment-github-copy\/",
+                title: "GitHub Pages Deployment",
+                description: "Descrição para a pagina",
+                content: "1. Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.\n2. Prerequisites link A GitHub Account Git Create a Hugo site using the Lotus Docs theme 3. Procedure link3.1. Create a new repository on GitHub linkCreate a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git\n3.2. Change GitHub Pages Source to GitHub Actions linkVisit your GitHub repository and navigate to Settings \u003e Pages. Change the Source to GitHub Actions.\n3.3. Create a Hugo server locally link hugo new site collinwilson.github.io cd colinwilson.github.io Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.github.io' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false [markup.goldmark.renderer] unsafe = true [[menu.primary]] name = \"Docs\" url = \"/docs/\" identifier = \"docs\" weight = 10 baseURL: 'https://colinwilson.github.io' languageCode: en-us title: My New Hugo Site module: imports: - path: github.com/colinwilson/lotusdocs disable: false - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5 disable: false markup: goldmark: renderer: unsafe: true menu: primary: - name: Docs url: /docs/ identifier: docs weight: 10 { \"baseURL\": \"https://colinwilson.github.io\", \"languageCode\": \"en-us\", \"title\": \"My New Hugo Site\", \"module\": { \"imports\": [ { \"path\": \"github.com/colinwilson/lotusdocs\", \"disable\": false }, { \"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/ v5\", \"disable\": false } ] }, \"markup\": { \"goldmark\": { \"renderer\": { \"unsafe\": true } } }, \"menu\": { \"primary\": [ { \"name\": \"Docs\", \"url\": \"/docs/\", \"identifier\": \"docs\", \"weight\": 10 } ] } } 4. Create an example page link hugo new docs/example-page.md If draft is true, make it false\n--- title: \"Example Page\" date: 2023-08-25T23:36:29+01:00 draft: false --- 5. Create an empty hugo.yaml file in your local repository link .github/workflows/hugo.yaml 6. Copy and paste the YAML below into the hugo.yaml you created. Change the branch name and Hugo version as needed. link # Sample workflow for building and deploying a Hugo site to GitHub Pages name: Deploy Hugo site to Pages on: # Runs on pushes targeting the default branch push: branches: - main # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages permissions: contents: read pages: write id-token: write # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete. concurrency: group: \"pages\" cancel-in-progress: false # Default to bash defaults: run: shell: bash jobs: # Build job build: runs-on: ubuntu-latest env: HUGO_VERSION: 0.118.2 steps: - name: Install Hugo CLI run: | wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \\ \u0026\u0026 sudo dpkg -i ${{ runner.temp }}/hugo.deb - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 - name: Setup Pages id: pages uses: actions/configure-pages@v3 - name: Install Node.js dependencies run: \"[[ -f package-lock.json || -f npm-shrinkwrap. json ]] \u0026\u0026 npm ci || true\" - name: Build with Hugo env: # For maximum backward compatibility with Hugo modules HUGO_ENVIRONMENT: production HUGO_ENV: production run: | hugo \\ --gc \\ --minify \\ --baseURL \"${{ steps.pages.outputs.base_url }}/\" - name: Upload artifact uses: actions/upload-pages-artifact@v1 with: path: ./public # Deployment job deploy: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} runs-on: ubuntu-latest needs: build steps: - name: Deploy to GitHub Pages id: deployment uses: actions/deploy-pages@v2 "
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/docs\/deployment-gitlab\/",
+                title: "GitLab Pages Deployment",
+                description: "Descrição para a pagina",
+                content: "Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.\nPrerequisites link Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git\nVisit your GitHub repository and navigate to Settings \u003e Pages. Change the Source to GitHub Actions.\nCreate a Hugo server locally.\nhugo new site cd Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.github.io' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false [markup.goldmark.renderer] unsafe = true [[menu.primary]] name = \"Docs\" url = \"/docs/\" identifier = \"docs\" weight = 10 baseURL: 'https://colinwilson.github.io' languageCode: en-us title: My New Hugo Site module: imports: - path: github.com/colinwilson/lotusdocs disable: false - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5 disable: false markup: goldmark: renderer: unsafe: true menu: primary: - name: Docs url: /docs/ identifier: docs weight: 10 { \"baseURL\": \"https://colinwilson.github.io\", \"languageCode\": \"en-us\", \"title\": \"My New Hugo Site\", \"module\": { \"imports\": [ { \"path\": \"github.com/colinwilson/lotusdocs\", \"disable\": false }, { \"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\", \"disable\": false } ] }, \"markup\": { \"goldmark\": { \"renderer\": { \"unsafe\": true } } }, \"menu\": { \"primary\": [ { \"name\": \"Docs\", \"url\": \"/docs/\", \"identifier\": \"docs\", \"weight\": 10 } ] } } "
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/docs\/pt\/setup\/",
+                title: "Setup",
+                description: "",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/docs\/",
+                title: "Docs",
+                description: "",
+                content: ""
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+    
+</body></html>

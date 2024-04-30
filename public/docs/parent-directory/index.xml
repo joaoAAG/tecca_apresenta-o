@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parent Directory on Lotus Docs Example Site</title>
+    <link>//localhost:1313/docs/parent-directory/</link>
+    <description>Recent content in Parent Directory on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 18:20:03 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/parent-directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Pages Deployment</title>
+      <link>//localhost:1313/docs/parent-directory/github/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/parent-directory/github/</guid>
+      <description>1. Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.&#xA;2. Prerequisites link A GitHub Account Git Create a Hugo site using the Lotus Docs theme 3. Procedure link1. Create a new repository on GitHub linkCreate a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git&#xA;2. Change GitHub Pages Source to GitHub Actions linkVisit your GitHub repository and navigate to Settings &amp;gt; Pages.</description>
+    </item>
+  </channel>
+</rss>

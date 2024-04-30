@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customização on Lotus Docs Exemple de Site</title>
+    <link>//localhost:1313/pt/docs/customisation/</link>
+    <description>Recent content in Customização on Lotus Docs Exemple de Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/pt/docs/customisation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customização</title>
+      <link>//localhost:1313/pt/docs/customisation/customisation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/customisation/customisation/</guid>
+      <description>💡 Um guia rápido e básico para personalizar seu site de documentação com o Tema Lotus Docs para atender melhor às suas necessidades. Requisitos linkAntes de começar a personalizar seu site de documentação Hugo, é importante ter um conhecimentos básicos de:&#xA;HTML CSS Markdown Personalização de Texto linkPara criar sua página, é provável que você queira usar mecanismos básicos de destaque para o seu texto.&#xA;Você pode querer criar um cabeçalho, e para isso, você precisa usar o seguinte código:</description>
+    </item>
+    <item>
+      <title>Explicação</title>
+      <link>//localhost:1313/pt/docs/customisation/customisation-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/customisation/customisation-explanation/</guid>
+      <description>Esta página tem o propósito de mostrar como a página de personalização foi feita. A página de personalização já explica uma grande parte do código utilizado para criar a página. No entanto, esta página servirá como uma visão geral.&#xA;Texto linkOs textos descritivos são escritos normalmente, sem nenhuma tag, rótulo ou área. Por exemplo:&#xA;The code: Texto simples.&#xD;Títulos linkTítulos e cabeçalhos são definidos usando # como prefixos. Quantomais #, menor é a posição na hierarquia dos títulos.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Page Developments on Lotus Docs Example Site</title>
+    <link>//localhost:1313/docs/page-developments/</link>
+    <description>Recent content in Page Developments on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/page-developments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>//localhost:1313/docs/page-developments/setup/</link>
+      <pubDate>Sat, 20 Apr 2024 18:51:35 +0100</pubDate>
+      <guid>//localhost:1313/docs/page-developments/setup/</guid>
+      <description>Here we will talk about how the Setup page was created&#xA;List linkFor the list part, it&amp;rsquo;s simple, just put the character &amp;ldquo;-&amp;rdquo; before the sentence and the list will be formed:&#xA;- git&#xD;- Go ≥ v1.19&#xD;- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic.</description>
+    </item>
+    <item>
+      <title>Explanation</title>
+      <link>//localhost:1313/docs/page-developments/about/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/page-developments/about/</guid>
+      <description>This page&amp;rsquo;s objective is to showcase how the About page was made.&#xA;Hugo generates the content of its static websites (mainly) through Markdown files. Most of the features explained in this page serve as a Markdown overview, however, Hugo&amp;rsquo;s aditional functionalities will also be highlighted.&#xA;Text linkGeneral text is written normally, just through writing our content without any tags or labels. For example:&#xA;This website&amp;#39;s objective is to provide comprehensive (.</description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>//localhost:1313/docs/page-developments/deployment/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/page-developments/deployment/</guid>
+      <description>1. Tabs link Add tabs to your content To add tabs, in the following format:&#xA;Tab example #1 Contents of Tab 1&#xD;Example code:&#xA;You will need the following structure:&#xA;2. Images linkHow to add images.&#xA;First, you&amp;rsquo;ll need to select a cloud hosting service for your image. Follow our example and choose SIRV.com.&#xA;Create a free account and upload your image&#xA;Copy your image path:&#xA;In your code, copy and paste the following code:</description>
+    </item>
+  </channel>
+</rss>

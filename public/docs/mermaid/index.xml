@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mermaid on Lotus Docs Example Site</title>
+    <link>//localhost:1313/docs/mermaid/</link>
+    <description>Recent content in Mermaid on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid Page Explanation</title>
+      <link>//localhost:1313/docs/mermaid/mermaid-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/mermaid/mermaid-explanation/</guid>
+      <description>This page serves to show how the Mermaid page was conceived.&#xA;Text linkGeneral text is written without any specific formatting or guidelines; simply typing the text will display it on the page.&#xA;Basic text.&#xD;Basic text.&#xA;Titles linkApplying text formatting such as title, subtitle, or deeper hierarchical titles is accomplished using the standard Markdown syntax:&#xA;Headers: Use hash symbols (#) for headers. The number of hash symbols indicates the level of the header (e.</description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>//localhost:1313/docs/mermaid/mermaid/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:39 +0000</pubDate>
+      <guid>//localhost:1313/docs/mermaid/mermaid/</guid>
+      <description>Welcome to the mermaid page.&#xA;What is Mermaid? linkMermaid is a JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development.&#xA;How to use Mermaid with Lotus Docs linkMermaid is enabled whenever content containing Mermaid diagram syntax is present in a page’s content. You can insert Mermaid diagrams by using the mermaid language identifier with triple backtick codeblocks:</description>
+    </item>
+  </channel>
+</rss>

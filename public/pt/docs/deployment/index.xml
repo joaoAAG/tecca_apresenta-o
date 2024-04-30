@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distribuição on Lotus Docs Exemple de Site</title>
+    <link>//localhost:1313/pt/docs/deployment/</link>
+    <description>Recent content in Distribuição on Lotus Docs Exemple de Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Wed, 20 Mar 2024 18:20:03 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/pt/docs/deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distribuição em páginas github</title>
+      <link>//localhost:1313/pt/docs/deployment/github/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/deployment/github/</guid>
+      <description>Visão Geral linkO GitHub Pages fornece hospedagem estática rápida e segura com SSL para páginas pessoais, organizacionais ou de projeto diretamente de um repositório do GitHub. Usando GitHub Actions, esse serviço simplifica fluxos de trabalho de desenvolvimento e construções.&#xA;Pré-requisitos link Uma Conta no GitHub Git Crie um site Hugo usando o tema Lotus Docs Procedimento link Crie um novo repositório&#xA;Crie um novo repositório no GitHub, por exemplo, https://github.com/joaoAAG/Tecaa.git</description>
+    </item>
+    <item>
+      <title>Distribuição em páginas gitlab</title>
+      <link>//localhost:1313/pt/docs/deployment/gitlab/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/deployment/gitlab/</guid>
+      <description>Visão Geral linkO GitLab fornece uma plataforma DevOps abrangente entregue como uma única aplicação, permitindo que equipes colaborem, gerenciem e acelerem o ciclo de vida do desenvolvimento de software. Com CI/CD integrado, controle de versão e rastreamento de problemas, o GitLab simplifica o processo de desenvolvimento e melhora a produtividade da equipe.&#xA;Pré-requisitos link Uma Conta no GitLab Git Crie um site Hugo usando o tema Lotus Docs Procedimento link Crie um novo repositório no GitLab, por exemplo, [https://gitlab.</description>
+    </item>
+  </channel>
+</rss>

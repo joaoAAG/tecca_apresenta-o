@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lotus Docs Example Site</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>//localhost:1313/docs/page-developments/setup/</link>
+      <pubDate>Sat, 20 Apr 2024 18:51:35 +0100</pubDate>
+      <guid>//localhost:1313/docs/page-developments/setup/</guid>
+      <description>Here we will talk about how the Setup page was created&#xA;List linkFor the list part, it&amp;rsquo;s simple, just put the character &amp;ldquo;-&amp;rdquo; before the sentence and the list will be formed:&#xA;- git&#xD;- Go ≥ v1.19&#xD;- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic.</description>
+    </item>
+    <item>
+      <title>Setup - Explanation</title>
+      <link>//localhost:1313/docs/setup/setup-explanation/</link>
+      <pubDate>Sat, 20 Apr 2024 18:51:35 +0100</pubDate>
+      <guid>//localhost:1313/docs/setup/setup-explanation/</guid>
+      <description>Here we will talk about how the Setup page was created&#xA;List linkFor the list part, it&amp;rsquo;s simple, just put the character &amp;ldquo;-&amp;rdquo; before the sentence and the list will be formed:&#xA;- git&#xD;- Go ≥ v1.19&#xD;- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic.</description>
+    </item>
+    <item>
+      <title>Setup - Explanation</title>
+      <link>//localhost:1313/pt/docs/setup/setup-explanation/</link>
+      <pubDate>Sat, 20 Apr 2024 18:51:35 +0100</pubDate>
+      <guid>//localhost:1313/pt/docs/setup/setup-explanation/</guid>
+      <description>Aqui vamos falar sobre como a página de Configuração foi criada&#xA;Lista Para a parte da lista, é simples, basta colocar o caractere &amp;ldquo;-&amp;rdquo; antes da frase e a lista será formada:&#xA;- git - Go ≥ v1.19 - Hugo ≥ v0.117.0 (Versão Extendida) Tags Nas secções 2.1 e 3, foram utilizadas tags de código curto. Estas tags permitem criar um menu que oferece diferentes informações sobre o mesmo tema. No nosso caso, utilizamos tags de código curto para apresentar as diferentes formas de instalar automaticamente o Lotus Docs em diferentes sistemas operativos.</description>
+    </item>
+    <item>
+      <title>Customisation</title>
+      <link>//localhost:1313/docs/customisation/customisation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:39 +0000</pubDate>
+      <guid>//localhost:1313/docs/customisation/customisation/</guid>
+      <description>💡 A quick and basic guide to personalizing your documentation site with the Theme Lotus Docs to better suit your needs. Requirements linkBefore you begin customizing your Hugo documentation site, it is essential to have a basic understanding of the following:&#xA;HTML CSS Markdown Text Personalization linkTo create your page, you will likely use basic highlighting mechanisms for your text.&#xA;You might want to create a header, and for that, you need to use the following code:</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/docs/about/about/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/about/about/</guid>
+      <description>This website aims to present a general idea of the content in the website, an insight into the team who developed it, as well as its Accessibility Statement. This website aims to provide comprehensive assistance for individuals and teams creating technical documentation websites utilizing Hugo. This platform has been meticulously crafted to empower users with the knowledge and tools necessary to leverage Hugo effectively in their documentation projects. Additionally, we highlight some of Hugo&amp;rsquo;s most valuable features, enabling users to maximize the potential of this powerful tool in their website development endeavors.</description>
+    </item>
+    <item>
+      <title>Customização</title>
+      <link>//localhost:1313/pt/docs/customisation/customisation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/customisation/customisation/</guid>
+      <description>💡 Um guia rápido e básico para personalizar seu site de documentação com o Tema Lotus Docs para atender melhor às suas necessidades. Requisitos Antes de começar a personalizar seu site de documentação Hugo, é importante ter um conhecimentos básicos de:&#xA;HTML CSS Markdown Personalização de Texto Para criar sua página, é provável que você queira usar mecanismos básicos de destaque para o seu texto.&#xA;Você pode querer criar um cabeçalho, e para isso, você precisa usar o seguinte código:</description>
+    </item>
+    <item>
+      <title>Explanation</title>
+      <link>//localhost:1313/docs/page-developments/about/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/page-developments/about/</guid>
+      <description>This page&amp;rsquo;s objective is to showcase how the About page was made.&#xA;Hugo generates the content of its static websites (mainly) through Markdown files. Most of the features explained in this page serve as a Markdown overview, however, Hugo&amp;rsquo;s aditional functionalities will also be highlighted.&#xA;Text linkGeneral text is written normally, just through writing our content without any tags or labels. For example:&#xA;This website&amp;#39;s objective is to provide comprehensive (.</description>
+    </item>
+    <item>
+      <title>Sobre</title>
+      <link>//localhost:1313/pt/docs/about/about/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/about/about/</guid>
+      <description>O objetivo desta página é apresentar o conteudo geral do website, e a equipa que o desenvolveu, bem como apresentar a sua Acessibilidade. O objetivo deste website é fornecer assistência abrangente para indivíduos e equipas envolvidos na criação de websites de documentação técnica pelo uso do Hugo. Esta plataforma foi meticulosamente elaborada para capacitar os utilizadores com o conhecimento e ferramentas necessárias para efetivamente tomar partido do Hugo nos seus projetos de documentação.</description>
+    </item>
+    <item>
+      <title>Quickstart</title>
+      <link>//localhost:1313/docs/example-page/</link>
+      <pubDate>Wed, 03 May 2023 22:37:22 +0100</pubDate>
+      <guid>//localhost:1313/docs/example-page/</guid>
+      <description>Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:&#xA;hugo new docs/examplepage.md &amp;hellip;</description>
+    </item>
+    <item>
+      <title>Quickstart</title>
+      <link>//localhost:1313/pt/docs/pagina_exemplo/</link>
+      <pubDate>Wed, 03 May 2023 22:37:22 +0100</pubDate>
+      <guid>//localhost:1313/pt/docs/pagina_exemplo/</guid>
+      <description>Create New Content Navigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:&#xA;hugo new docs/examplepage.md &amp;hellip;</description>
+    </item>
+    <item>
+      <title>Explanation</title>
+      <link>//localhost:1313/docs/about/about-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/about/about-explanation/</guid>
+      <description>This page aims to showcase how the About page was made.&#xA;Hugo generates the content of its static websites (mainly) through Markdown files. Most of the features explained on this page serve as a Markdown overview. However, Hugo&amp;rsquo;s additional functionalities will also be highlighted.&#xA;Text linkGeneral text is written normally by writing our content without any tags or labels. For example:&#xA;This website&amp;#39;s objective is to provide comprehensive (...)&#xD;Produces: This website&amp;rsquo;s objective is to provide comprehensive (&amp;hellip;)</description>
+    </item>
+    <item>
+      <title>Explicação</title>
+      <link>//localhost:1313/pt/docs/about/about-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/about/about-explanation/</guid>
+      <description>O objetivo desta página é mostrar como a página &amp;ldquo;Sobre&amp;rdquo; foi feita.&#xA;O Hugo gera o conteúdo dos seus websites estáticos (principalmente) através de ficheiros Markdown. A maioria das funcionalidades explicadas nesta página servem como uma visão geral de Markdown, no entanto, as funcionalidades adicionais do Hugo também serão destacadas.&#xA;Texto O texto geral é escrito normalmente, apenas escrevendo o nosso conteúdo sem quaisquer tags ou rótulos. Por exemplo:&#xA;O objetivo deste website é fornecer uma explicação abrangente (.</description>
+    </item>
+    <item>
+      <title>Mermaid Page Explanation</title>
+      <link>//localhost:1313/docs/mermaid/mermaid-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/mermaid/mermaid-explanation/</guid>
+      <description>This page serves to show how the Mermaid page was conceived.&#xA;Text linkGeneral text is written without any specific formatting or guidelines; simply typing the text will display it on the page.&#xA;Basic text.&#xD;Basic text.&#xA;Titles linkApplying text formatting such as title, subtitle, or deeper hierarchical titles is accomplished using the standard Markdown syntax:&#xA;Headers: Use hash symbols (#) for headers. The number of hash symbols indicates the level of the header (e.</description>
+    </item>
+    <item>
+      <title>Mermaid Page Explanation</title>
+      <link>//localhost:1313/pt/docs/mermaid/mermaid-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/mermaid/mermaid-explanation/</guid>
+      <description>Esta página serve para mostrar como foi concebida a página da Sereia.&#xA;Texto O texto geral é escrito sem qualquer formatação ou directrizes específicas; basta escrever o texto para o mostrar na página.&#xA;Basic text.&#xD;Texto de base.&#xA;Títulos A aplicação de formatação de texto, como título, subtítulo ou títulos hierárquicos mais profundos, é realizada usando a sintaxe padrão do Markdown:&#xA;Cabeçalhos: Use símbolos de hash (#) para cabeçalhos. O número de símbolos de hash indica o nível do cabeçalho (por exemplo, # para o nível 1, ## para o nível 2, e assim por diante).</description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>//localhost:1313/docs/mermaid/mermaid/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:39 +0000</pubDate>
+      <guid>//localhost:1313/docs/mermaid/mermaid/</guid>
+      <description>Welcome to the mermaid page.&#xA;What is Mermaid? linkMermaid is a JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development.&#xA;How to use Mermaid with Lotus Docs linkMermaid is enabled whenever content containing Mermaid diagram syntax is present in a page’s content. You can insert Mermaid diagrams by using the mermaid language identifier with triple backtick codeblocks:</description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>//localhost:1313/pt/docs/mermaid/mermaid/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:39 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/mermaid/mermaid/</guid>
+      <description>Bem-vindo à página sobre Mermaid.&#xA;O que é o Mermaid? Mermaid é uma ferramenta de construção de diagramas e gráficos baseada em JavaScript que usa definições de texto com base na syntax Markdown e um renderizador para criar e modificar diagramas complexos. O principal objetivo do Mermaid é ajudar a documentação a acompanhar o desenvolvimento.&#xA;Como usar o Mermaid com o Lotus Docs O Mermaid é ativado sempre que o conteúdo que contém a sintaxe do diagrama Mermaid está presente no conteúdo de uma página.</description>
+    </item>
+    <item>
+      <title>Configurar</title>
+      <link>//localhost:1313/pt/docs/setup/setup/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:36 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/setup/setup/</guid>
+      <description>Requisitos do Sistema git Go ≥ v1.19 Hugo ≥ v0.117.0 (Versão Estendida) Instalação Instalação Automática Instale a Hugo CLI, seguindo as instruções específicas para o seu sistema operativo abaixo:&#xA;Linux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) O gestor de pacotes da sua distribuição Linux pode incluir o Hugo. Se for o caso, instale-o diretamente usando o gestor de pacotes da sua distribuição - por exemplo, no Ubuntu, execute o seguinte comando.</description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>//localhost:1313/docs/setup/setup/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:36 +0000</pubDate>
+      <guid>//localhost:1313/docs/setup/setup/</guid>
+      <description>System Requirements link git Go ≥ v1.19 Hugo ≥ v0.117.0 (Extended Version) Installation linkAuto Installation linkInstall the Hugo CLI, using the specific instructions for your operating system below:&#xA;Linux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) Your Linux distro’s package manager may include Hugo. If this is the case, install it directly using your distro’s package manager – for instance, in Ubuntu, run the following command. This will install the extended edition of Hugo:</description>
+    </item>
+    <item>
+      <title>Explanation</title>
+      <link>//localhost:1313/docs/customisation/customisation-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/customisation/customisation-explanation/</guid>
+      <description>This page serves the purpose to showcase how the customization page was made. The customization page already explains a great part of the code utilized to create the page. However, this page will serve as a overview.&#xA;Text linkThe descriptive texts are written normally without any tags, labels or areas. E.g&#xA;The code: Simple text.&#xD;Renderizes as: Simple text.&#xA;Titles linkTitles and headings are defined using # as prefixes. The more #the lower the position in the hierarchy of titles.</description>
+    </item>
+    <item>
+      <title>Explicação</title>
+      <link>//localhost:1313/pt/docs/customisation/customisation-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/customisation/customisation-explanation/</guid>
+      <description>Esta página tem o propósito de mostrar como a página de personalização foi feita. A página de personalização já explica uma grande parte do código utilizado para criar a página. No entanto, esta página servirá como uma visão geral.&#xA;Texto Os textos descritivos são escritos normalmente, sem nenhuma tag, rótulo ou área. Por exemplo:&#xA;The code: Texto simples.&#xD;Títulos Títulos e cabeçalhos são definidos usando # como prefixos. Quantomais #, menor é a posição na hierarquia dos títulos.</description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>//localhost:1313/docs/page-developments/deployment/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/page-developments/deployment/</guid>
+      <description>1. Tabs link Add tabs to your content To add tabs, in the following format:&#xA;Tab example #1 Contents of Tab 1&#xD;Example code:&#xA;You will need the following structure:&#xA;2. Images linkHow to add images.&#xA;First, you&amp;rsquo;ll need to select a cloud hosting service for your image. Follow our example and choose SIRV.com.&#xA;Create a free account and upload your image&#xA;Copy your image path:&#xA;In your code, copy and paste the following code:</description>
+    </item>
+    <item>
+      <title>Distribuição em páginas github</title>
+      <link>//localhost:1313/pt/docs/deployment/github/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/deployment/github/</guid>
+      <description>Visão Geral O GitHub Pages fornece hospedagem estática rápida e segura com SSL para páginas pessoais, organizacionais ou de projeto diretamente de um repositório do GitHub. Usando GitHub Actions, esse serviço simplifica fluxos de trabalho de desenvolvimento e construções.&#xA;Pré-requisitos Uma Conta no GitHub Git Crie um site Hugo usando o tema Lotus Docs Procedimento Crie um novo repositório&#xA;Crie um novo repositório no GitHub, por exemplo, https://github.com/joaoAAG/Tecaa.git&#xA;Altere a Fonte do GitHub Pages para GitHub Actions</description>
+    </item>
+    <item>
+      <title>Distribuição em páginas gitlab</title>
+      <link>//localhost:1313/pt/docs/deployment/gitlab/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/deployment/gitlab/</guid>
+      <description>Visão Geral O GitLab fornece uma plataforma DevOps abrangente entregue como uma única aplicação, permitindo que equipes colaborem, gerenciem e acelerem o ciclo de vida do desenvolvimento de software. Com CI/CD integrado, controle de versão e rastreamento de problemas, o GitLab simplifica o processo de desenvolvimento e melhora a produtividade da equipe.&#xA;Pré-requisitos Uma Conta no GitLab Git Crie um site Hugo usando o tema Lotus Docs Procedimento Crie um novo repositório no GitLab, por exemplo, [https://gitlab.</description>
+    </item>
+    <item>
+      <title>GitHub Pages Deployment</title>
+      <link>//localhost:1313/docs/deployment/github/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/deployment/github/</guid>
+      <description>Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.&#xA;Prerequisites link A GitHub Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository&#xA;Create a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git&#xA;Change GitHub Pages Source to GitHub Actions&#xA;Visit your GitHub repository and navigate to Settings &amp;gt; Pages.</description>
+    </item>
+    <item>
+      <title>GitLab Pages Deployment</title>
+      <link>//localhost:1313/docs/deployment/gitlab/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/deployment/gitlab/</guid>
+      <description>Overview linkGitLab provides a comprehensive DevOps platform delivered as a single application, enabling teams to collaborate, manage, and accelerate the software development lifecycle. With built-in CI/CD, version control, and issue tracking, GitLab streamlines the development process and enhances team productivity.&#xA;Prerequisites link A GitLab Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository on GitLab, e.g., [https://gitlab.com/lordcodex/lotustheme_tecaa].&#xA;Select GitLab Pages as the Project deployment target:</description>
+    </item>
+  </channel>
+</rss>

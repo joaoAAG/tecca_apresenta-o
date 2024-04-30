@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+<html lang="pt"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <title>Mermaid | Building a Technical Documentation Website</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba tudo sobre a implementação do Mermaid">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="//localhost:1313/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="//localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="//localhost:1313/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="//localhost:1313/site.webmanifest">
+<meta property="og:title" content="Mermaid" />
+<meta property="og:description" content="Saiba tudo sobre a implementação do Mermaid" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="//localhost:1313/pt/docs/mermaid/" /><meta property="og:image" content="//localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_16371940098774955139.png"/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="//localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_16371940098774955139.png"/>
+<meta name="twitter:title" content="Mermaid"/>
+<meta name="twitter:description" content="Saiba tudo sobre a implementação do Mermaid"/>
+
+    
+    <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
+    
+    
+            
+                <script type="text/javascript" src="//localhost:1313/docs/js/flexsearch.bundle.js"></script>
+            
+        
+    
+    
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700|Fira+Code:400,700&display=block" rel="stylesheet">
+
+    <link rel="stylesheet" href="/docs/scss/style.css" crossorigin="anonymous">
+    
+    
+    </head><body>
+    <div class="content">
+        <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/pt/' aria-label="HomePage" alt="HomePage">
+            
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                Sobre
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/about/about/">Sobre</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/about/about-explanation/">Explicação</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">Tune</i>
+                                Customização
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/customisation/customisation/">Customização</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/customisation/customisation-explanation/">Explicação</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="//localhost:1313/pt/docs/pagina_exemplo/">
+                                <i class="material-icons me-2">rocket_launch</i>
+                                
+                                Quickstart
+                            </a>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">rocket_launch</i>
+                                Configurar
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/setup/setup-explanation/">Setup - Explanation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/setup/setup/">Configurar</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                Distribuição
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/deployment/github/">Distribuição em páginas github</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/deployment/gitlab/">Distribuição em páginas gitlab</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  current active">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                Mermaid
+                            </button>
+                            <div class="sidebar-submenu d-block">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/mermaid/mermaid-explanation/">Mermaid Page Explanation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/pt/docs/mermaid/mermaid/">Mermaid</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                <main class="page-content bg-transparent">
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/pt/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            
+            
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+            </ul>
+            <button id="mode" class="btn btn-icon btn-default ms-2" type="button" aria-label="Toggle user interface mode">
+                <span class="toggle-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"/></svg>
+                </span>
+                <span class="toggle-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"/></svg>
+                </span>
+            </button>
+            
+                <button type="button" class="ps-2 btn btn-link btn-default" data-bs-toggle="modal" data-bs-target="#lang-selector-popup">
+                    PT
+                </button>
+            
+        </div>
+    </div>
+    
+    
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
+    
+    
+</div>
+<div class="container-fluid">
+                            <div class="layout-spacing">
+                                
+                                    <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/pt/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Mermaid</span>
+                <meta itemprop="position" content='2' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                
+                                <div class="row flex-xl-nowrap">
+                                    
+                                    <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="TableOfContents"></nav>
+    </toc></div>
+                                    
+                                    
+                                    <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                        <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                            Table of Contents
+                                        </button>
+<nav id="toc-mobile"></nav></div>
+                                    <div class="docs-content col-12  mt-0">
+                                        <div class="mb-0 d-flex">
+                                            
+                                            <i class="material-icons title-icon me-2">article</i>
+                                            
+                                            <h1 class="content-title mb-0">
+                                                Mermaid
+                                                
+                                            </h1>
+                                        </div>
+                                        
+                                        <div id="content" class="main-content" >
+                                            
+    <div class="row flex-xl-wrap">
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="//localhost:1313/pt/docs/mermaid/mermaid-explanation/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">article</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Mermaid Page Explanation</p>
+                        <p class="para card-text mb-0">Explanation of the creation of the &quot;Mermaid&quot; page.</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="//localhost:1313/pt/docs/mermaid/mermaid/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">article</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Mermaid</p>
+                        <p class="para card-text mb-0"></p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </div>
+
+                                        </div>
+                                        <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+        </div>
+    </div>
+
+    
+    
+    <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+    
+    
+
+    
+    
+        <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+    
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    <script src="/docs/js/bootstrap.js" defer></script>
+
+
+    <script type="text/javascript" src="//localhost:1313/docs/js/bundle.js" defer></script>
+    
+
+    
+    <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/pt\/docs\/about\/",
+                title: "Sobre",
+                description: "Informação geral sobre o website",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/pt\/docs\/customisation\/",
+                title: "Customização",
+                description: "Guia geral sobre customização",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/pt\/docs\/setup\/setup-explanation\/",
+                title: "Setup - Explanation",
+                description: "Aqui vamos falar sobre como a página de Configuração foi criada\nLista linkPara a parte da lista, é simples, basta colocar o caractere “-” antes da frase e a lista será formada:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Versão Extendida) Tags linkNas secções 2.1 e 3, foram utilizadas tags de código curto. Estas tags permitem criar um menu que oferece diferentes informações sobre o mesmo tema. No nosso caso, utilizamos tags de código curto para apresentar as diferentes formas de instalar automaticamente o Lotus Docs em diferentes sistemas operativos.",
+                content: "Aqui vamos falar sobre como a página de Configuração foi criada\nLista linkPara a parte da lista, é simples, basta colocar o caractere “-” antes da frase e a lista será formada:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Versão Extendida) Tags linkNas secções 2.1 e 3, foram utilizadas tags de código curto. Estas tags permitem criar um menu que oferece diferentes informações sobre o mesmo tema. No nosso caso, utilizamos tags de código curto para apresentar as diferentes formas de instalar automaticamente o Lotus Docs em diferentes sistemas operativos. Desta forma, os utilizadores já não precisam de procurar instruções de instalação específicas para o seu sistema operativo; basta aceder à secção correspondente e selecionar o seu sistema operativo.\nPara utilizar tags, é necessário começar por abrir o separador utilizando {{ \u003c tabs tabTotal=\"n\" \u003e }}, onde “n” corresponde ao número de divisões necessárias. Por exemplo, na página de configuração, definimos “n” como 4 para a secção 2.1 e 3 para a secção 3. Em seguida, precisamos de definir o nome do separador utilizando o código {{ % tab tabName=\"Linux\" % }}, e depois pode inserir o conteúdo do separador. Para terminar a divisão do separador, utilize {{ %/tab % }}, e para fechar toda a secção do separador, utilize {{ }}.\n{{ \u003c tabs tabTotal=\"4\"\u003e }}\r{{ % tab tabName=\"Linux\" % }}\r## conteúdo...\r{{ % /tab % }}\r## mais separadores...\r{{ \u003c /tabs \u003e }}\rDestaques e Ênfase linkAo escrever textos, por vezes é importante destacar partes específicas para que os utilizadores possam entender melhor os pontos-chave das frases, como comandos importantes ou códigos. Para fazer isso, basta colocar o acento grave (``) no início e no final das palavras que deseja destacar.\nOutra forma é usar asteriscos (**), tanto antes como depois das palavras, tornando-as em negrito e enfatizando a frase.\nExemplos de como isso foi usado na página de ‘Configuração’:\n...\rPara construir itens de menu de segundo nível, primeiro crie um diretório chamado **\"pai\"** que tenha um ficheiro chamado ``_index.md``. Por exemplo:\r...\rNeste exemplo, os asteriscos foram usados para enfatizar a palavra “pai”, enquanto os acentos graves foram usados para destacar um ficheiro.\nHiperligações linkDurante o processo de criação da página de “Configuração”, também foi necessário criar hiperligações, tanto externas como internas. Para hiperligações externas, foi utilizado o seguinte código: [Palavra que conterá o link](URL do site externo). Enquanto para hiperligações internas, por exemplo, foi utilizado este código: [Palavra que conterá o link](\\docs\\deployment).\nLinhas de código e comandos linkPara diferenciar as linhas de código ou comandos e destacá-los para os utilizadores, optamos por usar shell e o shortcode prism.\nShell linkShell é uma interface de linha de comando que permite aos utilizadores interagir com um sistema operativo através de texto. Utilizamos shell para indicar que estas linhas podem ser usadas como comandos ou código. Um exemplo usado na página de Configuração é:\n```shell\rbrew install hugo\r```\rIsto permite aos utilizadores copiar esta linha e colá-la nos seus terminais Linux para instalar o Hugo.\nPrism linkPrism é um shortcode que destaca linhas de código destinadas a linguagens de texto como Markdown e HTML. Na criação da página de Configuração, prism foi usado para evitar conflitos entre comandos. Por exemplo, quando um snippet continha um comando shell dentro de outro, optamos por usar prism para garantir clareza e evitar confusão.\nExemplo de uso de prism:\n{{ \u003c prism lang=\"md\" \u003e }}\r---\rweight: 200\rtitle: \"Nova Página\"\ricon: \"artigo\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"Esta nova página tem o tema Lotus Documents\"\rrascunho: verdadeiro toc: verdadeiro\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Iniciantes\"]\r---\r## Criar Novo Conteúdo\rNavegue até à raiz do seu projeto Hugo e utilize o comando `hugo new` para criar um ficheiro no diretório `content/docs`:\r```shell\rhugo new docs/paginaexemplo.md\r```\r...\r{{ \u003c /prism \u003e }}\rAlertas linkPara destacar algumas notas importantes na documentação, utilizamos o shortcode Alert, pois permitia a criação de caixas de texto com diferentes aparências. Na página em questão, optamos pelo alerta de informação, que exibe uma caixa com fundo em tons de azul e um ícone “i” antes da frase, indicando informações adicionais:\nAqui está um exemplo de como criar uma caixa de alerta.\n{{ \u003c alert context=\"info\" text=\"Tenha em mente que os ficheiros _index.md destinam-se apenas a ser usados para modificar as configurações do cabeçalho. Não fará diferença se adicionar algum material que não esteja entre as variáveis permitidas no cabeçalho.\"/\u003e }} Imagens linkPara adicionar imagens à página de Configuração, utilizamos o serviço de hospedagem de imagens Sirv, que oferece serviços gratuitos de hospedagem de imagens. Ao hospedar imagens no Sirv, conseguimos melhorar o desempenho do site, pois não é necessário renderizar as imagens; o Sirv faz isso por nós, resultando apenas na exibição das imagens na nossa documentação.\nAqui está um exemplo de como exibir a imagem na documentação:\n![Visualização da Publicação do Site](https://paulorodrigues-isep.sirv.com/TECAA/Preview_Site_Publish.png) O título da imagem está entre colchetes [], enquanto a URL da imagem está entre parênteses ().\nNo Sirv, basta carregar a imagem e depois copiar o link:\nO Sirv também oferece opções de personalização de imagens, como tamanho, para melhorar o desempenho do site.\nTreeview linkAlém disso, treeviews foram usados na secção 8. Isso porque a discussão sobre diretórios foi abordada lá, e treeviews são a melhor opção para representar hierarquias de diretórios. Com eles, é possível criar uma visualização hierárquica de pastas, mostrando aos utilizadores como seus arquivos estão organizados no final.\nNa secção 8.1, o treeview foi apresentado da seguinte forma:\n```treeview\rconteúdo/\r└── docs/\r├── diretório-pai/\r│ └── _index.md\r├── nova-página.md\r├── nova-página-2.md\r├── configuração.md\r└── _index.md\r```\rDesta forma, foi possível mostrar como o diretório ficaria após a criação de um segundo nível de pastas.\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/pt\/docs\/customisation\/customisation\/",
+                title: "Customização",
+                description: "Guia geral sobre customização",
+                content: " 💡 Um guia rápido e básico para personalizar seu site de documentação com o Tema Lotus Docs para atender melhor às suas necessidades. Requisitos linkAntes de começar a personalizar seu site de documentação Hugo, é importante ter um conhecimentos básicos de:\nHTML CSS Markdown Personalização de Texto linkPara criar sua página, é provável que você queira usar mecanismos básicos de destaque para o seu texto.\nVocê pode querer criar um cabeçalho, e para isso, você precisa usar o seguinte código:\n# Título para definir outros cabeçalhos menores, você escreverá o seguinte:\n## Título2\r### Título3\r#### Título4\r##### Título5 Quanto mais # à esquerda do seu texto, menor será o nível do cabeçalho.\nPara adicionar Texto em Negrito, existem duas maneiras: texto a negrito ou texto a negrito, o que aqui você não pode ver a diferença quando renderizado, mas é feito da seguinte maneira:\n**assim** ou __assim__ Da mesma maneira que, texto em Itálico também pode ser conseguido de duas maneiras distintas\n*assim* ou _assim_ Adicionalmente, também é possivel adicionar texto rasurado, para isso é necessário o seguinte código:\n~~rasurado~~ Para adicionar links, use colchetes [] para o texto a ser exibido e a URL entre parênteses\nPor exemplo, você pode precisar adicionar um link do Youtube e para fazer isso, você precisa adicionar o seguinte código:\n[link do Youtube](https://www.youtube.com/) Para adicionar imagens, é muito semelhante à forma como implementamos URLs.\nBasta usar ! antes dos colchetes [] e colocar o link da imagem entre os parêntesis.\n![Template Hero Landing Page](https://tania1998.sirv.com/images_tecaa/lotusdocs_hero.webp) Alertas linkAlertas geralmente são usados para exibir informações de forma destacada. O Lotus Docs suporta `Alertas com contexto, Alertas com Ícones de Emoji personalizados, Alertas sem Ícones e a possibilidade de renderizar Markdown e HTML dentro de um Alerta.\nAlerts with Contex linkO CONTEXT pode ser info, success, danger, warning, primary, light and dark. Para implementar um alerta, adicione o seguinte código, entre {{chaves duplas }}\n\u003c alert context=\"context\" text=\"This is an Alert with an emoji with the success context.\" /\u003e Para usar os diferentes contextos de alerta, altere o valor do contexto para cada um dos seguintes:\nalert context= \"info\" info Contexto do Alerta - Info alert context= \"success\" check_circle Contexto do Alerta - Success alert context= \"danger\" report Contexto do Alerta - Danger alert context= \"warning\" warning Contexto do Alerta - Warning alert context= \"primary\" info Contexto do Alerta - Primary Note: when in dark mode, light and dark alerts are inverted.\nalert context= \"light\" Contexto do Alerta - Light alert context= \"dark\" Contexto do Alerta - Dark Alertas com Ícone de Emoji personalizado linkAinda usando o parâmetro de contexto, você pode alterar o ícone de Emoji que aparece à esquerda do texto do Alerta. Para obter emojis, você só precisa copiar e colar emojis deste website.\n🤚🏻 Este é um Alerta com um emoji com o contexto de sucesso.. Para fazer isso, adicione o seguinte código, entre {{chaves duplas}}\n\u003c alert icon=\"🤚🏻\" context=\"success\" text=\"Este é um Alerta com um emoji com o contexto de sucesso..\" /\u003e Alertas sem Ícone linkPara obter um alerta sem ícone, defina apenas o parâmetro icon para um espaço vazio alert icon=\" \"\nAlerta sem ícone com o contexto de perigo! Renderizar Markdown e HTML dentro de um Alerta linkPara fazer isso, certifique-se de que no ficheiro de configuração hugo.toml, o parâmetro unsafe esteja definido como true em [markup.goldmark.renderer]\n[markup.goldmark.renderer]\runsafe = true Agora, para renderizar Markdowns e HTML dentro de um Alerta, é necessário emparelhar shortcodes com delimitadores %, semelhante ao código seguinte:\n{{ alert icon=\"🎅🏼\" context=\"success\" }}\rEste ***shortcode em pares*** alerta contém uma lista **markdown** e cabeçalho:\r#### Minha Lista de Natal:\r1. Uma boneca\r2. Livros\r3. Meias\rFeliz Natal!\r{{ /alert }} o que resulta em:\n🎅🏼\nEste shortcode em pares alerta contém uma lista markdown e cabeçalho:\nMinha Lista de Natal: link Uma boneca Livros Meias Feliz Natal!\nOpções Principais do Site linkÍcones linkAdicionar Ícones aos seus Títulos linkPara adicionar ícones aos títulos de conteúdo, adicione ao ficheiro hugo.toml o seguinte:\n[params.docs]\rtitleIcon = true O ícone que aparece como prefixo ao título do conteúdo será definido de acordo com a definição icon:no topo da página. Cada definição está relacionada a um ícone que pode ser visto nos Estilos de ícone do Google;\nAdicionar Ícones à barra lateral linkPara adicionar ícones aos títulos de conteúdo da barra lateral, adicione ao ficheiro hugo.toml o seguinte:\n[params.docs]\rsidebarIcons = true Cor de destaque linkPor padrão, o tema Lotus Docs tem uma cor de destaque azul, no entanto, você pode alterar a cor de destaque. Esta cor afeta links, botões e ícones. Para fazer isso, vá para o ficheiro hugo.toml:\n[params.docs]\rthemeColor = \"color\" Esta cor pode serblue, green, red, yellow, emerald, cardinal, magenta and cyan. (pt: Azul, verde, vermelho, amarelo, esmeralda, cardeal, magenta e ciano);\nazul verde vermelho amarelo esmeralda cardeal magenta ciano Modo Escuro linkPor padrão, o modo escuro é definido como falso. Para definir como verdadeiro por padrão, vá para o ficheiro hugo.toml.\n[params.docs]\rdarkMode = true Mudança de Fonte linkUma fonte é um conjunto de caracteres com um estilo e tamanho específicos, usados para exibir texto de maneira consistente, o que pode impactar o design geral e a sensação de um site. O site Lotus Docs tem por padrão três conjuntos de fontes, sans_serif_font, secondary_font e mono_font. Para mudar as fontes, adicione o seguinte código ao ficheiro hugo.toml :\n[params]\rsans_serif_font = \"Times New Roman\"\rsecondary_font = \"Calibri\"\rmono_font = \"Arial\" Em cada parâmetro, você pode definir outra fonte e ver onde cada uma se aplica nas páginas.\nAdicionar Fontes do Google linkPara personalização adicional, você pode usar outras fontes que podem ser encontradas no site Google Fonts\nPara adicionar novas fontes, você precisa implementar uma matriz de fontes com o nome das fontes e os tamanhos a carregar. Por exemplo, quero carregar as fontes Montserrat e Gluten nos pesos 300 e 400 respectivamente\nwarning As fontes têm seu próprio conjunto único de pesos, verifique antes de carregar as fontes. no ficheiro hugo.toml implemente o seguinte código:\n[params]\rgoogle_fonts = [[\"Montserrat\", \"300\"],[\"Gluten\", \"400\"]]\rsans_serif_font = \"Gluten\"\rsecondary_font = \"Montserrat\"\rmono_font = \"Arial\" Resultados da alteração das fontes:\nFontes Padrão Fontes Personalizadas info É possível personalizar ainda mais as fontes editando os ficheiros HTML e CSS do site. Convidamos você a explorar essa funcionalidade por conta própria! Realce de Sintaxe linkPara realçar e personalizar blocos de código, você pode usar Realce de Sintaxe. É possível usar o Prism, , que o Lotus Docs suporta ou o Chroma o realçador de código integrado do Hugo. Prism stá habilitado por padrão usando o param.docs.prism no ficheiro hugo.toml. Chroma é habilitado definindo no ficheiro hugo.toml em [params.docs]o seguinte: prism = false .\nAo usar blocos de código delimitados por três crases, especifique a linguagem de código ao lado da abertura das crases e o código será destacado automaticamente.\nCompre nossa nova camiseta!\rCOMPRAR\rResults link Prism Chroma Prism Highlight - Suporta ≈ 290 linguagens, verifique o site para mais informações.\n[params.docs]\rprism = true Chroma Highlight - Suporta ≈ 200 linguagens, verifique o site para mais informações.\n[params.docs]\rprism = false Personalizar Tema do Prism linkVocê também pode personalizar o tema do Prism alterando o parâmetro prismTheme em [params.docs] nos ficheiros de configuração.\nPor exemplo, em hugo.toml você só precisa:\nLotusdocs Solarized-light Twilight Lucario [params.docs]\rprismTheme = \"lotusdocs\" To get: [params.docs]\rprismTheme = \"solarized-light\" To get: [params.docs]\rprismTheme = \"twilight\" To get: [params.docs]\rprismTheme = \"lucario\" To get: Modelos de Landing page linkAtualmente, ao criar um site com o modelo Lotus Docs, a página de destino de um site Lotus Docs tem quatro seções pelas quais você pode rolar. Cada uma das seções é um dos quatro modelos, cada um deles tem seu próprio conjunto de parâmetros para personalização.\nHero Feature Grid Imagem + Texto Comparação de Imagem O primeiro modelo mostrado é o Hero, é um modelo básico com duas seções. À esquerda texto e botões de Chamada Para Ação e à direita uma imagem.\nEste modelo Hero pode ser configurável em 8 componentes, como ilustrado abaixo:\nUma lista de recursos, com várias linhas em uma grade de 3 colunas. Cada recurso listado na grade consiste em um ícone, título e texto descritivo.\nEste Modelo Feature Grid pode ser configurável em 6 componentes, como ilustrado abaixo:\nSemelhante ao modelo Hero, este terceiro modelo exibe duas colunas, é um modelo básico com duas seções que podem exibir uma imagem, texto descritivo, listas e botões de Chamada para Ação.\nEste Modelo Imagem e Texto pode ser configurável em 5 componentes, como ilustrado abaixo:\nEste último modelo utiliza a bibliotecaImageCompareViewer para exibir imagens antes e depois, utilizando uma aba gerada automaticamente para deslizar entre os conjuntos de comparação de imagens.\nEste modelo de Comparação de Imagem pode ser configurável em 5 componentes, como ilustrado abaixo:\nRecursos Adicionais link Documentação Lotus Docs "
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/pt\/docs\/about\/about\/",
+                title: "Sobre",
+                description: "Informação geral sobre o website",
+                content: "O objetivo desta página é apresentar o conteudo geral do website, e a equipa que o desenvolveu, bem como apresentar a sua Acessibilidade. O objetivo deste website é fornecer assistência abrangente para indivíduos e equipas envolvidos na criação de websites de documentação técnica pelo uso do Hugo. Esta plataforma foi meticulosamente elaborada para capacitar os utilizadores com o conhecimento e ferramentas necessárias para efetivamente tomar partido do Hugo nos seus projetos de documentação. Além disso, destacamos algumas das funcionalidades mais úteis do Hugo, permitindo os utilizadores maximizarem o potencial desta poderosa ferramenta nos seus projetos de desenvolvimento de websites.\nConteúdo linkO website é composto por várias páginas-chave, cada uma projetada para fornecer conhecimentos abrangentes sobre diversos aspectos do desenvolvimento de websites de documentação técnica com o Hugo. Estas páginas são:\nConfiguração Funcionalidades Personalização Distribuição Resumo do Conteúdo\nConfiguração Funcionalidades Personalização Distribuição Esta página fornece instruções detalhadas sobre como configurar um novo projeto Hugo. Abrange tudo desde a instalação do Hugo, até ao início de um novo projeto e a configuração de ajustes básicos. Ao seguir o guia passo a passo, os utilizadores podem começar rapidamente os seus websites de documentação com o Hugo.\nA página de Funcionalidades destaca algumas das funcionalidades mais úteis do Hugo. Oferece uma visão geral das capacidades do Hugo, incluindo sua velocidade, flexibilidade e suporte para vários formatos de conteúdo. Os utilizadores podem obter conhecimentos sobre por que o Hugo é a escolha preferida para a construção de websites estáticos e projetos de documentação técnica.\nNa página de Personalização, os utilizadores podem explorar as várias opções de personalização disponíveis no Hugo. Desde a escolha de temas até a modificação de layouts e estilos, esta página demonstra como os utilizadores podem personalizar os seus websites Hugo para corresponder às suas preferências únicas e requisitos de marca. Exemplos e tutoriais mostram a flexibilidade e versatilidade das capacidades de personalização do Hugo.\nA página de Distribuição explica como publicar um website gerado pelo Hugo através o GitHub Pages. Esta fornece um guia abrangente sobre como configurar o GitHub Pages para hospedagem, criar um repositório e distribuir o conteúdo gerado pelo Hugo. Os utilizadores podem seguir as instruções detalhadas para publicar os seus websites Hugo de forma transparente e torná-los acessíveis ao público.\nEquipa linkEste website foi desenvolvido por uma equipa de estudantes de Mestrado no Instituto Superior de Engenharia do Porto (ISEP). Através da experiência acadêmica e prática, a equipa propôs-se a criar um recurso abrangente para o desenvolvimento de websites de documentação técnica através do Hugo.\nAcessibilidade linkEstamos comprometidos em garantir que nosso website seja acessível a todos, incluindo pessoas com deficiência. Esforçamo-nos para seguir as Diretrizes de Acessibilidade para Conteúdo da Web (WCAG) 2.2, que fornecem diretrizes para tornar o conteúdo da web mais acessível para pessoas com deficiência.\nRecursos de Acessibilidade link Texto Alternativo: Fornecemos texto alternativo para todas as imagens no nosso website, o que permite que leitores de ecrâ descrevam as imagens para utilizadores com deficiência visual. Navegação por Teclado: O nosso website é projetado para ser navegável apenas com um teclado, o que garante que utilizadores que não podem usar um rato ainda possam aceder a todo o conteúdo. Fontes e Cores Legíveis: Usamos fontes e esquemas de cores que são fáceis de ler e fornecem contraste suficiente, tornando o conteúdo acessível a utilizadores com deficiência visual. Design Responsivo: O nosso website é construído com princípios de design responsivo, o que garante que ele seja acessível em uma ampla variedade de dispositivos e tamanhos de ecrâ. Feedback linkEstamos a trabalhar continuamente para melhorar a acessibilidade de nosso website. Se encontrar quaisquer barreiras de acessibilidade ou tiver sugestões para melhorias, entre em contato através de um dos e-mails abaixo.\nPadrões de Acessibilidade linkEmbora nos esforcemos para seguir as diretrizes WCAG, reconhecemos que podem existir áreas onde podemos melhorar. Estamos comprometidos em revisar e atualizar regularmente nosso website para garantir que ele permaneça acessível a todos os usuários.\ninfo Garantir acessibilidade não é apenas um requisito legal; é um aspecto fundamental na criação de um ambiente online inclusivo. Ao tornar nosso website acessível, capacitamos pessoas com deficiência a acessar as mesmas informações e serviços que todos os outros. Isto promove a igualdade, melhora a experiência do utilizador e expande nosso alcance para um público mais amplo. Colaboradores link Filipe Pires 1234567@isep.ipp.pt João Guedes 1234567@isep.ipp.pt Paulo Rodrigues 1234567@isep.ipp.pt Pedro Garcia 1234567@isep.ipp.pt Tânia Teixeira 1234567@isep.ipp.pt "
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/pt\/docs\/pagina_exemplo\/",
+                title: "Quickstart",
+                description: "A quickstart guide to creating new content in Lotus Docs",
+                content: "Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:\nhugo new docs/examplepage.md …\n"
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/pt\/docs\/about\/about-explanation\/",
+                title: "Explicação",
+                description: "Explicação da criação da página \"Sobre\".",
+                content: "O objetivo desta página é mostrar como a página “Sobre” foi feita.\nO Hugo gera o conteúdo dos seus websites estáticos (principalmente) através de ficheiros Markdown. A maioria das funcionalidades explicadas nesta página servem como uma visão geral de Markdown, no entanto, as funcionalidades adicionais do Hugo também serão destacadas.\nTexto linkO texto geral é escrito normalmente, apenas escrevendo o nosso conteúdo sem quaisquer tags ou rótulos. Por exemplo:\nO objetivo deste website é fornecer uma explicação abrangente (...)\rProduz: O objetivo deste website é fornecer uma explicação abrangente (…)\nTítulos linkMarcar texto como título, subtítulo ou um título mais profundo dentro da hierarquia também é feito através do modo padrão do Markdown:\n# Sobre - Este é um título\r## Conteúdo - Este é um subtítulo\r### Funcionalidades de Acessibilidade - Este é um subtítulo mais profundo dentro da hierarquia\r#### Etc.\rO Hugo é capaz de analisar esta informação e criar uma Tabela de Conteúdos - TOC (encontrada no lado direito de cada página, para este tema atual). warning A maioria dos temas ignora os Títulos ao gerar a TOC, pois deve ser usado apenas no topo da página, utilizando apenas o resto da hierarquia. Marcadores e Listas linkUm marcador pode ser criado simplesmente inserindo um hífen (\" - “) antes de uma linha de texto. Listas de marcadores são uma sequência de frases, cada uma precedida por \" - “:\n- Configuração - Item Um\r- Funcionalidades - Item Dois - Etc. -Uso Errado (falta um espaço após \"-\")\rwarning Deve haver um espaço entre o hífen e a frase para criar um marcador. Embora não utilizado, também pode haver sub-itens dentro de uma lista de pontos:\nItem Sub-Item Sub-Item Item Sub-Item O que pode ser alcançado por: - Item\r- Sub-Item\r- Sub-Item\r- Item\r- Sub-Item\rwarning Apenas espaços em branco podem preceder o hífen ao criar um marcador. Caracteres visíveis impedirão que um marcador seja criado. Destaques, Ênfase, Links linkEstas funcionalidades também são alcançadas através da linguagem de normal do Markdown.\nTexto Itálico é alcançado ao rodear o texto com 1 asterisco em cada lado: *Texto Itálico* é alcançado ao rodear (...)\rTexto em Negrito é alcançado ao rodear o texto com 2 asteriscos em cada lado: **Texto em Negrito** é alcançado ao rodear (...)\rTexto em Negrito Itálico é alcançado ao rodear o texto com 3 asteriscos em cada lado: ***Texto em Negrito Itálico*** é alcançado ao rodear (...)\rTexto Riscado é alcançado ao rodear o texto com 2 tils em cada lado: ~~Texto Riscado~~ é alcançado ao rodear (...)\rEstas funcionalidades também podem ser misturadas, gerando frases como: Texto Riscado, em Negrito, Itálico. info Apenas texto em negrito foi usado na página ‘Sobre’, no entanto, itálico, negrito itálico e riscado também foram exemplificados devido à sua semelhança de marcação. Mais informações sobre a sintaxe do markdown podem ser exploradas aqui. Separadores linkExistem duas formas de desenhar um separador: ***\re\r---\rwarning Neste tema do Hugo, devido a limitações técnicas, apenas a primeira forma (***) deve ser usada. Funcionalidades do Hugo link warning As seguintes funcionalidades são específicas do Hugo e podem não estar disponíveis em alguns temas. Abas linkA forma de criar componentes de navegação com várias abas básicas, como a usada na página “Sobre”, é a seguinte:\n{ {\u003c tabs tabTotal=\"3\"\u003e}}\r{ {% tab tabName=\"Aba Um\" %}}\rEste é o conteúdo da Aba Um\r{ {% /tab %}}\r{ {% tab tabName=\"Aba Dois\" %}}\rEste é o conteúdo da Aba Dois\r{ {% /tab %}}\r{ {% tab tabName=\"Aba Três\" %}}\rEste é o conteúdo da Aba Três\r{ {% /tab %}}\r{ {\u003c /tabs \u003e}}\rwarning O espaço entre as chavetas no início de cada linha (\"{ {(…)\") deve ser ignorado. Neste tema do Hugo, devido a limitações técnicas, o espaço precisa de ser inserido para mostrar o código. "
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/pt\/docs\/mermaid\/mermaid-explanation\/",
+                title: "Mermaid Page Explanation",
+                description: "Explanation of the creation of the \"Mermaid\" page.",
+                content: "Esta página serve para mostrar como foi concebida a página da Sereia.\nTexto linkO texto geral é escrito sem qualquer formatação ou directrizes específicas; basta escrever o texto para o mostrar na página.\nBasic text.\rTexto de base.\nTítulos linkA aplicação de formatação de texto, como título, subtítulo ou títulos hierárquicos mais profundos, é realizada usando a sintaxe padrão do Markdown:\nCabeçalhos: Use símbolos de hash (#) para cabeçalhos. O número de símbolos de hash indica o nível do cabeçalho (por exemplo, # para o nível 1, ## para o nível 2, e assim por diante).\nExemplo:\n# Title\r## Subtitle\r### Deeper Subtitle\r#### Etc.\rTexto de base.\nPrism linkPrism é uma biblioteca normalmente usada em temas do Hugo para realçar blocos de código em várias linguagens de programação.\nEla é usada como:\n\u003c prism lang=\"md\" \u003e\rRandom content.\r\u003c /prism \u003e\rPontos linkUm marcador é criado simplesmente prefaciando a frase com “-” ou “*”.\nExemplo:\n- Content * Content 2 Que renderiza como:\nContent Content 2 Sub-itens dentro de uma lista de pontos: link - Item\r- Sub-Item\r* Item 2\r- Sub-Item 2\rQue renderiza como:\nItem Sub-Item Item 2 Sub-Item 2 Destaques linkEstas funcionalidades funcionam da mesma forma que o Markdown.\nO Texto em itálico é obtido rodeando o excerto com 1 asterisco de cada lado: *Italic Text* is achieved through surrounding (...)\rO Texto em negrito é obtido rodeando o excerto com 2 asteriscos de cada lado: **Bold Text** is achieved through surrounding (...)\rO Texto em itálico e negrito é obtido rodeando o excerto com 3 asteriscos de cada lado: ***Bold Italic Text*** is achieved through surrounding (...)\rO Texto riscado é obtido rodeando o excerto com 2 tildes de cada lado: ~~Crossed-Out Text~~ is achieved through surrounding (...)\rEstas funcionalidades também podem ser misturadas, gerando resultados como: Texto riscado, negrito, itálico.\nSeparadores linkExistem duas formas de renderizar um separador: ***\rand\r---\rLinks linkPara criar uma ligação, o conteúdo da ligação é colocado entre parênteses, seguido do url, entre parênteses: [Hugo](https://gohugo.io)\rQue vai gerar: Hugo\nAlertas linkPara criar um alerta:\n\u003c alert context=\"primary\" text=\"This is an alert\"/\u003e\rQue renderiza como:\ninfo This is an alert "
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/pt\/docs\/mermaid\/mermaid\/",
+                title: "Mermaid",
+                description: "Bem-vindo à página sobre Mermaid.\nO que é o Mermaid? linkMermaid é uma ferramenta de construção de diagramas e gráficos baseada em JavaScript que usa definições de texto com base na syntax Markdown e um renderizador para criar e modificar diagramas complexos. O principal objetivo do Mermaid é ajudar a documentação a acompanhar o desenvolvimento.\nComo usar o Mermaid com o Lotus Docs linkO Mermaid é ativado sempre que o conteúdo que contém a sintaxe do diagrama Mermaid está presente no conteúdo de uma página.",
+                content: "Bem-vindo à página sobre Mermaid.\nO que é o Mermaid? linkMermaid é uma ferramenta de construção de diagramas e gráficos baseada em JavaScript que usa definições de texto com base na syntax Markdown e um renderizador para criar e modificar diagramas complexos. O principal objetivo do Mermaid é ajudar a documentação a acompanhar o desenvolvimento.\nComo usar o Mermaid com o Lotus Docs linkO Mermaid é ativado sempre que o conteúdo que contém a sintaxe do diagrama Mermaid está presente no conteúdo de uma página. É possível inserir diagramas Mermaid utilizando o identificador de linguagem Mermaid com blocos de código de “`” triplos:\n```mermaid\r---\rtitle: Gráfico avançado\r---\rsequenceDiagram\rAlice-\u003e\u003eJoão: Olá João como estás?\rloop Estado de saúde\rJoão-\u003e\u003eJoão: Fight against hypochondria\rend\rNote right of João: Rational thoughts!\rJoão--\u003e\u003eAlice: Ótimo!\rJoão-\u003e\u003ePedro: Então e tu?\rPedro--\u003e\u003eJoão: Muito bem! ```\r---\rtitle: Gráfico avançado\r---\rsequenceDiagram\rAlice-\u003e\u003eJoão: Olá João como estás?\rloop Estado de saúde\rJoão-\u003e\u003eJoão: A lutar contra febre\rend\rNote right of João: Pensamentos racionais!\rJoão--\u003e\u003eAlice: Ótimo!\rJoão-\u003e\u003ePedro: Então e tu?\rPedro--\u003e\u003eJoão: Muito bem! Este é um diagrama mais avançado, por isso vamos reduzi-lo a um simples fluxograma.\nFluxograma linkO que é um Fluxograma linkUm fluxograma é uma representação gráfica de um processo ou fluxo de trabalho, descrevendo a sequência de etapas, decisões e ações envolvidas. Normalmente, consiste em formas, setas e texto, ilustrando o fluxo de controlo através de um sistema.\nOs fluxogramas são utilizados em vários domínios para criar uma mapa visual de procedimentos, analisar processos e comunicar fluxos de trabalho complexos.\nCriar Nós linkComo já foi referido, os fluxogramas são compostos por nós.\nPara criar um nó:\n```mermaid\r---\rtitle: Nó\r---\rflowchart LR\rid\r```\r---\rtitle: Nó\r---\rflowchart LR\rid Fluxograma básico linkO fluxograma mais básico consiste em criar uma implicação de x para y.\n```mermaid\r---\rtitle: Fluxograma básico\r---\rflowchart LR\rx --\u003e y\r```\r---\rtitle: Fluxograma básico\r---\rflowchart LR\rx --\u003e y Fluxograma de 1 para Muitos link ```mermaid\r---\rtitle: Fluxograma de 1 para Muitos\r---\rflowchart LR\rx[a]\ry[b1,b2,b3]\rx --\u003e y\r```\r---\rtitle: Fluxograma de 1 para Muitos\r---\rflowchart LR\rx[a]\ry[b1,b2,b3]\rx --\u003e y Costumizar o Flowchart linkExistem várias formas de personalizar um fluxograma, desde alterar a forma dos nós, mudar a orientação e até adicionar cores e ícones.\n```mermaid\r---\rtitle: Fluxograma Especial\r---\rflowchart LR\rA[Borda dura] --\u003e|Texto conetor| B(Borda redonda)\rB --\u003e C{Decisão}:::vermelho\rC --\u003e|One| D[Resultado um]:::azul\rC --\u003e|Two| E[Resultado dois]:::verde\rclassDef vermelho stroke:#f00\rclassDef azul stroke:#0f0\rclassDef verde stroke:#00f\r```\r---\rtitle: Fluxograma Especial\r---\rflowchart LR\rA[Borda dura] --\u003e|Texto conetor| B(Borda redonda)\rB --\u003e C{Decisão}:::vermelho\rC --\u003e|Um| D[Resultado um]:::azul\rC --\u003e|Dois| E[Resultado dois]:::verde\rclassDef vermelho stroke:#f00\rclassDef azul stroke:#0f0\rclassDef verde stroke:#00f info Toda a informação extra sobre Fluxogramas pode ser encontrada em: Fluxograma Gráfico Circulrar linkO que é um gráfico circular linkUm Gráfico Circular é um gráfico estatístico circular dividido em fatias para ilustrar proporções numéricas. Cada fatia representa uma parte proporcional de todo o conjunto de dados, normalmente apresentada como uma percentagem do total. Os gráficos de pizza são normalmente utilizados para visualizar a distribuição de dados e mostrar a dimensão relativa de diferentes categorias ou componentes num conjunto de dados.\n---\rtitle: Animais adotados\r---\rpie\r\"Cães\" : 386\r\"Gatos\" : 85\r\"Ratos\" : 15 Sintaxe do gráfico circular linkDrawing a pie chart is really simple in mermaid.\nIniciar com a palavra-chave pie para iniciar o diagrama ShowData para apresentar os valores reais dos dados após o texto da legenda. Isto é OPCIONAL Seguido da palavra-chave title e do seu valor em string para dar um título ao gráfico circular. Isto é OPCIONAL Seguido de dataSet. As fatias da tarte serão ordenadas no sentido dos ponteiros do relógio pela mesma ordem que as etiquetas. Etiqueta para uma secção do diagrama circular entre aspas “ ”. Seguido de : dois pontos como separador Seguido de um valor numérico positivo (suportado até duas casas decimais) info Toda a informação extra sobre Gráficos Circulares pode ser encontrada em: Gráficos Circulares Gráfico circular básico link ```mermaid\r---\rtitle: Gráfico circular básico\r---\rpie showData\rpie showData\rtitle Elementos chave em produto X\r\"Cálcio\" : 42.96\r\"Potássio\" : 50.05\r\"Magnésio\" : 10.01\r\"Ferro\" : 5\r```\r---\rtitle: Gráfico circular básico\r---\rpie showData\rtitle Elementos chave em produto X\r\"Cálcio\" : 42.96\r\"Potássio\" : 50.05\r\"Magnésio\" : 10.01\r\"Ferro\" : 5 Gráfico de Quadrante linkO que é um gráfico de quadrante linkUm gráfico de quadrantes é uma representação gráfica que divide os dados em quatro quadrantes com base em dois eixos. Cada eixo representa uma dimensão ou variável diferente, e os quadrantes são definidos dividindo a área do gráfico em quatro secções iguais.\nOs gráficos de quadrantes são normalmente utilizados para analisar e visualizar relações de dados, particularmente quando se comparam dois conjuntos de variáveis ou critérios. Ajudam a identificar padrões, tendências e valores atípicos no conjunto de dados, permitindo aos utilizadores categorizar os pontos de dados em diferentes quadrantes com base nas suas posições relativamente aos eixos\nquadrantChart\rtitle Alcance e Interesse nas campanhas\rx-axis Baixo Alcance --\u003e Alto Alcance\ry-axis Baixo Interesse --\u003e Alto Interesse\rquadrant-1 Deviamos expandir\rquadrant-2 Precisamos de promover\rquadrant-3 Reavaliar\rquadrant-4 Tem de ser melhorado\rCampanha A: [0.3, 0.6]\rCampanha B: [0.45, 0.23]\rCampanha C: [0.57, 0.69]\rCampanha D: [0.78, 0.34]\rCampanha E: [0.40, 0.34]\rCampanha F: [0.35, 0.78] Sintaxe do Gráfico de Quadrantes link Title O título é uma breve descrição do gráfico e será sempre apresentado na parte superior do gráfico Exemplo: quadrantChart title Isto é um gráfico exemplo\nx-axis O eixo x determina o texto que será apresentado no eixo x. No eixo x existem duas partes, esquerda e direita, podendo passar ambas ou apenas a esquerda. A declaração deve começar com o eixo x, depois o texto do eixo esquerdo seguido do delimitador –\u003e e depois o texto do eixo direito. Exemplo x-axis –\u003e tanto o texto do eixo esquerdo como o do eixo direito serão processados. x-axis apenas o texto do eixo esquerdo será processado.\ny-axis O eixo y determina o texto que será apresentado no eixo y. No eixo y há duas partes, superior e inferior, podendo passar ambas ou apenas a inferior. A declaração deve começar com o eixo y, depois o texto do eixo inferior seguido do delimitador –\u003e e depois o texto do eixo superior. Exemplo y-axis –\u003e tanto o texto do eixo inferior como o do eixo superior serão processados. y-axis apenas o texto do eixo inferior será processado.\nQuadrants text O quadrante-[1,2,3,4] determina o texto que será apresentado no interior dos quadrantes. Exemplo quadrant-1 determinam o texto que será apresentado no quadrante superior direito. quadrant-2 determinam o texto que será apresentado no quadrante superior esquerdo. quadrant-3 determina o texto que será apresentado no quadrante inferior esquerdo. quadrant-4 determina o texto que será apresentado no quadrante inferior direito.\nPoints Os pontos são utilizados para traçar um círculo no interior do quadrantChart. A sintaxe é : [x, y], em que os valores x e y se situam no intervalo 0 - 1. Exemplo Point 1: [0.75, 0.80] aqui o Ponto 1 será desenhado no quadrante superior direito. Point 2: [0.35, 0.24] aqui o Ponto 2 será desenhado no quadrante inferior esquerdo.\ninfo Toda a informação extra sobre Gráficos de Quadrantes pode ser encontrada em: Gráfico de Quadrantes Gráfico de quadrantes básico linkCódigo:\n```mermaid\r---\rtitle: Basic Quadrant Chart\r---\rquadrantChart\rx-axis Urgente --\u003e \"Não é\" urgente\ry-axis \"Não é\" importante --\u003e \"Importante ❤\"\rquadrant-1 Planear\rquadrant-2 Fazer\rquadrant-3 Delegar\rquadrant-4 Eliminar\r```drant-4 Eliminar\r```\r---\rtitle: Basic Quadrant Chart\r---\rquadrantChart\rx-axis Urgente --\u003e \"Não é\" urgente\ry-axis \"Não é\" importante --\u003e \"Importante ❤\"\rquadrant-1 Planear\rquadrant-2 Fazer\rquadrant-3 Delegar\rquadrant-4 Eliminar report No caso de o diagrama conter palavras que levem acentos, é necessário colocar essas palavras entre aspas, caso contrário não irá funcionar. Diagrama de Classe linkO que é um diagrama de classes linkUm diagrama de classe é um tipo de diagrama UML (Unified Modeling Language) que representa a estrutura de um sistema, descrevendo as classes de objetos dentro dele, seus atributos, métodos e as relações entre eles.\nOs diagramas de classes são utilizados principalmente na engenharia de software e na conceção de sistemas para visualizar a estrutura de sistemas orientados para objectos. Fornecem um plano para a conceção de aplicações de software, ajudando os programadores a compreender as relações entre diferentes classes, a planear a implementação de código e a garantir consistência e clareza no processo de conceção.\n---\rtitle: Animal exemplo\r---\rclassDiagram\rnote \"De Pato até Zebra\"\rAnimal \u003c|-- Pato\rnote for Pato \"Consegue voar\\n Consegue nadar\\n Consegue Mergulhar\\n pode ajudar na depuração\"\rAnimal \u003c|-- Peixe\rAnimal \u003c|-- Zebra\rAnimal : +int idade Animal : +String género\rAnimal: +éMamífero()\rAnimal: +acasala()\rclass Pato{\r+String corDoBico\r+nada()\r+quack()\r}\rclass Fish{\r-int tamanhoEmCm\r-consegueComer()\r}\rclass Zebra{\r+bool é_selvagem\r+corre()\r} Sintaxe do diagrama de classes link A UML fornece mecanismos para representar membros de classe, como atributos e métodos, e informações adicionais sobre eles. Uma única instância de uma classe no diagrama contém três compartimentos:\nO compartimento superior contém o nome da classe. Ele é impresso em negrito e centralizado, e a primeira letra é maiúscula. Também pode conter texto de anotação opcional descrevendo a natureza da classe.\nO compartimento do meio contém os atributos da classe. Eles são alinhados à esquerda e a primeira letra é minúscula.\nO compartimento inferior contém as operações que a classe pode executar. Elas também são alinhadas à esquerda e a primeira letra é minúscula.\ninfo Toda a informação extra sobre Diagramas de ClassesDiagramas de Classes pode ser encontrada em: Diagramas de Classes Diagrama de Classes básico link ```mermaid\r---\rtitle: Banco exemplo\r---\rclassDiagram\rclass ContaBancária\rContaBancária : +String Dono\rContaBancária : +Bigdecimal Saldo\rContaBancária : +depósito(quantidade)\rContaBancária : +levantamento(quantidade)\r```\r---\rtitle: Banco exemplo\r---\rclassDiagram\rclass ContaBancária\rContaBancária : +String Dono\rContaBancária : +Bigdecimal Saldo\rContaBancária : +depósito(quantidade)\rContaBancária : +levantamento(quantidade) Diagrama de linha do tempo linkO que é um diagrama de linha do tempo linkUm diagrama de linha do tempo é uma representação visual que exibe eventos, tarefas ou marcos ao longo de um eixo cronológico. Ele normalmente consiste em barras ou linhas horizontais que representam a duração ou a ocorrência de cada evento, com rótulos ou marcadores indicando pontos-chave no tempo.\nOs diagramas de linha do tempo são utilizados para ilustrar a sequência de eventos ou actividades ao longo de um período, fornecendo uma visão clara e concisa das relações temporais. São normalmente utilizados na gestão de projectos, análise histórica, narração de histórias e visualização de processos\ntimeline\rtitle England's History Timeline\rsection Idade da pedra\r7600 a.C.: A mais antiga casa conhecida da Grã-Bretanha foi construída em Orkney, na Escócia\r6000 a.C.: O nível do mar sobe e a Grã-Bretanha torna-se uma ilha.\nAs pessoas que aqui vivem são caçadores-recolectores.\rsection Idade do Bronze\r2300 BC : Chegam pessoas da Europa e instalam-se na Grã-Bretanha. Trazem a agricultura e a metalurgia.\r: Surgem novos estilos de cerâmica e novas formas de enterrar os mortos.\r2200 BC : As últimas grandes obras de construção são concluídas em Stonehenge.\nAs pessoas enterram agora os seus mortos em círculos de pedra.\r: Os primeiros objectos de metal são fabricados na Grã-Bretanha e outras coisas agradáveis acontecem. É uma boa altura para estar vivo. Sintaxe do diagrama de linha de tempo link A sintaxe para criar um diagrama de linha do tempo é simples. Começa-se sempre com a palavra-chave timeline para que o Mermaid saiba que se pretende criar um diagrama de timeline.\nDepois disso, há a possibilidade de adicionar um título à linha de tempo. Isto é feito adicionando uma linha com a palavra-chave título seguida do texto do título.\nEm seguida, adiciona os dados da linha cronológica, onde começa sempre com um período de tempo, seguido de dois pontos e do texto do evento. Opcionalmente, pode adicionar um segundo ponto e depois o texto do evento. Assim, pode ter um ou mais eventos por período de tempo.\ninfo Toda a informação extra sobre Diagrama de Linha do Tempo pode ser encontrada em: Diagrama de Linha do Tempo Diagrama de Linha de Tempo básico link ```mermaid\rtimeline\rtitle História da plataforma de redes sociais\r2002 : LinkedIn\r2004 : Facebook : Google\r2005 : Youtube\r2006 : Twitter\r```\rtimeline\rtitle História da plataforma de redes sociais\r2002 : LinkedIn\r2004 : Facebook : Google\r2005 : Youtube\r2006 : Twitter "
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/pt\/docs\/setup\/",
+                title: "Configurar",
+                description: "A quick start guide to get started in Lotus Doc and how this page was made",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/pt\/docs\/setup\/setup\/",
+                title: "Configurar",
+                description: "A quick start guide to get started in Lotus Doc and how this page was made",
+                content: "Requisitos do Sistema link git Go ≥ v1.19 Hugo ≥ v0.117.0 (Versão Estendida) Instalação linkInstalação Automática linkInstale a Hugo CLI, seguindo as instruções específicas para o seu sistema operativo abaixo:\nLinux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) O gestor de pacotes da sua distribuição Linux pode incluir o Hugo. Se for o caso, instale-o diretamente usando o gestor de pacotes da sua distribuição - por exemplo, no Ubuntu, execute o seguinte comando. Isto irá instalar a edição estendida do Hugo:\nsudo apt install hugo Se utiliza o gestor de pacotes Homebrew, execute o comando brew install no terminal para instalar o Hugo:\nbrew install hugo Se utiliza o gestor de pacotes Chocolatey, execute o comando choco install no terminal para instalar o Hugo:\nchoco install hugo --confirm Se utiliza o gestor de pacotes Scoop, execute o comando scoop install no terminal para instalar o Hugo:\nscoop install hugo Instalação Manual linkO repositório GitHub do Hugo contém versões pré-compiladas da ferramenta de linha de comando do Hugo para vários sistemas operativos, que podem ser encontradas na página de Releases\nPara mais instruções sobre como instalar estas versões, consulte a documentação do Hugo\nCriar um Novo Site de Documentação Lotus link(Explicar como criar novas páginas e com as configurações iniciais)\nCom o Hugo instalado, crie um novo projeto Hugo usando o comando hugo new:\nhugo new site my-docs-site \u0026\u0026 cd my-docs-site Agora utilize o comando hugo mod init para inicializar o seu projeto como um Módulo Hugo:\nhugo mod init my-docs-site info Nota: Pode inicializar o seu site utilizando o caminho para o seu repositório git, por exemplo, hugo mod init github.com///, se já tiver um. Das opções abaixo, selecione o seu método preferido para aplicar o tema Lotus Docs ao seu novo site recém-criado:\nAdicionar como um Módulo Hugo Adicionar como um submódulo Git Clonar os ficheiros do tema As linhas de 5 a 11 abaixo precisam ser editadas para adicionar o módulo Bootstrap do Hugo e o tema Lotus Docs ao ficheiro de configuração hugo.toml:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false Configure o Git e crie um submódulo clonando o repositório do tema Lotus Docs:\ngit init\rgit submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs Substitua a configuração no seu ficheiro de configuração hugo.toml atual com o seguinte:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r# uncomment line below for temporary local development of module\r# or when using a 'theme' as a git submodule\rreplacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\"\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false Pode clonar o tema Lotus Docs na subpasta themes do seu projeto se preferir modificar e atualizar o tema por conta própria.\nPara clonar o tema Lotus Docs na sua subpasta themes, utilize o seguinte comando a partir do diretório raiz do seu projeto:\ngit clone https://github.com/colinwilson/lotusdocs themes/lotusdocs As linhas de 5 a 14 abaixo precisam ser editadas para incluir o módulo Bootstrap do Hugo e o tema Lotus Docs ao ficheiro de configuração hugo.toml:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r# uncomment line below for temporary local development of module,\r# when using a 'theme' as a git submodule or git cloned files\rreplacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\"\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false info Hugo ≥ v0.110.0 introduziu hugo.toml como o nome de ficheiro de configuração padrão. Considere renomear o seu ficheiro config.toml para hugo.toml se estiver a usar uma versão anterior do Hugo. Criar Novo Conteúdo linkCrie um ficheiro no diretório content/docs navegando até à raiz do seu projeto Hugo e utilizando o comando hugo new:\nhugo new docs/nova-pagina.md Isto irá produzir o ficheiro markdown nova-pagina.md com o front matter padrão como segue:\n---\rweight: 999\rtitle: \"Nova Página\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"Esta nova página tem o tema Lotus Documents\"\rdraft: true toc: true\r--- O código do front matter que foi usado para gerar esta página é exibido no código abaixo, juntamente com algum markdown do corpo:\n---\rweight: 200\rtitle: \"Nova Página\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"Esta nova página tem o tema Lotus Documents\"\rdraft: true toc: true\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Iniciantes\"]\r---\r## Criar Novo Conteúdo\rNavegue até à raiz do seu projeto Hugo e utilize o comando `hugo new` para criar um ficheiro no diretório `content/docs`:\r```shell\rhugo new docs/paginadeexemplo.md\r```\r...\rPré-visualizar o seu Site linkUtilizando o comando hugo server -D, pode agora examinar o seu novo website Lotus Documents depois de criar algum conteúdo de exemplo:\nhugo server -D Quando aceder a localhost:1313/docs/, deverá aparecer um link de cartão para a página Nova Página gerada anteriormente: Configurar Conteúdo linkOrdenar Conteúdo linkPara ordenação de conteúdo e criação de menu, o Lotus Docs utiliza um sistema de ponderação simples.\nTodo o conteúdo é organizado numa determinada sequência e a estrutura do menu (que inclui o menu lateral e os botões de navegação da página) é gerada automaticamente utilizando a variável weight do front matter. Maior prioridade é atribuída a valores de peso mais baixos. Itens com peso mais baixo são priorizados e organizados desta forma no menu.\nPor exemplo:\nNova Página:\n---\rweight: 200\rtitle: \"Nova Página\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"Esta nova página tem o tema Lotus Documents\"\rdraft: true toc: true\rtags: [\"Iniciantes\"]\rpublishdate: \"2023-05-03T22:37:22+01:00\"\r--- Nova Página 2:\n---\rweight: 100\rtitle: \"Nova Página 2\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"Esta nova página tem o tema Lotus Documents\"\rdraft: true toc: true\rtags: [\"Iniciantes\"]\rpublishdate: \"2023-05-03T22:37:22+01:00\"\r--- Resultado: Descrição do Conteúdo linkÉ imperativo que o site forneça aos leitores um resumo compreensível do seu conteúdo, completo com um título educacional e uma explicação sucinta. As variáveis ’title’ e ‘description’ podem ser alteradas para fazer isso com base no tema do seu website. Por exemplo, o site pode parecer algo assim se o seu objetivo for demonstrar como usar o Lotus Docs para construir uma configuração básica para documentação:\n---\rweight: 300\rtitle: \"Configuração\"\ricon: \"article\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"Um guia rápido para começar no Lotus Doc e como esta página foi criada\"\rdraft: true toc: true\r--- E este seria o resultado: Se quiseres ver mais sobre os iconés no Lotus Docs, pode consultar a pagina de Customização\nÍcone do Conteúdo linkPode alterar o símbolo que aparece no layout da sua página para destacá-la das restantes e tornar as páginas mais fáceis de distinguir entre si.\n---\rweight: 300\rtitle: \"Configuração\"\ricon: \"rocket_launch\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"Um guia rápido para começar no Lotus Doc e como esta página foi criada\"\rdraft: true toc: true\r--- E este seria o resultado: Título do Documento linkPode criar um ficheiro chamado “_index.md” se precisar de renomear o título do seu documento do padrão “Docs” para algo mais pertinente:\nhugo new docs/_index.md E agora tudo o que precisa de fazer é aceder ao ficheiro _index.md e alterar o título:\n---\rweight: 999\rtitle: \"Novo Título dos Docs\"\rdescription: \"\"\ricon: \"article\"\rdate: \"2024-04-19T16:14:44+01:00\"\rlastmod: \"2024-04-19T16:14:44+01:00\"\rdraft: true\rtoc: true\r--- E é assim que aparece visualmente: info Tenha em mente que os ficheiros _index.md são apenas destinados a serem usados para modificar definições de cabeçalho. Não fará diferença se adicionar algum material que não esteja entre as variáveis permitidas no cabeçalho. Itens de Menu de Segundo Nível linkCriar Segundo Nível linkPara construir itens de menu de segundo nível, primeiro crie um diretório chamado “parent” que tenha um ficheiro chamado _index.md. Por exemplo:\nhugo new docs/diretorio-pai/_index.md Um ficheiro _index.md é criado pelo comando mencionado anteriormente dentro do diretório content/docs/diretorio-pai:\ncontent/\r└── docs/\r├── diretorio-pai/\r│ └── _index.md\r├── nova-pagina.md\r├── nova-pagina-2.md\r├── configuracao.md\r└── _index.md Adicionar nova página ao segundo nível linkComo antes, os itens de segundo nível podem agora ser criados dentro do diretório pai. Para criar uma postagem dentro do recém-estabelecido diretorio-pai, utilize novamente o comando hugo new:\nhugo new docs/diretorio-pai/nova-pagina-3.md A sua estrutura de diretórios/ficheiros agora deve parecer assim:\ncontent/\r└── docs/\r├── diretorio-pai/\r│ ├── _index.md\r│ └── nova-pagina-3.md\r├── nova-pagina.md\r├── nova-pagina-2.md\r├── configuracao.md\r└── _index.md E visualmente parecerá assim:\nNo geral: No diretório diretorio-pai: Configurar conteúdo de segundo nível linkPara configurar o conteúdo para o segundo nível, o processo é semelhante ao do primeiro nível. Basta aceder ao ficheiro _index.md do segundo nível e ajustar o título e a descrição para fornecer mais informações sobre o conteúdo específico presente nesse nível, ajudando o utilizador na navegação e localização.\n---\rweight: 999\rtitle: \"Novo Diretório Pai\"\rdescription: \"Este é um exemplo de como criar um segundo nível\"\ricon: \"article\"\rdate: \"2024-04-19T15:22:56+01:00\"\rlastmod: \"2024-04-19T15:22:56+01:00\"\rdraft: true\rtoc: true\r--- E o resultado é assim: E para ordenar os itens de menu do segundo nível é da mesma forma que para os outros conteúdos, basta alterar o weight do ficheiro _index.md:\n---\rweight: 150\rtitle: \"Novo Diretório Pai\"\rdescription: \"Este é um exemplo de como criar um segundo nível\"\ricon: \"article\"\rdate: \"2024-04-19T15:22:56+01:00\"\rlastmod: \"2024-04-19T15:22:56+01:00\"\rdraft: true\rtoc: true\r--- E com isso, muda a posição nos itens do menu Publicar páginas linkDurante as fases anteriores do processo, trabalhámos com páginas de rascunho. No entanto, assim que uma página estiver concluída, precisa de transformá-la de um rascunho numa versão pronta para publicar. Este processo é simples: basta modificar a variável draft para false ou, alternativamente, remover completamente esta variável. Isso garante que a página está pronta para ser publicada.\nMostrando um exemplo com a página de Configuração:\n---\rweight: 300\rtitle: \"Configuração\"\ricon: \"rocket_launch\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"Um guia rápido para começar no Lotus Doc e como esta página foi criada\"\rdraft: false toc: true\r--- A partir deste momento, a página será considerada publicada. Isso significa que ao visualizar a pré-visualização do site, já não será necessário utilizar o comando hugo server -D. Agora, pode utilizar o comando hugo server para ver todas as páginas publicadas, excluindo aquelas que estão em rascunho.\nAntes de prosseguir, é importante confirmar que fez alterações ao ficheiro _index.md do primeiro nível. Se o tiver alterado, certifique-se de que a variável draft está definida como false. No nosso exemplo, como alterámos o título e o draft está marcado como true, também precisaremos de modificar esta variável.\n---\rweight: 999\rtitle: \"Novo Título dos Docs\"\rdescription: \"\"\ricon: \"article\"\rdate: \"2024-04-19T16:14:44+01:00\"\rlastmod: \"2024-04-19T16:14:44+01:00\"\rdraft: false\rtoc: true\r--- info Nota: Se não criou um ficheiro _index.md para o primeiro nível porque não precisava de modificar nenhuma informação, não precisa de o criar para definir o rascunho como falso, pois este já é o valor padrão se _index.md não foi criado. Mostrando como fica a pré-visualização da página:\nQuando se faz hugo server -D: Aqui pode ver que DRAFT já desapareceu do conteúdo da página de configuração, assim como do título do documento.\nQuando se faz hugo server: Este é um passo muito importante para mais tarde ser possível Implantar o seu documento.\nLicença linkO Lotus Docs é distribuído sob a licença MIT, que é uma licença de software extremamente flexível e permissiva. Colin Wilson, o inventor do Lotus Docs, oferece liberdade irrestrita a qualquer pessoa para usar, modificar e distribuir o programa, desde que o aviso de direitos autorais e a licença sejam incluídos com todas as cópias. Os utilizadores podem utilizar o programa para qualquer fim, incluindo a venda, sem incorrer em custos ou royalties. Não existem promessas específicas de que o programa funcionará, e os autores não são responsáveis por qualquer dano causado pelo seu uso. Em resumo, a Licença MIT dá aos utilizadores total liberdade para usar o programa como desejarem, com poucas obrigações ou limites.\nRecursos Adicionais link Lotus Docs GitHub do Lotus Docs 1. Pergunta: Como instalo o Lotus Docs?\nResposta: Pode instalar o Lotus Docs seguindo as instruções fornecidas na secção de instalação da documentação. Certifique-se de cumprir os requisitos do sistema e siga o método de instalação apropriado para o seu sistema operativo.\n2. Pergunta: Como crio um novo site usando o Lotus Docs?\nResposta: O processo de criação de um novo site com o Lotus Docs está detalhado na secção “Criar um Novo Site Lotus Docs”. Siga os passos fornecidos, incluindo a instalação do Hugo, inicialização do projeto e aplicação do tema Lotus Docs.\n3. Pergunta: Como adiciono novo conteúdo ao meu site Lotus Docs?\nResposta: Pode adicionar novo conteúdo ao seu site Lotus Docs criando novos ficheiros Markdown na pasta content/docs. Utilize o comando hugo new seguido do caminho do ficheiro para criar novo conteúdo.\n4. Pergunta: Como posso personalizar a aparência do meu site Lotus Docs?\nResposta: Esta pergunta pode ser respondida visualizando a página de Customização.\n5. Pergunta: Como publico uma página no meu site Lotus Docs?\nResposta: Uma vez que uma página esteja pronta para ser publicada, precisa de alterar a variável draft para false no ficheiro Markdown correspondente. Isso marca a página como pronta para publicação e está detalhado na secção “Publicar páginas” da documentação.\n6. Pergunta: Como foi feita esta página?\nResposta: Pode ver como esta página foi feita ativando a página: Processo de criação Configuração\n"
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/pt\/docs\/customisation\/customisation-explanation\/",
+                title: "Explicação",
+                description: "Explicação de como foi desenvolvida a página de Customização",
+                content: "Esta página tem o propósito de mostrar como a página de personalização foi feita. A página de personalização já explica uma grande parte do código utilizado para criar a página. No entanto, esta página servirá como uma visão geral.\nTexto linkOs textos descritivos são escritos normalmente, sem nenhuma tag, rótulo ou área. Por exemplo:\nThe code: Texto simples.\rTítulos linkTítulos e cabeçalhos são definidos usando # como prefixos. Quantomais #, menor é a posição na hierarquia dos títulos. Hugo tambéminterpreta os cabeçalhos e a respectiva hierarquia para criar aTabela de Conteúdos da página.\nDestaques, Ênfase, Links linkPara alcançar texto em Negrito, o texto precisa ter dois asteriscos ou underlines antes e depois.\n**NEGRITO**\r__NEGRITO__\rPara alcançar texto em Itálico, o texto precisa ter um asterisco ou underline antes e depois.\n*ITALICO*\r_ITALICO_\rPara alcançar texto Rasurado, o texto precisa ter dois tils antes e depois.\n~~RASURADO~~\rPara links de websites:\n[Nome a mostrar](https://website.com)\rPara links de images:\n![Create Content](https://tania1998.sirv.com/images_tecaa/green.png)\rHospedei minhas imagens no site Sirvpara poder incluir os links no site.\nSeparadores linkPara separar áreas, usei três -\nPara criar alertas linkPara criar alertas, adicionei o seguinte código entre dois colchetes {{. O contexto dos alertas pode ser info, success, danger, warning, primary, light e dark.\n\u003c alert context= \"dark\" text=\"contexto do alerta\"/\u003e\rPara criar áreas de abas linkPara criar uma navegação com várias abas nas páginas com um certo número de abas:\n{ {\u003c tabs tabTotal=\"nr de abas\"\u003e}} --\u003e abre abas, define número de abas\r{ {% tab tabName=\"Aba Um\" %}} --\u003e nome da primeira aba\rConteúdo\r{ {% /tab %}}\r{ {% tab tabName=\"Aba Dois\" %}} --\u003e nome da segunda aba\rConteúdo\r{ {% /tab %}}\r{ {% tab tabName=\"Aba Três\" %}} --\u003e nome da terceira aba\rConteúdo\r{ {% /tab %}}\r{ {\u003c /tabs \u003e}} --\u003e fecha abas\rPara adicionar blocos de código link ```linguagem\rcódigo\r```\rPara criar tags linkAdicione texto entre dois acentos graves `\n`tag`\r"
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
+                href: "\/pt\/docs\/deployment\/github\/",
+                title: "Distribuição em páginas github",
+                description: "Como fazer a distribuição num repositório GitLab",
+                content: "Visão Geral linkO GitHub Pages fornece hospedagem estática rápida e segura com SSL para páginas pessoais, organizacionais ou de projeto diretamente de um repositório do GitHub. Usando GitHub Actions, esse serviço simplifica fluxos de trabalho de desenvolvimento e construções.\nPré-requisitos link Uma Conta no GitHub Git Crie um site Hugo usando o tema Lotus Docs Procedimento link Crie um novo repositório\nCrie um novo repositório no GitHub, por exemplo, https://github.com/joaoAAG/Tecaa.git\nAltere a Fonte do GitHub Pages para GitHub Actions\nVisite seu repositório do GitHub e navegue até Configurações \u003e Páginas. Altere a Fonte para GitHub Actions.\nConstrução e Implantação-Antes Construção e Implantação-Depois Crie um servidor Hugo localmente\nhugo new site collinwilson.github.io cd colinwilson.github.io Atualize o arquivo de configuração do seu site (hugo.toml / hugo.yaml / hugo.json) para incluir os módulos do tema necessários e atualize o seu baseURL para o seu GitHub Pages pretendido Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.github.io' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false [markup.goldmark.renderer] unsafe = true [[menu.primary]] name = \"Docs\" url = \"/docs/\" identifier = \"docs\" weight = 10 baseURL: 'https://colinwilson.github.io' languageCode: en-us title: My New Hugo Site module: imports: - path: github.com/colinwilson/lotusdocs disable: false - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5 disable: false markup: goldmark: renderer: unsafe: true menu: primary: - name: Docs url: /docs/ identifier: docs weight: 10 { \"baseURL\": \"https://colinwilson.github.io\", \"languageCode\": \"en-us\", \"title\": \"My New Hugo Site\", \"module\": { \"imports\": [ { \"path\": \"github.com/colinwilson/lotusdocs\", \"disable\": false }, { \"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/ v5\", \"disable\": false } ] }, \"markup\": { \"goldmark\": { \"renderer\": { \"unsafe\": true } } }, \"menu\": { \"primary\": [ { \"name\": \"Docs\", \"url\": \"/docs/\", \"identifier\": \"docs\", \"weight\": 10 } ] } } Crie uma página de exemplo\nhugo new docs/example-page.md If the draft is true, then make it false.\n--- title: \"Example Page\" date: 2023-08-25T23:36:29+01:00 draft: false --- Crie um arquivo hugo.yaml vazio no seu repositório local\n.github/workflows/hugo.yaml Copie e cole o YAML abaixo no hugo.yaml que você criou. Altere o nome do branch e a versão do Hugo conforme necessário.\n# Exemplo de fluxo de trabalho para construir e implantar um site Hugo no GitHub Pages name: Deploy Hugo site to Pages on: # Roda em push direcionando para o branch padrão push: branches: - main # Permite que você execute este fluxo de trabalho manualmente na guia Ações workflow_dispatch: # Define as permissões do GITHUB_TOKEN para permitir a implantação no GitHub Pages permissions: contents: read pages: write id-token: write # Permite apenas uma implantação concorrente, ignorando as execuções enfileiradas entre a execução em andamento e a última enfileirada. # No entanto, NÃO cancele execuções em andamento, pois queremos permitir que essas implantações de produção sejam concluídas. concurrency: group: \"pages\" cancel-in-progress: false # Padrão para bash defaults: run: shell: bash jobs: # Job de construção build: runs-on: ubuntu-latest env: HUGO_VERSION: 0.118.2 steps: - name: Install Hugo CLI run: | wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \\ \u0026\u0026 sudo dpkg -i ${{ runner.temp }}/hugo.deb - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 - name: Setup Pages id: pages uses: actions/configure-pages@v3 - name: Install Node.js dependencies run: \"[[ -f package-lock.json || -f npm-shrinkwrap. json ]] \u0026\u0026 npm ci || true\" - name: Build with Hugo env: # Para máxima compatibilidade retroativa com os módulos Hugo HUGO_ENVIRONMENT: production HUGO_ENV: production run: | hugo \\ --gc \\ --minify \\ --baseURL \"${{ steps.pages.outputs.base_url }}/\" - name: Upload artifact uses: actions/upload-pages-artifact@v1 with: path: ./public # Job de Implantação deploy: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} runs-on: ubuntu-latest needs: build steps: - name: Deploy to GitHub Pages id: deployment uses: actions/deploy-pages@v2 Confirme todas as mudanças no seu repositório local com uma mensagem de confirmação como “Novo site \u0026 fluxo de trabalho”.\ngit commit -m \"Novo site \u0026 fluxo de trabalho\" E envie seu repositório local para o repositório que você criou no GitHub\ngit push -u origin main git commit -m \"Novo site \u0026 fluxo de trabalho\" git push -u origin main No menu principal do GitHub, escolha Ações.\nNa etapa de implantação, você verá um link para seu site ativo 🎉. "
+            }
+        );
+    index.add(
+            {
+                id:  13 ,
+                href: "\/pt\/docs\/deployment\/gitlab\/",
+                title: "Distribuição em páginas gitlab",
+                description: "Como fazer a distribuição num repositório GitLab",
+                content: "Visão Geral linkO GitLab fornece uma plataforma DevOps abrangente entregue como uma única aplicação, permitindo que equipes colaborem, gerenciem e acelerem o ciclo de vida do desenvolvimento de software. Com CI/CD integrado, controle de versão e rastreamento de problemas, o GitLab simplifica o processo de desenvolvimento e melhora a produtividade da equipe.\nPré-requisitos link Uma Conta no GitLab Git Crie um site Hugo usando o tema Lotus Docs Procedimento link Crie um novo repositório no GitLab, por exemplo, [https://gitlab.com/lordcodex/lotustheme_tecaa].\nSelecione o GitLab Pages como o destino de implantação do projeto:\nGitlabs blank repository Crie um novo projeto Hugo usando o comando hugo new:\nhugo new site collinwilson.github.io\rcd colinwilson.github.io Inicialize seu projeto como um Módulo Hugo usando o comando hugo mod init:\nhugo mod init my-docs-site Atualize o arquivo de configuração do seu site (hugo.toml / hugo.yaml / hugo.json) para incluir os módulos do tema necessários e atualize o seu baseURL para o seu domínio GitLab Pages pretendido, por exemplo, colinwilson.gitlab.io. Você também pode configurar um item [[menu.primary]]. Isto cria um link na página inicial para a seção docs/.\ninfo Você pode acessar os arquivos do site via interface de linha de comando. Vários editores de código, como Notepad e VS Code, estão disponíveis para uso. Para abrir, por exemplo, no Visual Studio Code:\ncode hugo.toml Ou para abrir no notepad:\nnote hugo.toml Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.gitlab.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false\r[markup.goldmark.renderer]\runsafe = true\r[[menu.primary]]\rname = \"Docs\"\rurl = \"/docs/\"\ridentifier = \"docs\"\rweight = 10 baseURL: 'https://colinwilson.gitlab.io'\rlanguageCode: en-us\rtitle: My New Hugo Site\rmodule:\rimports:\r- path: github.com/colinwilson/lotusdocs\rdisable: false\r- path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5\rdisable: false\rmarkup:\rgoldmark:\rrenderer:\runsafe: true\rmenu:\rprimary:\r- name: Docs\rurl: /docs/\ridentifier: docs\rweight: 10 {\r\"baseURL\": \"https://colinwilson.gitlab.io\",\r\"languageCode\": \"en-us\",\r\"title\": \"My New Hugo Site\",\r\"module\": {\r\"imports\": [\r{\r\"path\": \"github.com/colinwilson/lotusdocs\",\r\"disable\": false\r},\r{\r\"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\",\r\"disable\": false\r}\r]\r},\r\"markup\": {\r\"goldmark\": {\r\"renderer\": {\r\"unsafe\": true\r}\r}\r},\r\"menu\": {\r\"primary\": [\r{\r\"name\": \"Docs\",\r\"url\": \"/docs/\",\r\"identifier\": \"docs\",\r\"weight\": 10\r}\r]\r}\r} Crie algum conteúdo de exemplo.\nhugo new docs/example-page.md ---\rtitle: \"Example Page\"\rdate: 2023-08-25T23:36:29+01:00\rdraft: false\r--- Crie um arquivo vazio .gitlab-ci.yml na raiz do seu repositório local.\n/.gitlab-ci.aml Copie e cole o YAML abaixo no arquivo de job que você criou\nimage: registry.gitlab.com/pages/hugo/hugo_extended:0.118.2\rvariables:\rHUGO_ENV: production\rdefault:\rtags:\r- docker\r- linux\rbefore_script:\r- apk add --no-cache go curl bash nodejs\r# - hugo mod get -u $THEME_URL\r## Uncomment the following if you use PostCSS. See https://gohugo.io/hugo-pipes/postcss/\r#- npm install postcss postcss-cli autoprefixer\rtest:\rtags:\r- docker\r- linux\rscript:\r- hugo\rrules:\r- if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH\rpages:\rtags:\r- docker\r- linux\rscript:\r- hugo\rartifacts:\rpaths:\r- public\rrules:\r- if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH Crie um arquivo .gitignore. Copie o conteúdo abaixo para ele. Isso impede que o seu diretório local /public (e outros recursos) seja confirmado no seu repositório do GitLab.\n/public\r/assets/jsconfig.json\rresources/_gen/\r.hugo_build.lock A estrutura do seu site deve ficar semelhante a esta:\ncolinwilson.gitlab.io\r├── archetypes\r├── assets\r├── content\r│ └── docs\r│ └── example-page.md\r├── data\r├── i18n\r├── layouts\r├── static\r├── themes\r├── .gitignore\r├── .gitlab-ci.yml\r├── .hugo_build.lock\r├── go.mod\r├── go.sum\r└── hugo.toml Use git init para inicializar seu projeto como um repositório, em seguida, confirme todas as alterações no seu repositório local com uma mensagem de commit como “🎉 commit inicial”. Envie seu repositório local para o repositório que você criou no GitLab no passo 1.\nVolte ao seu repositório no GitLab, navegue até Build \u003e Pipelines, e você deverá ver que seu site Hugo foi construído com sucesso.\nAgora você deve ser capaz de ver seu site no baseURL (por exemplo, https://colinwilson.gitlab.io) definido no seu arquivo de configuração hugo.toml / hugo.yaml / hugo.json\n"
+            }
+        );
+    index.add(
+            {
+                id:  14 ,
+                href: "\/pt\/docs\/deployment\/",
+                title: "Distribuição",
+                description: "Implemente o Lotus Docs em várias plataformas de hospedagem",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  15 ,
+                href: "\/pt\/docs\/mermaid\/",
+                title: "Mermaid",
+                description: "Saiba tudo sobre a implementação do Mermaid",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
+                href: "\/pt\/docs\/",
+                title: "Docs",
+                description: "",
+                content: ""
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+    
+</body>
+
+<div class="modal fade" id="lang-selector-popup" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded shadow border-0">
+            <div class="modal-header">
+                <h5 class="modal-title">Select your language</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="container-fluid p-2">
+                    <div class="row">
+                        
+
+
+
+
+
+
+
+    <div class="d-flex col-md-4 col-6 py-1 justify-content-center">
+        <a class="btn btn-link-modal" role="button" rel="alternate" href="/docs/mermaid/" hreflang="en" lang="en">
+            <span>
+                English
+            </span>
+        </a>
+    </div>
+
+
+
+
+    
+        
+        
+        
+    
+
+    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sobre on Lotus Docs Exemple de Site</title>
+    <link>//localhost:1313/pt/docs/about/</link>
+    <description>Recent content in Sobre on Lotus Docs Exemple de Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/pt/docs/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre</title>
+      <link>//localhost:1313/pt/docs/about/about/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/about/about/</guid>
+      <description>O objetivo desta página é apresentar o conteudo geral do website, e a equipa que o desenvolveu, bem como apresentar a sua Acessibilidade. O objetivo deste website é fornecer assistência abrangente para indivíduos e equipas envolvidos na criação de websites de documentação técnica pelo uso do Hugo. Esta plataforma foi meticulosamente elaborada para capacitar os utilizadores com o conhecimento e ferramentas necessárias para efetivamente tomar partido do Hugo nos seus projetos de documentação.</description>
+    </item>
+    <item>
+      <title>Explicação</title>
+      <link>//localhost:1313/pt/docs/about/about-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/pt/docs/about/about-explanation/</guid>
+      <description>O objetivo desta página é mostrar como a página &amp;ldquo;Sobre&amp;rdquo; foi feita.&#xA;O Hugo gera o conteúdo dos seus websites estáticos (principalmente) através de ficheiros Markdown. A maioria das funcionalidades explicadas nesta página servem como uma visão geral de Markdown, no entanto, as funcionalidades adicionais do Hugo também serão destacadas.&#xA;Texto linkO texto geral é escrito normalmente, apenas escrevendo o nosso conteúdo sem quaisquer tags ou rótulos. Por exemplo:&#xA;O objetivo deste website é fornecer uma explicação abrangente (.</description>
+    </item>
+  </channel>
+</rss>

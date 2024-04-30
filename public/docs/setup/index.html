@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <title>Setup | Building a Technical Documentation Website</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A quick start guide to get started in Lotus Doc and how this page was made">
+    <meta name="keywords" content="Documentation, Hugo, Hugo Theme, Bootstrap" />
+    <meta name="author" content="Colin Wilson - Lotus Labs" />
+    <meta name="email" content="support@aigis.uk" />
+    <meta name="website" content="https://lotusdocs.dev" />
+    <meta name="Version" content="v0.1.0" />
+    
+    <link rel="icon" href="//localhost:1313/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="//localhost:1313/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="//localhost:1313/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="manifest" crossorigin="use-credentials" href="//localhost:1313/site.webmanifest">
+<meta property="og:title" content="Setup" />
+<meta property="og:description" content="A quick start guide to get started in Lotus Doc and how this page was made" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="//localhost:1313/docs/setup/" /><meta property="og:image" content="//localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_9035540696697947652.png"/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="//localhost:1313/opengraph/card-base-2_hu06b1a92291a380a0d2e0ec03dab66b2f_17642_filter_9035540696697947652.png"/>
+<meta name="twitter:title" content="Setup"/>
+<meta name="twitter:description" content="A quick start guide to get started in Lotus Doc and how this page was made"/>
+
+    
+    <script>(()=>{var t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,e=localStorage.getItem("theme");t&&e===null&&(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")),t&&e==="dark"&&document.documentElement.setAttribute("data-dark-mode",""),e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script>
+    
+    
+            
+                <script type="text/javascript" src="//localhost:1313/docs/js/flexsearch.bundle.js"></script>
+            
+        
+    
+    
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700|Fira+Code:400,700&display=block" rel="stylesheet">
+
+    <link rel="stylesheet" href="/docs/scss/style.css" crossorigin="anonymous">
+    
+    
+    </head><body>
+    <div class="content">
+        <div class="page-wrapper toggled">
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-brand">
+        <a href='/' aria-label="HomePage" alt="HomePage">
+            
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+            
+        </a>
+    </div>
+    <div class="sidebar-content" style="height: calc(100% - 131px);">
+        <ul class="sidebar-menu">
+            
+                
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                About
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/about/about/">About</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/about/about-explanation/">Explanation</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">Tune</i>
+                                Customisation
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/customisation/customisation/">Customisation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/customisation/customisation-explanation/">Explanation</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="">
+                            <a class="sidebar-root-link" href="//localhost:1313/docs/example-page/">
+                                <i class="material-icons me-2">rocket_launch</i>
+                                
+                                Quickstart
+                            </a>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  current active">
+                            <button class="btn">
+                                <i class="material-icons me-2">rocket_launch</i>
+                                Setup
+                            </button>
+                            <div class="sidebar-submenu d-block">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/setup/setup-explanation/">Setup - Explanation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/setup/setup/">Setup</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">code</i>
+                                Deployment
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/deployment/github/">GitHub Pages Deployment</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/deployment/gitlab/">GitLab Pages Deployment</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                Mermaid
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/mermaid/mermaid-explanation/">Mermaid Page Explanation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/mermaid/mermaid/">Mermaid</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="sidebar-dropdown  ">
+                            <button class="btn">
+                                <i class="material-icons me-2">article</i>
+                                Page Developments
+                            </button>
+                            <div class="sidebar-submenu ">
+                                <ul>
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/page-developments/setup/">Setup</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/page-developments/about/">Explanation</a></li>
+                                        
+                                    
+                                        
+                                        
+                                            <li class=" "><a class="sidebar-nested-link" href="//localhost:1313/docs/page-developments/deployment/">Deployment</a></li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            
+        </ul>
+        
+    </div>
+    
+        <ul class="sidebar-footer list-unstyled mb-0">
+            
+        </ul>
+    
+</nav>
+
+                <main class="page-content bg-transparent">
+<div id="top-header" class="top-header d-print-none">
+    <div class="header-bar d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href='/' class="logo-icon me-3" aria-label="HomePage" alt="HomePage">
+                <div class="small">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+                <div class="big">
+                    
+                            <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><path d="m143,39.5c-18,0-18,18-18,18,0,0,0-18-18-18H22c-2.76,0-5,2.24-5,5v143c0,2.76,2.24,5,5,5h76c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h76c2.76,0,5-2.24,5-5V44.5c0-2.76-2.24-5-5-5h-85Zm63,123.5c0,1.38-1.12,2.5-2.5,2.5h-60.5c-18,0-18,18-18,18,0,0,0-18-18-18h-60.5c-1.38,0-2.5-1.12-2.5-2.5v-94c0-1.38,1.12-2.5,2.5-2.5h51.5c7.2,0,8.64,11.52,8.93,16.13.07,1.05.95,1.87,2,1.87h32.14c1.06,0,1.94-.82,2-1.87.29-4.61,1.73-16.13,8.93-16.13h51.5c1.38,0,2.5,1.12,2.5,2.5v94Z" style="fill:#06f;"/></svg>
+                    
+                </div>
+            </a>
+            <button id="close-sidebar" class="btn btn-icon btn-soft">
+                <span class="material-icons size-20 menu-icon align-middle">menu</span>
+            </button>
+            
+            
+                    
+                    <button id="flexsearch-button" class="ms-3 btn btn-soft" data-bs-toggle="collapse" data-bs-target="#FlexSearchCollapse" aria-expanded="false" aria-controls="FlexSearchCollapse">
+                        <span class="material-icons size-20 menu-icon align-middle">search</span>
+                        <span class="flexsearch-button-placeholder ms-1 me-2 d-none d-sm-block">Search</span>
+                        <div class="d-none d-sm-block">
+                            <span class="flexsearch-button-keys">
+                                <kbd class="flexsearch-button-cmd-key">
+                                    <svg width="44" height="15"><path d="M2.118,11.5A1.519,1.519,0,0,1,1,11.042,1.583,1.583,0,0,1,1,8.815a1.519,1.519,0,0,1,1.113-.458h.715V6.643H2.118A1.519,1.519,0,0,1,1,6.185,1.519,1.519,0,0,1,.547,5.071,1.519,1.519,0,0,1,1,3.958,1.519,1.519,0,0,1,2.118,3.5a1.519,1.519,0,0,1,1.114.458A1.519,1.519,0,0,1,3.69,5.071v.715H5.4V5.071A1.564,1.564,0,0,1,6.976,3.5,1.564,1.564,0,0,1,8.547,5.071,1.564,1.564,0,0,1,6.976,6.643H6.261V8.357h.715a1.575,1.575,0,0,1,1.113,2.685,1.583,1.583,0,0,1-2.227,0A1.519,1.519,0,0,1,5.4,9.929V9.214H3.69v.715a1.519,1.519,0,0,1-.458,1.113A1.519,1.519,0,0,1,2.118,11.5Zm0-.857a.714.714,0,0,0,.715-.714V9.214H2.118a.715.715,0,1,0,0,1.429Zm4.858,0a.715.715,0,1,0,0-1.429H6.261v.715a.714.714,0,0,0,.715.714ZM3.69,8.357H5.4V6.643H3.69ZM2.118,5.786h.715V5.071a.714.714,0,0,0-.715-.714.715.715,0,0,0-.5,1.22A.686.686,0,0,0,2.118,5.786Zm4.143,0h.715a.715.715,0,0,0,.5-1.22.715.715,0,0,0-1.22.5Z" fill="currentColor"></path><path d="M12.4,11.475H11.344l3.879-7.95h1.056Z" fill="currentColor"></path><path d="M25.073,5.384l-.864.576a2.121,2.121,0,0,0-1.786-.923,2.207,2.207,0,0,0-2.266,2.326,2.206,2.206,0,0,0,2.266,2.325,2.1,2.1,0,0,0,1.782-.918l.84.617a3.108,3.108,0,0,1-2.622,1.293,3.217,3.217,0,0,1-3.349-3.317,3.217,3.217,0,0,1,3.349-3.317A3.046,3.046,0,0,1,25.073,5.384Z" fill="currentColor"></path><path d="M30.993,5.142h-2.07v5.419H27.891V5.142h-2.07V4.164h5.172Z" fill="currentColor"></path><path d="M34.67,4.164c1.471,0,2.266.658,2.266,1.851,0,1.087-.832,1.809-2.134,1.855l2.107,2.691h-1.28L33.591,7.87H33.07v2.691H32.038v-6.4Zm-1.6.969v1.8h1.572c.832,0,1.22-.3,1.22-.918s-.411-.882-1.22-.882Z" fill="currentColor"></path><path d="M42.883,10.561H38.31v-6.4h1.033V9.583h3.54Z" fill="currentColor"></path></svg>
+                                </kbd>
+                                <kbd class="flexsearch-button-key">
+                                    <svg width="15" height="15"><path d="M5.926,12.279H4.41L9.073,2.721H10.59Z" fill="currentColor"/></svg>
+                                </kbd>
+                            </span>
+                        </div>
+                    </button>
+                
+            </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="list-unstyled mb-0">
+                
+            </ul>
+            <button id="mode" class="btn btn-icon btn-default ms-2" type="button" aria-label="Toggle user interface mode">
+                <span class="toggle-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 42q-7.5 0-12.75-5.25T6 24q0-7.5 5.25-12.75T24 6q.4 0 .85.025.45.025 1.15.075-1.8 1.6-2.8 3.95-1 2.35-1 4.95 0 4.5 3.15 7.65Q28.5 25.8 33 25.8q2.6 0 4.95-.925T41.9 22.3q.05.6.075.975Q42 23.65 42 24q0 7.5-5.25 12.75T24 42Zm0-3q5.45 0 9.5-3.375t5.05-7.925q-1.25.55-2.675.825Q34.45 28.8 33 28.8q-5.75 0-9.775-4.025T19.2 15q0-1.2.25-2.575.25-1.375.9-3.125-4.9 1.35-8.125 5.475Q9 18.9 9 24q0 6.25 4.375 10.625T24 39Zm-.2-14.85Z"/></svg>
+                </span>
+                <span class="toggle-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 48 48" fill="currentColor"><path d="M24 31q2.9 0 4.95-2.05Q31 26.9 31 24q0-2.9-2.05-4.95Q26.9 17 24 17q-2.9 0-4.95 2.05Q17 21.1 17 24q0 2.9 2.05 4.95Q21.1 31 24 31Zm0 3q-4.15 0-7.075-2.925T14 24q0-4.15 2.925-7.075T24 14q4.15 0 7.075 2.925T34 24q0 4.15-2.925 7.075T24 34ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5h5q.65 0 1.075.425Q10 23.35 10 24q0 .65-.425 1.075-.425.425-1.075.425Zm36 0q-.65 0-1.075-.425Q38 24.65 38 24q0-.65.425-1.075.425-.425 1.075-.425h5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 10q-.65 0-1.075-.425Q22.5 9.15 22.5 8.5v-5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 10 24 10Zm0 36q-.65 0-1.075-.425-.425-.425-.425-1.075v-5q0-.65.425-1.075Q23.35 38 24 38q.65 0 1.075.425.425.425.425 1.075v5q0 .65-.425 1.075Q24.65 46 24 46ZM12 14.1l-2.85-2.8q-.45-.45-.425-1.075.025-.625.425-1.075.45-.45 1.075-.45t1.075.45L14.1 12q.4.45.4 1.05 0 .6-.4 1-.4.45-1.025.45-.625 0-1.075-.4Zm24.7 24.75L33.9 36q-.4-.45-.4-1.075t.45-1.025q.4-.45 1-.45t1.05.45l2.85 2.8q.45.45.425 1.075-.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45ZM33.9 14.1q-.45-.45-.45-1.05 0-.6.45-1.05l2.8-2.85q.45-.45 1.075-.425.625.025 1.075.425.45.45.45 1.075t-.45 1.075L36 14.1q-.4.4-1.025.4-.625 0-1.075-.4ZM9.15 38.85q-.45-.45-.45-1.075t.45-1.075L12 33.9q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-2.8 2.85q-.45.45-1.075.425-.625-.025-1.075-.425ZM24 24Z"/></svg>
+                </span>
+            </button>
+            
+                <button type="button" class="ps-2 btn btn-link btn-default" data-bs-toggle="modal" data-bs-target="#lang-selector-popup">
+                    EN
+                </button>
+            
+        </div>
+    </div>
+    
+    
+            <div class="collapse" id="FlexSearchCollapse">
+                <div class="flexsearch-container">
+                    <div class="flexsearch-keymap">
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to navigate</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to select</span>
+                        </li>
+                        <li>
+                            <kbd class="flexsearch-button-cmd-key"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd>
+                            <span class="flexsearch-key-label">to close</span>
+                        </li>
+                    </div>
+                    <form class="flexsearch position-relative flex-grow-1 ms-2 me-2">
+                        <div class="d-flex flex-row">
+                            <input id="flexsearch" class="form-control" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                            <button id="hideFlexsearch" type="button" class="ms-2 btn btn-soft">
+                                cancel
+                            </button>
+                        </div>
+                        <div id="suggestions" class="shadow rounded-1 d-none"></div>
+                    </form>
+                </div>
+            </div>
+        
+    
+    
+</div>
+<div class="container-fluid">
+                            <div class="layout-spacing">
+                                
+                                    <div class="d-md-flex justify-content-between align-items-center"><nav aria-label="breadcrumb" class="d-inline-block pb-2 mt-1 mt-sm-0">
+    <ul id="breadcrumbs" class="breadcrumb bg-transparent mb-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+            
+                <li class="breadcrumb-item text-capitalize active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/docs/">
+                        <i class="material-icons size-20 align-text-bottom" itemprop="name">Home</i>
+                    </a>
+                    <meta itemprop="position" content='1' />
+                </li>
+            
+        
+            <li class="breadcrumb-item text-capitalize active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Setup</span>
+                <meta itemprop="position" content='2' />
+            </li>
+        
+    </ul>
+</nav></div>
+                                
+                                <div class="row flex-xl-nowrap">
+                                    
+                                    <div class="docs-toc col-xl-3 visually-hidden visually-hidden  d-xl-block"><toc>
+    <div class="fw-bold text-uppercase mb-2">On this page</div>
+    <nav id="TableOfContents"></nav>
+    </toc></div>
+                                    
+                                    
+                                    <div class="docs-toc-mobile visually-hidden visually-hidden  d-print-none d-xl-none">
+                                        <button id="toc-dropdown-btn" class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-offset="0,0" aria-expanded="false">
+                                            Table of Contents
+                                        </button>
+<nav id="toc-mobile"></nav></div>
+                                    <div class="docs-content col-12  mt-0">
+                                        <div class="mb-0 d-flex">
+                                            
+                                            <i class="material-icons title-icon me-2">rocket_launch</i>
+                                            
+                                            <h1 class="content-title mb-0">
+                                                Setup
+                                                
+                                            </h1>
+                                        </div>
+                                        
+                                        <div id="content" class="main-content" >
+                                            
+    <div class="row flex-xl-wrap">
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="//localhost:1313/docs/setup/setup-explanation/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">article</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Setup - Explanation</p>
+                        <p class="para card-text mb-0"></p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div id="list-item" class="col-md-4 col-12 mt-4 pt-2">
+            <a class="text-decoration-none text-reset" href="//localhost:1313/docs/setup/setup/">
+                <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+                    <span class="icon-color d-flex my-3">
+                        <i class="material-icons align-middle">rocket_launch</i>
+                        
+                        
+                    </span>
+                    <div class="card-body p-0 content">
+                        <p class="fs-5 fw-semibold card-title mb-1">Setup</p>
+                        <p class="para card-text mb-0">A quick start guide to get started in Lotus Doc and how this page was made</p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </div>
+
+                                        </div>
+                                        <div><hr class="doc-hr">
+<div id="doc-nav" class="d-print-none">
+</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<footer class="shadow py-3 d-print-none">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="text-sm-start text-center mx-md-2">
+                    <p class="mb-0">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+        </div>
+    </div>
+
+    
+    
+    <button onclick="topFunction()" id="back-to-top" aria-label="Back to Top Button" class="back-to-top fs-5"><svg width="24" height="24"><path d="M12,10.224l-6.3,6.3L4.32,15.152,12,7.472l7.68,7.68L18.3,16.528Z" style="fill:#fff"/></svg></button>
+    
+    
+
+    
+    
+        <script>(()=>{var e=document.getElementById("mode");e!==null&&(window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{e.matches?(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-dark-mode","")):(localStorage.setItem("theme","light"),document.documentElement.removeAttribute("data-dark-mode"))}),e.addEventListener("click",()=>{document.documentElement.toggleAttribute("data-dark-mode"),localStorage.setItem("theme",document.documentElement.hasAttribute("data-dark-mode")?"dark":"light")}),localStorage.getItem("theme")==="dark"?document.documentElement.setAttribute("data-dark-mode",""):document.documentElement.removeAttribute("data-dark-mode"))})()</script>
+    
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    <script src="/docs/js/bootstrap.js" defer></script>
+
+
+    <script type="text/javascript" src="//localhost:1313/docs/js/bundle.js" defer></script>
+    
+
+    
+    <script type="module">
+    var suggestions = document.getElementById('suggestions');
+    var search = document.getElementById('flexsearch');
+
+    const flexsearchContainer = document.getElementById('FlexSearchCollapse');
+
+    const hideFlexsearchBtn = document.getElementById('hideFlexsearch');
+
+    const configObject = { toggle: false }
+    const flexsearchContainerCollapse = new Collapse(flexsearchContainer, configObject) 
+
+    if (search !== null) {
+        document.addEventListener('keydown', inputFocus);
+        flexsearchContainer.addEventListener('shown.bs.collapse', function () {
+            search.focus();
+        });
+        
+        var topHeader = document.getElementById("top-header");
+        document.addEventListener('click', function(elem) {
+            if (!flexsearchContainer.contains(elem.target) && !topHeader.contains(elem.target))
+                flexsearchContainerCollapse.hide();
+        });
+    }
+
+    hideFlexsearchBtn.addEventListener('click', () =>{
+        flexsearchContainerCollapse.hide()
+    })
+
+    function inputFocus(e) {
+        if (e.ctrlKey && e.key === '/') {
+            e.preventDefault();
+            flexsearchContainerCollapse.toggle();
+        }
+        if (e.key === 'Escape' ) {
+            search.blur();
+            
+            flexsearchContainerCollapse.hide();
+        }
+    };
+
+    document.addEventListener('click', function(event) {
+
+    var isClickInsideElement = suggestions.contains(event.target);
+
+    if (!isClickInsideElement) {
+        suggestions.classList.add('d-none');
+    }
+
+    });
+
+    
+
+
+    document.addEventListener('keydown',suggestionFocus);
+
+    function suggestionFocus(e) {
+    const suggestionsHidden = suggestions.classList.contains('d-none');
+    if (suggestionsHidden) return;
+
+    const focusableSuggestions= [...suggestions.querySelectorAll('a')];
+    if (focusableSuggestions.length === 0) return;
+
+    const index = focusableSuggestions.indexOf(document.activeElement);
+
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIndex = index > 0 ? index - 1 : 0;
+        focusableSuggestions[nextIndex].focus();
+    }
+    else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIndex= index + 1 < focusableSuggestions.length ? index + 1 : index;
+        focusableSuggestions[nextIndex].focus();
+    }
+
+    }
+
+    
+
+
+    (function(){
+
+    var index = new FlexSearch.Document({
+        
+        tokenize: "forward",
+        minlength:  0 ,
+        cache:  100 ,
+        optimize:  true ,
+        document: {
+        id: 'id',
+        store: [
+            "href", "title", "description"
+        ],
+        index: ["title", "description", "content"]
+        }
+    });
+
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+
+    index.add(
+            {
+                id:  0 ,
+                href: "\/docs\/about\/",
+                title: "About",
+                description: "General information about this website",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  1 ,
+                href: "\/docs\/customisation\/",
+                title: "Customisation",
+                description: "General Guide about customisation",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  2 ,
+                href: "\/docs\/page-developments\/setup\/",
+                title: "Setup",
+                description: "Here we will talk about how the Setup page was created\nList linkFor the list part, it’s simple, just put the character “-” before the sentence and the list will be formed:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic.",
+                content: "Here we will talk about how the Setup page was created\nList linkFor the list part, it’s simple, just put the character “-” before the sentence and the list will be formed:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic. In our case, we use short code labels to present the different ways to automatically install Lotus Docs on different operating systems. This way, users no longer need to search for installation instructions specific to their operating system; just access the corresponding section and select your operating system.\nTo use tags, you must start by opening the tab using {{ \u003c tabs tabTotal=\"n\" \u003e }}, where “n” corresponds to the number of divisions required. For example, on the configuration page, we set “n” to 4 for section 2.1 and 3 for section 3. Next, we need to define the tab name using the code {{ % tab tabName=\"Linux\" % }}, and then you can insert the content of the tab. To finish dividing the tab, use {{ %/tab % }}, and to close the entire tab section, use {{ }}.\n{{ \u003c tabs tabTotal=\"4\"\u003e }}\r{{ % tab tabName=\"Linux\" % }}\r## content...\r{{ % /tab % }}\r## more tabs...\r{{ \u003c /tabs \u003e }}\rHighlights and Emphasis linkWhen writing texts, it is sometimes important to highlights specific parts so that users can better understand the key points of the sentences, such as important commands or codes. To do this, simply place the grave accent (``) at the beginning and end of the words you want to highlights.\nAnother way is to use asterisks (**), both before and after the words, making them bold and emphasize the sentence.\nExamples of how this was used on the ‘Setup’ page:\n...\rTo build second level menu items, first create a directory called **\"parent\"** that has a file called ``_index.md``. For example:\r...\rIn this example, asterisks were used to emphasize the word “parent”, while grave accents were used to highlight a file.\nLinks linkDuring the process of creating the “Setup” page, it was also necessary to create links, both external and internal. For external links, the following code was used: [Word that will contain the link](URL of the external site). While for internal links, for example, this code was used: [Word that will contain the link](\\docs\\deployment).\nLines of codes and commands linkTo differentiate code lines or commands and highlight them for users, we chose to use shell and the prism shortcode.\nShell linkShell is a command-line interface that allows users to interact with an operating system via text. We used shell to indicate that these lines can be used as commands or code. An example used on the Setup page is:\n```shell\rbrew install hugo\r```\rThis allows users to copy this line and paste it into their Linux terminals to install Hugo.\nPrism linkPrism is a shortcode that highlights lines of code intended for text languages like Markdown and HTML. In the creation of the Setup page, prism was used to avoid conflicts between commands. For example, when a snippet contained a shell command within another, we opted to use prism to ensure clarity and avoid confusion.\nExample of using prism:\n{{ \u003c prism lang=\"md\" \u003e }}\r---\rweight: 200\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Beginners\"]\r---\r## Create New Content\rNavigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:\r```shell\rhugo new docs/examplepage.md\r```\r...\r{{ \u003c /prism \u003e }}\rAlerts linkTo highlight some important notes in the documentation, we used the Alert shortcode, as it allowed the creation of text boxes with different appearances. On the page in question, we opted for the alert info, which displays a box with blue-toned background and an “i” icon before the phrase, indicating additional information:\nHere is an example of how to create an alert box.\n{{ \u003c alert context=\"info\" text=\"Keep in mind that _index.md files are only meant to be used to modify header settings. It won't make a difference if you add any material that isn't among the variables allowed in the header.\"/\u003e }} Images linkTo add images to the Setup page, we used the image hosting service Sirv, which offers free image hosting services. By hosting images on Sirv, we are able to improve the site’s performance, as there’s no need to render the images; Sirv does that for us, resulting in just displaying the images in our documentation.\nHere’s an example of how to display the image in the documentation:\n![Preview Site Publish](https://paulorodrigues-isep.sirv.com/TECAA/Preview_Site_Publish.png) The title of the image is within brackets [], while the image URL is within parentheses ().\nOn Sirv, simply upload the image and then copy the link:\nSirv also offers image customization options, such as size, to improve site performance.\nTreeview linkFurthermore, treeviews were used in section 8. This is because the discussion about directories was addressed there, and treeviews are the best option for representing directory hierarchies. With them, it’s possible to create a hierarchical view of folders, showing users how their files are organized in the end.\nIn section 8.1, the treeview was presented as follows:\n```treeview\rcontent/\r└── docs/\r├── parent-directory/\r│ └── _index.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md\r```\rThis way, it was possible to show how the directory would look after creating a second level of folders.\n"
+            }
+        );
+    index.add(
+            {
+                id:  3 ,
+                href: "\/docs\/setup\/setup-explanation\/",
+                title: "Setup - Explanation",
+                description: "Here we will talk about how the Setup page was created\nList linkFor the list part, it’s simple, just put the character “-” before the sentence and the list will be formed:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic.",
+                content: "Here we will talk about how the Setup page was created\nList linkFor the list part, it’s simple, just put the character “-” before the sentence and the list will be formed:\n- git\r- Go ≥ v1.19\r- Hugo ≥ v0.117.0 (Extended Version) Tags linkIn sections 2.1 and 3, short code labels were used. These tags make it possible to create a menu that offers different information on the same topic. In our case, we use short code labels to present the different ways to automatically install Lotus Docs on different operating systems. This way, users no longer need to search for installation instructions specific to their operating system; just access the corresponding section and select your operating system.\nTo use tags, you must start by opening the tab using {{ \u003c tabs tabTotal=\"n\" \u003e }}, where “n” corresponds to the number of divisions required. For example, on the configuration page, we set “n” to 4 for section 2.1 and 3 for section 3. Next, we need to define the tab name using the code {{ % tab tabName=\"Linux\" % }}, and then you can insert the content of the tab. To finish dividing the tab, use {{ %/tab % }}, and to close the entire tab section, use {{ }}.\n{{ \u003c tabs tabTotal=\"4\"\u003e }}\r{{ % tab tabName=\"Linux\" % }}\r## content...\r{{ % /tab % }}\r## more tabs...\r{{ \u003c /tabs \u003e }}\rHighlights and Emphasis linkWhen writing texts, it is sometimes important to highlights specific parts so that users can better understand the key points of the sentences, such as important commands or codes. To do this, simply place the grave accent (``) at the beginning and end of the words you want to highlights.\nAnother way is to use asterisks (**), both before and after the words, making them bold and emphasize the sentence.\nExamples of how this was used on the ‘Setup’ page:\n...\rTo build second level menu items, first create a directory called **\"parent\"** that has a file called ``_index.md``. For example:\r...\rIn this example, asterisks were used to emphasize the word “parent”, while grave accents were used to highlight a file.\nLinks linkDuring the process of creating the “Setup” page, it was also necessary to create links, both external and internal. For external links, the following code was used: [Word that will contain the link](URL of the external site). While for internal links, for example, this code was used: [Word that will contain the link](\\docs\\deployment).\nLines of codes and commands linkTo differentiate code lines or commands and highlight them for users, we chose to use shell and the prism shortcode.\nShell linkShell is a command-line interface that allows users to interact with an operating system via text. We used shell to indicate that these lines can be used as commands or code. An example used on the Setup page is:\n```shell\rbrew install hugo\r```\rThis allows users to copy this line and paste it into their Linux terminals to install Hugo.\nPrism linkPrism is a shortcode that highlights lines of code intended for text languages like Markdown and HTML. In the creation of the Setup page, prism was used to avoid conflicts between commands. For example, when a snippet contained a shell command within another, we opted to use prism to ensure clarity and avoid confusion.\nExample of using prism:\n{{ \u003c prism lang=\"md\" \u003e }}\r---\rweight: 200\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Beginners\"]\r---\r## Create New Content\rNavigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:\r```shell\rhugo new docs/examplepage.md\r```\r...\r{{ \u003c /prism \u003e }}\rAlerts linkTo highlight some important notes in the documentation, we used the Alert shortcode, as it allowed the creation of text boxes with different appearances. On the page in question, we opted for the alert info, which displays a box with blue-toned background and an “i” icon before the phrase, indicating additional information:\nHere is an example of how to create an alert box.\n{{ \u003c alert context=\"info\" text=\"Keep in mind that _index.md files are only meant to be used to modify header settings. It won't make a difference if you add any material that isn't among the variables allowed in the header.\"/\u003e }} Images linkTo add images to the Setup page, we used the image hosting service Sirv, which offers free image hosting services. By hosting images on Sirv, we are able to improve the site’s performance, as there’s no need to render the images; Sirv does that for us, resulting in just displaying the images in our documentation.\nHere’s an example of how to display the image in the documentation:\n![Preview Site Publish](https://paulorodrigues-isep.sirv.com/TECAA/Preview_Site_Publish.png) The title of the image is within brackets [], while the image URL is within parentheses ().\nOn Sirv, simply upload the image and then copy the link:\nSirv also offers image customization options, such as size, to improve site performance.\nTreeview linkFurthermore, treeviews were used in section 8. This is because the discussion about directories was addressed there, and treeviews are the best option for representing directory hierarchies. With them, it’s possible to create a hierarchical view of folders, showing users how their files are organized in the end.\nIn section 8.1, the treeview was presented as follows:\n```treeview\rcontent/\r└── docs/\r├── parent-directory/\r│ └── _index.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md\r```\rThis way, it was possible to show how the directory would look after creating a second level of folders.\n"
+            }
+        );
+    index.add(
+            {
+                id:  4 ,
+                href: "\/docs\/customisation\/customisation\/",
+                title: "Customisation",
+                description: "General Guide about customization",
+                content: " 💡 A quick and basic guide to personalizing your documentation site with the Theme Lotus Docs to better suit your needs. Requirements linkBefore you begin customizing your Hugo documentation site, it is essential to have a basic understanding of the following:\nHTML CSS Markdown Text Personalization linkTo create your page, you will likely use basic highlighting mechanisms for your text.\nYou might want to create a header, and for that, you need to use the following code:\n# Heading To define other more minor headings, you’ll write the following:\n## Heading2\r### Heading3\r#### Heading4\r##### Heading5 The more # on the left of your text, the lower the level of the header.\nThere are two ways of adding bold text: bold text or bold text. You can’t see the difference when rendered, but it’s done as follows:\n**this** way or __this__ way In the same way, Italic text can also be done in two ways\n*this* way or _this_ way Additionally, you might need to add a strikethrough to the text, and for that, the code is as follows:\n~~strikethrough~~ To add links, use square brackets [] to display the text and the URL between the parenthesis.\nFor example, you might need to add a Youtube link, and to do this, you need to add the following code:\n[Youtube link](https://www.youtube.com/) Adding images is very similar to the way we implement the URLs.\nJust use a ! before the square brackets [] and add the link to the image between the parenthesis.\n![Printscreen LandingPage](https://tania1998.sirv.com/images_tecaa/lotusdocs_hero.webp) Alerts linkAlerts are typically used to display information in a highlighted manner. Lotus Docs support `Alerts with context, Alerts with custom Emoji Icons, Alerts with No Icons and the possibility to render Markdown and HTML inside an Alert.\nAlerts with Context linkThe CONTEXT can be info, success, danger, warning, primary, light, and dark. To implement one alert, add the following code between {{double curly brackets }}\n\u003c alert context=\"context\" text=\"This is an Alert with an emoji with the success context.\" /\u003e To use the different alert contexts, change the context value for each one of the following:\nalert context= \"info\" info Info alert context alert context= \"success\" check_circle Success alert context alert context= \"danger\" report Danger alert context alert context= \"warning\" warning Warning alert context alert context= \"primary\" info Primary alert context Note: When in dark mode, light and dark alerts are inverted.\nalert context= \"light\" Light alert context alert context= \"dark\" Dark alert context Alerts with custom Emoji Icon linkWhile still using the context parameter, you can change the Emoji icon on the left of the Alert text. You only need to Copy and Paste emojis from this Emoji website to get emojis.\n🤚🏻 This is an Alert with an emoji with the success context. To do this, add the following code between {{double curly brackets }}\n\u003c alert icon=\"🤚🏻\" context=\"success\" text=\"This is an Alert with an emoji with the success context.\" /\u003e Alerts with no Icon link To get an alert with no icon, only set the icon parameter to a space alert icon=\" \"\nAlert with no icon with the danger context! Render Markdown and HTML inside an Alert linkTo do this, ensure that in the hugo.toml configuration file, the parameter unsafe is set to true under the [markup.goldmark.renderer].\n[markup.goldmark.renderer]\runsafe = true Now, to render Markdowns and HTML inside and Alert, it is needed to pair shortcodes with % delimiters, as following:\n{{ alert icon=\"🎅🏼\" context=\"success\" }}\rThis ***paired shortcode*** alert contains a **markdown** list and header:\r#### My Christmas List:\r1. A doll\r2. Books\r3. Socks\rMerry Christmas!\r{{ /alert }} which results in:\n🎅🏼\nThis paired shortcode alert contains a markdown list and header:\nMy Christmas List link A doll Books Socks Merry Christmas!\nCore Site Options linkIcons linkAdd Icons to your Headings linkTo add icons to content titles, add to the hugo.toml file the following:\n[params.docs]\rtitleIcon = true The icon that shows as a prefix to the content title will be set according to the icon: definition at the top of the page. Each definition is related to an icon that can be seen in the Google Icon styles;\nAdd Icons to the sidebar linkTo add icons to the sidebar content titles, add to the hugo.toml file the following:\n[params.docs]\rsidebarIcons = true Accent color linkBy default, the Lotus Docs theme has a blue accent color. However, you can change the accent color. This color affects links, buttons, and icons. To do this, go to the hugo.toml file:\n[params.docs]\rthemeColor = \"color\" This color can be blue, green, red, yellow, emerald, cardinal, magenta, or cyan.\nblue green red yellow emerald cardinal magenta cyan Dark Mode linkBy default, the dark mode is set to false. To set it to true as default, go to the hugo.toml file:\n[params.docs]\rdarkMode = true Font changing linkA font is a set of characters with a specific style and size used for displaying text in a consistent manner, which can impact a website’s overall design and feel. The Lotus Docs website has, by default, three sets of fonts, sans_serif_font, secondary_font, and mono_font. To change the fonts, add the following code to the file hugo.toml :\n[params]\rsans_serif_font = \"Times New Roman\"\rsecondary_font = \"Calibri\"\rmono_font = \"Arial\" You can define another font in each parameter and see where each applies to the pages.\nAdd Google Fonts linkFor extra customization, you can use other fonts that can be found on the Google Fonts site\nTo add new fonts, you need to implement an array of fonts with the name of the fonts and the sizes to load. E.g. I want to load the Montserrat and Gluten fonts, in the weights 300 and 400 respectively.\nwarning Fonts have their unique set of weights, please confirm before loading fonts. in the hugo.toml file implement the following code:\n[params]\rgoogle_fonts = [[\"Montserrat\", \"300\"],[\"Gluten\", \"400\"]]\rsans_serif_font = \"Gluten\"\rsecondary_font = \"Montserrat\"\rmono_font = \"Arial\" That will change the Fonts from:\nDefault Fonts Customised fonts info It is possible to customize the fonts even further by editing the website’s HTML and CSS files. We invite you to explore this functionality on your own!. Syntax Highlighting linkTo enhance and personalize code blocks, you can use Syntax Highlighting. Its is possible to use Prism, which Lotus Docs supports or Chroma the Hugo’s built-in code highlighter. Prism is enabled by default using the param.docs.prism in the file hugo.toml. Chroma is enabled by setting in the file hugo.toml under [params.docs] the following: prism = false.\nWhen using fenced code blocks, enclosed by triple backticks, specify the code language next to the opening backticks, and the code will be automatically highlighted.\nBuy our new t-shirt!\rBUY\rResults link Prism Chroma Prism Highlight - Supports ≈ 290 languages, check website for more information.\n[params.docs]\rprism = true Chroma Highlight - Supports ≈ 200 languages, check website for more information.\n[params.docs]\rprism = false Personalize Prism Theme linkYou can also personalize the Prism theme by changing the prismTheme parameter under [params.docs] in the config files.\nFor example, in hugo.toml, you only need to:\nLotusdocs Solarized-light Twilight Lucario [params.docs]\rprismTheme = \"lotusdocs\" To get: [params.docs]\rprismTheme = \"solarized-light\" To get: [params.docs]\rprismTheme = \"twilight\" To get: [params.docs]\rprismTheme = \"lucario\" To get: Landing page Templates linkCurrently, when creating a website with the Lotus Docs template, the landing page of a Lotus Docs website has four sections you can scroll through. Each of the sections is one of four templates, and each has its own set of parameters for customization.\nHero Feature Grid Image + Text Image Compare The first template shown is the hero, a basic template with two sections. On the left text and Call To Action buttons and the right a image.\nThis Hero template can be configurable in 8 components, as illustrated below:\nA list of features with multiple rows in a 3-column grid. Each feature on the grid consists of an icon, title, and descriptive text.\nThis Feature Grid template can be configurable in 6 components, as illustrated below:\nSimilar to the Hero template, this third template displays two columns; it is a basic template with two sections that can display an image, descriptive text, lists, and Call to Action Buttons.\nThis Image and Text template can be configurable in 5 components, as illustrated below:\nThis last template utilizes the ImageCompareViewer library to display before and after images, using an auto-generated tab to slide between the image comparison sets.\nThis Image Compare template can be configurable in 5 components, as illustrated below:\nAdditional Resources link Lotus Docs Documentation "
+            }
+        );
+    index.add(
+            {
+                id:  5 ,
+                href: "\/docs\/about\/about\/",
+                title: "About",
+                description: "General information about this website",
+                content: "This website aims to present a general idea of the content in the website, an insight into the team who developed it, as well as its Accessibility Statement. This website aims to provide comprehensive assistance for individuals and teams creating technical documentation websites utilizing Hugo. This platform has been meticulously crafted to empower users with the knowledge and tools necessary to leverage Hugo effectively in their documentation projects. Additionally, we highlight some of Hugo’s most valuable features, enabling users to maximize the potential of this powerful tool in their website development endeavors.\nContent linkThe website comprises several vital pages, each designed to provide comprehensive insights into various aspects of technical documentation website development with Hugo. These pages are:\nSetup Features Customization Deployment Content Summary\nSetup Features Customization Deployment This page provides detailed instructions on setting up a new Hugo project. It covers everything from installing Hugo on your system to initializing a new project and configuring basic settings. By following the step-by-step guide, users can quickly get started with their Hugo-based documentation website.\nThe Features page highlights some of the most valuable features of Hugo. It overviews Hugo’s capabilities, including speed, flexibility, and support for various content formats. Users can understand why Hugo is preferred for building static websites and technical documentation projects.\nUsers can explore Hugo’s various customization options on the Customization page. From choosing themes to modifying layouts and styling, this page demonstrates how users can tailor their Hugo websites to match their unique preferences and branding requirements. Examples and tutorials showcase the flexibility and versatility of Hugo’s customization capabilities.\nThe Deployment page explains how to deploy a Hugo-generated website using GitHub Pages. It provides a comprehensive guide on configuring GitHub Pages for hosting, setting up a repository, and deploying Hugo-generated content. Users can follow the detailed instructions to seamlessly publish their Hugo websites and make them accessible to the public.\nTeam linkThis website was developed by a team of students pursuing a Master’s degree at ISEP - Instituto Superior de Engenharia do Porto. Through academic expertise and practical experience, the team set out to create a comprehensive resource for technical documentation website development using Hugo.\nAccessibility linkWe are committed to ensuring our website is accessible to all individuals, including those with disabilities. We strive to adhere to the Web Content Accessibility Guidelines (WCAG) 2.2, which provide guidelines for making web content more accessible for people with disabilities.\nAccessibility Features link Alternative Text: We provide alternative text for all images on our website, enabling screen readers to describe images to visually impaired users. Keyboard Navigation: Our website is designed to be navigable using only a keyboard, ensuring that users who cannot use a mouse can still access all content. Readable Fonts and Colors: We use fonts and color schemes that are easy to read and provide sufficient contrast, making content accessible to visually impaired users. Responsive Design: Our website is built with responsive design principles, ensuring it is accessible on various devices and screen sizes. Feedback linkWe are continuously working to improve the accessibility of our website. If you encounter any accessibility barriers or have suggestions for improvement, please get in touch with us through one of the emails below.\nAccessibility Standards linkWhile we strive to adhere to WCAG guidelines, we recognize that there may be areas where we can improve. We are committed to regularly reviewing and updating our website to ensure it remains accessible to all users.\ninfo Ensuring accessibility is not just a legal requirement; it’s a fundamental aspect of creating an inclusive online environment. By making our website accessible, we empower individuals with disabilities to access the same information and services as everyone else. This promotes equality, enhances user experience, and expands our reach to a broader audience. Contributors link Filipe Pires 1234567@isep.ipp.pt João Guedes 1234567@isep.ipp.pt Paulo Rodrigues 1234567@isep.ipp.pt Pedro Garcia 1234567@isep.ipp.pt Tânia Teixeira 1234567@isep.ipp.pt "
+            }
+        );
+    index.add(
+            {
+                id:  6 ,
+                href: "\/docs\/page-developments\/about\/",
+                title: "Explanation",
+                description: "Explanation of the creation of the About page.",
+                content: "This page’s objective is to showcase how the About page was made.\nHugo generates the content of its static websites (mainly) through Markdown files. Most of the features explained in this page serve as a Markdown overview, however, Hugo’s aditional functionalities will also be highlighted.\nText linkGeneral text is written normally, just through writing our content without any tags or labels. For example:\nThis website's objective is to provide comprehensive (...)\rProduces: This website’s objective is to provide comprehensive (…)\nTitles linkMarking text as title, subtitle, or a deeper title within the hierarchy is also done through the default Markdown way:\n# About - This is a title\r## Content - This is a subtitle\r### Accessibility Features - This is a deeper subtitle within the hierarchy\r#### Etc.\rHugo is able to parse this information into a Table of Contents - TOC (found on the right side of each page, for this current theme). warning Most themes ignore Titles when generating the TOC, since it should only be used on the top of the page, using only the rest of the hierarchy. Bullet Point Lists linkA bullet point can be created by simply inserting a dash (\" - “) before a line of text. Bullet point lists are a sequence of phrases, each preceded by \" - “:\n- Setup - Item One\r- Features - Item Two - Etc. -Wrong use (missing a space after \"-\")\rwarning There should be a space in between the dash and the phrase to bullet point. Although not used, there can also be sub-items inside in a bullet point list:\nItem Sub-Item Sub-Item Item Sub-Item Which can be achieved by - Item\r- Sub-Item\r- Sub-Item\r- Item\r- Sub-Item\rwarning Only whitespaces can precede the dash when creating a bullet point. Visible characters will prevent a bullet point from being created. Highlights, Emphasis, Links linkThese functionalities are also achived through Markdown’s markup language.\nItalic Text is achieved through surrounding the excert with 1 asterisk on each side: *Italic Text* is achieved through surrounding (...)\rBold Text is achieved through surrounding the excert with 2 asterisks on each side: **Bold Text** is achieved through surrounding (...)\rBold Italic Text is achieved through surrounding the excert with 3 asterisks on each side: ***Bold Italic Text*** is achieved through surrounding (...)\rCrossed-Out Text is achieved through surrounding the excert with 2 tildes on each side: ~~Crossed-Out Text~~ is achieved through surrounding (...)\rThese functionalities can also be mixed, generating outputs like: Crossed-Out, Bold, Italic Text. info Only bold text was used in the About page, however, italic, bold italic and crossed were also exemplified due to their markup similarity. More information markdown syntax can be explored here. Separators linkThere are two ways of drawing a separator: ***\rand\r---\rwarning In this Hugo theme, due to technical limitations, only the first way (***) should be used. Hugo Functionalities link warning These following functionalities are Hugo-specific, and may be unavailable in some themes. Tabs linkThe way to create a basic multi tab navigation components like the one used in the About page is the following:\n{ {\u003c tabs tabTotal=\"3\"\u003e}}\r{ {% tab tabName=\"Tab One\" %}}\rThis is the content of Tab One\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Two\" %}}\rThis is the content of Tab Two\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Three\" %}}\rThis is the content of Tab Three\r{ {% /tab %}}\r{ {\u003c /tabs \u003e}}\rwarning The space between the brackets on the start of each line (\"{ {(…)\") should be ignored. In this Hugo theme, due to technical limitations, the space needs to be inserted to showcase the code. "
+            }
+        );
+    index.add(
+            {
+                id:  7 ,
+                href: "\/docs\/example-page\/",
+                title: "Quickstart",
+                description: "A quickstart guide to creating new content in Lotus Docs",
+                content: "Create New Content linkNavigate to the root of your Hugo project and use the hugo new command to create a file in the content/docs directory:\nhugo new docs/examplepage.md …\n"
+            }
+        );
+    index.add(
+            {
+                id:  8 ,
+                href: "\/docs\/about\/about-explanation\/",
+                title: "Explanation",
+                description: "Explanation of the creation of the \"About\" page.",
+                content: "This page aims to showcase how the About page was made.\nHugo generates the content of its static websites (mainly) through Markdown files. Most of the features explained on this page serve as a Markdown overview. However, Hugo’s additional functionalities will also be highlighted.\nText linkGeneral text is written normally by writing our content without any tags or labels. For example:\nThis website's objective is to provide comprehensive (...)\rProduces: This website’s objective is to provide comprehensive (…)\nTitles linkMarking text as a title, subtitle, or a deeper title within the hierarchy is also done through the default Markdown way:\n# About - This is a title\r## Content - This is a subtitle\r### Accessibility Features - This is a deeper subtitle within the hierarchy\r#### Etc.\rHugo can parse this information into a Table of Contents - TOC (found on the right side of each page for this current theme). warning Most themes ignore Titles when generating the TOC since it should only be used on the top of the page, using only the rest of the hierarchy. Bullet Point Lists linkA bullet point can be created by simply inserting a dash (\" - “) before a line of text. Bullet point lists are a sequence of phrases, each preceded by \" - “:\n- Setup - Item One\r- Features - Item Two - Etc. -Wrong use (missing a space after \"-\")\rwarning There should be a space in between the dash and the phrase to bullet point. Although not used, there can also be sub-items inside a bullet point list:\nItem Sub-Item Sub-Item Item Sub-Item This can be achieved by: - Item\r- Sub-Item\r- Sub-Item\r- Item\r- Sub-Item\rwarning Only whitespaces can precede the dash when creating a bullet point. Visible characters will prevent a bullet point from being created. Highlights, Emphasis, Links linkThese functionalities are also achieved through Markdown’s markup language.\nItalic Text is achieved through surrounding the excert with 1 asterisk on each side: *Italic Text* is achieved through surrounding (...)\rBold Text is achieved through surrounding the excert with 2 asterisks on each side: **Bold Text** is achieved through surrounding (...)\rBold Italic Text is achieved through surrounding the excert with 3 asterisks on each side: ***Bold Italic Text*** is achieved through surrounding (...)\rCrossed-Out Text is achieved through surrounding the excert with 2 tildes on each side: ~~Crossed-Out Text~~ is achieved through surrounding (...)\rThese functionalities can also be mixed, generating outputs like: Crossed-Out, Bold, Italic Text. info Only bold text was used in the About page; however, italic, bold italic, and crossed were also exemplified due to their markup similarity. More information on markdown syntax can be explored here. Separators linkThere are two ways of drawing a separator: ***\rand\r---\rwarning In this Hugo theme, due to technical limitations, only the first way (***) should be used. Links linkTo associate a link to a word, the content of the link is placed in between brackets, followed by the actual URL, in between parentheses: [Hugo](https://gohugo.io)\rWhich generates: Hugo\nHugo Functionalities link warning These following functionalities are Hugo-specific and may be unavailable in some themes. Tabs linkThe way to create basic multi-tab navigation components, like the one used in the “About” page, is the following:\n{ {\u003c tabs tabTotal=\"3\"\u003e}}\r{ {% tab tabName=\"Tab One\" %}}\rThis is the content of Tab One.\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Two\" %}}\rThis is the content of Tab Two.\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Three\" %}}\rThis is the content of Tab Three.\r{ {% /tab %}}\r{ {\u003c /tabs \u003e}}\rwarning The space between the brackets on the start of each line (\"{ {(…)\") should be ignored. In this Hugo theme, due to technical limitations, the space needs to be inserted to showcase the code. "
+            }
+        );
+    index.add(
+            {
+                id:  9 ,
+                href: "\/docs\/mermaid\/mermaid-explanation\/",
+                title: "Mermaid Page Explanation",
+                description: "Explanation of the creation of the \"Mermaid\" page.",
+                content: "This page serves to show how the Mermaid page was conceived.\nText linkGeneral text is written without any specific formatting or guidelines; simply typing the text will display it on the page.\nBasic text.\rBasic text.\nTitles linkApplying text formatting such as title, subtitle, or deeper hierarchical titles is accomplished using the standard Markdown syntax:\nHeaders: Use hash symbols (#) for headers. The number of hash symbols indicates the level of the header (e.g., # for level 1, ## for level 2, and so on).\nExample:\n# Title\r## Subtitle\r### Deeper Subtitle\r#### Etc.\rPrism linkPrism is a syntax highlighting library commonly used in Hugo themes to highlight code blocks in various programming languages.\nIt is used as:\n\u003c prism lang=\"md\" \u003e\rRandom content.\r\u003c /prism \u003e\rBullet Points linkA bullet point is created by simply prefacing the sentence with “-” or “*”.\nExample:\n- Content * Content 2 Wich renders as:\nContent Content 2 Sub-items inside in a bullet point list: link - Item\r- Sub-Item\r* Item 2\r- Sub-Item 2\rWich renders as:\nItem Sub-Item Item 2 Sub-Item 2 Highlights linkThese functionalities work the same as Markdown.\nItalic Text is achieved through surrounding the excert with 1 asterisk on each side: *Italic Text* is achieved through surrounding (...)\rBold Text is achieved through surrounding the excert with 2 asterisks on each side: **Bold Text** is achieved through surrounding (...)\rBold Italic Text is achieved through surrounding the excert with 3 asterisks on each side: ***Bold Italic Text*** is achieved through surrounding (...)\rCrossed-Out Text is achieved through surrounding the excert with 2 tildes on each side: ~~Crossed-Out Text~~ is achieved through surrounding (...)\rThese functionalities can also be mixed, generating outputs like: Crossed-Out, Bold, Italic Text.\nSeparators linkThere are two ways of drawing a separator: ***\rand\r---\rLinks linkTo create a link, the content of the link is placed in between brackets, followed by the url, in between parentheses: [Hugo](https://gohugo.io)\rWhich generates: Hugo\nAlerts linkTo create an alert:\n\u003c alert context=\"primary\" text=\"This is an alert\"/\u003e\rRenders as:\ninfo This is an alert "
+            }
+        );
+    index.add(
+            {
+                id:  10 ,
+                href: "\/docs\/mermaid\/mermaid\/",
+                title: "Mermaid",
+                description: "Welcome to the mermaid page.\nWhat is Mermaid? linkMermaid is a JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development.\nHow to use Mermaid with Lotus Docs linkMermaid is enabled whenever content containing Mermaid diagram syntax is present in a page’s content. You can insert Mermaid diagrams by using the mermaid language identifier with triple backtick codeblocks:",
+                content: "Welcome to the mermaid page.\nWhat is Mermaid? linkMermaid is a JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. The main purpose of Mermaid is to help documentation catch up with development.\nHow to use Mermaid with Lotus Docs linkMermaid is enabled whenever content containing Mermaid diagram syntax is present in a page’s content. You can insert Mermaid diagrams by using the mermaid language identifier with triple backtick codeblocks:\n```mermaid\r---\rtitle: Advanded graph\r---\rsequenceDiagram\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003e\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts!\rJohn--\u003e\u003eAlice: Great!\rJohn-\u003e\u003eBob: How about you?\rBob--\u003e\u003eJohn: Jolly good! ```\rsequenceDiagram\rAlice-\u003e\u003eJohn: Hello John, how are you?\rloop Healthcheck\rJohn-\u003e\u003eJohn: Fight against hypochondria\rend\rNote right of John: Rational thoughts!\rJohn--\u003e\u003eAlice: Great!\rJohn-\u003e\u003eBob: How about you?\rBob--\u003e\u003eJohn: Jolly good! ``` This is a more adavanced diagram, so lets scale it back to a simple flowchart.\nFlowchart linkWhat is a flowchart linkA flowchart is a graphical representation of a process or workflow, depicting the sequence of steps, decisions, and actions involved. It typically consists of shapes, arrows, and text, illustrating the flow of control through a system.\nFlowcharts are used across various domains to visually map out procedures, analyze processes, and communicate complex workflows.\nCreate nodes linkAs mentioned before, flowchart are composed by nodes. To create a node:\n```mermaid\r---\rtitle: Node\r---\rflowchart LR\rid\r```\r---\rtitle: Node\r---\rflowchart LR\rid Basic Flowchart linkThe most basic flowchart consist of creating an implication of x to y.\n```mermaid\r---\rtitle: Simple Flowchart\r---\rflowchart LR\rx --\u003e y\r```\r---\rtitle: Simple Flowchart\r---\rflowchart LR\rx --\u003e y One to Many Flowchart link ```mermaid\r---\rtitle: 1 to Many Flowchart\r---\rflowchart LR\rx[a]\ry[b1,b2,b3]\rx --\u003e y\r```\r---\rtitle: 1 to Many Flowchart\r---\rflowchart LR\rx[a]\ry[b1,b2,b3]\rx --\u003e y Costumize Flowchart linkThere are various ways to costumize a flowchart, from chaging the nodes shape, changing orientation to adding colors and icons.\n```mermaid\r---\rtitle: Special Flowchart\r---\rflowchart LR\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}:::red\rC --\u003e|One| D[Result one]:::blue\rC --\u003e|Two| E[Result two]:::green\rclassDef red stroke:#f00\rclassDef green stroke:#0f0\rclassDef blue stroke:#00f\r```\r---\rtitle: Special Flowchart\r---\rflowchart LR\rA[Hard edge] --\u003e|Link text| B(Round edge)\rB --\u003e C{Decision}:::red\rC --\u003e|One| D[Result one]:::blue\rC --\u003e|Two| E[Result two]:::green\rclassDef red stroke:#f00\rclassDef green stroke:#0f0\rclassDef blue stroke:#00f info All extra information about Flowcharts can be found in Flowchart Pie Chart diagram linkWhat is a Pie Chart linkA pie chart is a circular statistical graphic divided into slices to illustrate numerical proportions. Each slice represents a proportionate part of the whole data set, typically displayed as a percentage of the total. Pie charts are commonly used to visualize data distribution and show the relative size of different categories or components within a dataset.\n---\rtitle: Pets adopted by volunteers\r---\rpie\r\"Dogs\" : 386\r\"Cats\" : 85\r\"Rats\" : 15 Pie Chart Syntax linkDrawing a pie chart is really simple in mermaid.\nStart with pie keyword to begin the diagram showData to render the actual data values after the legend text. This is OPTIONAL Followed by title keyword and its value in string to give a title to the pie-chart. This is OPTIONAL Followed by dataSet. Pie slices will be ordered clockwise in the same order as the labels. label for a section in the pie diagram within \" \" quotes. Followed by : colon as separator Followed by positive numeric value (supported up to two decimal places) info All extra information about Pie charts can be found in Pie Charts Basic Pie Chart link ```mermaid\r---\rtitle: Special Flowchart\r---\rpie showData\rpie showData\rtitle Key elements in Product X\r\"Calcium\" : 42.96\r\"Potassium\" : 50.05\r\"Magnesium\" : 10.01\r\"Iron\" : 5\r```\rpie showData\rtitle Key elements in Product X\r\"Calcium\" : 42.96\r\"Potassium\" : 50.05\r\"Magnesium\" : 10.01\r\"Iron\" : 5 Quadrant Chart linkWhat is a Quadrant Chart linkA quadrant chart is a graphical representation that divides data into four quadrants based on two axes. Each axis represents a different dimension or variable, and the quadrants are defined by dividing the chart area into four equal sections.\nQuadrant charts are commonly used to analyze and visualize data relationships, particularly when comparing two sets of variables or criteria. They help identify patterns, trends, and outliers within the dataset, allowing users to categorize data points into different quadrants based on their positions relative to the axes\nquadrantChart\rtitle Reach and engagement of campaigns\rx-axis Low Reach --\u003e High Reach\ry-axis Low Engagement --\u003e High Engagement\rquadrant-1 We should expand\rquadrant-2 Need to promote\rquadrant-3 Re-evaluate\rquadrant-4 May be improved\rCampaign A: [0.3, 0.6]\rCampaign B: [0.45, 0.23]\rCampaign C: [0.57, 0.69]\rCampaign D: [0.78, 0.34]\rCampaign E: [0.40, 0.34]\rCampaign F: [0.35, 0.78] Quadrant Chart Syntax linkTitle The title is a short description of the chart and it will always render on top of the chart.\nExample quadrantChart title This is a sample example\nx-axis The x-axis determines what text would be displayed in the x-axis. In x-axis there is two part left and right you can pass both or you can pass only left. The statement should start with x-axis then the left axis text followed by the delimiter –\u003e then right axis text. Example x-axis –\u003e both the left and right axis text will be rendered. x-axis only the left axis text will be rendered.\ny-axis The y-axis determines what text would be displayed in the y-axis. In y-axis there is two part top and bottom you can pass both or you can pass only bottom. The statement should start with y-axis then the bottom axis text followed by the delimiter –\u003e then top axis text. Example y-axis –\u003e both the bottom and top axis text will be rendered. y-axis only the bottom axis text will be rendered.\nQuadrants text The quadrant-[1,2,3,4] determine what text would be displayed inside the quadrants. Example quadrant-1 determine what text will be rendered inside the top right quadrant. quadrant-2 determine what text will be rendered inside the top left quadrant. quadrant-3 determine what text will be rendered inside the bottom left quadrant. quadrant-4 determine what text will be rendered inside the bottom right quadrant.\nPoints Points are used to plot a circle inside the quadrantChart. The syntax is : [x, y] here x and y value is in the range 0 - 1. Example Point 1: [0.75, 0.80] here the Point 1 will be drawn in the top right quadrant. Point 2: [0.35, 0.24] here the Point 2 will be drawn in the bottom left quadrant.\ninfo All extra information about Quadrant charts can be found in Quadrant Charts Basic Quadrant Chart linkCode:\n```mermaid\r---\rtitle: Basic Quadrant Chart\r---\rquadrantChart\rx-axis Urgent --\u003e Not Urgent\ry-axis Not Important --\u003e \"Important ❤\"\rquadrant-1 Plan\rquadrant-2 Do\rquadrant-3 Delegate\rquadrant-4 Delete\r```\r---\rtitle: Basic Quadrant Chart\r---\rquadrantChart\rx-axis Urgent --\u003e Not Urgent\ry-axis Not Important --\u003e \"Important ❤\"\rquadrant-1 Plan\rquadrant-2 Do\rquadrant-3 Delegate\rquadrant-4 Delete Class Diagram linkWhat is a Class Diagram linkA class diagram is a type of UML (Unified Modeling Language) diagram that represents the structure of a system by depicting the classes of objects within it, their attributes, methods, and the relationships between them.\nClass diagrams are used primarily in software engineering and system design to visualize the structure of object-oriented systems. They provide a blueprint for designing software applications, helping developers understand the relationships between different classes, plan the implementation of code, and ensure consistency and clarity in the design process.\n---\rtitle: Animal example\r---\rclassDiagram\rnote \"From Duck till Zebra\"\rAnimal \u003c|-- Duck\rnote for Duck \"can fly\\ncan swim\\ncan dive\\ncan help in debugging\"\rAnimal \u003c|-- Fish\rAnimal \u003c|-- Zebra\rAnimal : +int age\rAnimal : +String gender\rAnimal: +isMammal()\rAnimal: +mate()\rclass Duck{\r+String beakColor\r+swim()\r+quack()\r}\rclass Fish{\r-int sizeInFeet\r-canEat()\r}\rclass Zebra{\r+bool is_wild\r+run()\r} Class Diagram Syntax link UML provides mechanisms to represent class members, such as attributes and methods, and additional information about them. A single instance of a class in the diagram contains three compartments:\nThe top compartment contains the name of the class. It is printed in bold and centered, and the first letter is capitalized. It may also contain optional annotation text describing the nature of the class.\nThe middle compartment contains the attributes of the class. They are left-aligned and the first letter is lowercase.\nThe bottom compartment contains the operations the class can execute. They are also left-aligned and the first letter is lowercase.\ninfo All extra information about Quadrant Diagrams can be found in Class Diagram Basic Class Diagram link ```mermaid\r---\rtitle: Bank example\r---\rclassDiagram\rclass BankAccount\rBankAccount : +String owner\rBankAccount : +Bigdecimal balance\rBankAccount : +deposit(amount)\rBankAccount : +withdrawal(amount)\r```\r---\rtitle: Bank example\r---\rclassDiagram\rclass BankAccount\rBankAccount : +String owner\rBankAccount : +Bigdecimal balance\rBankAccount : +deposit(amount)\rBankAccount : +withdrawal(amount) Timeline Diagram linkWhat is a Timeline Diagram linkA Timeline Diagram is a visual representation that displays events, tasks, or milestones along a chronological axis. It typically consists of horizontal bars or lines representing the duration or occurrence of each event, with labels or markers indicating key points in time.\nTimeline diagrams are used to illustrate the sequence of events or activities over a period, providing a clear and concise overview of temporal relationships. They are commonly utilized in project management, historical analysis, storytelling, and process visualization\ntimeline\rtitle England's History Timeline\rsection Stone Age\r7600 BC : Britain's oldest known house was built in Orkney, Scotland\r6000 BC : Sea levels rise and Britain becomes an island.\nThe people who live here are hunter-gatherers.\rsection Bronze Age\r2300 BC : People arrive from Europe and settle in Britain. They bring farming and metalworking.\r: New styles of pottery and ways of burying the dead appear.\r2200 BC : The last major building works are completed at Stonehenge.\nPeople now bury their dead in stone circles.\r: The first metal objects are made in Britain.Some other nice things happen. it is a good time to be alive. Timeline Diagram Synxtax link The syntax for creating Timeline diagram is simple. You always start with the timeline keyword to let mermaid know that you want to create a timeline diagram.\nAfter that there is a possibility to add a title to the timeline. This is done by adding a line with the keyword title followed by the title text.\nThen you add the timeline data, where you always start with a time period, followed by a colon and then the text for the event. Optionally you can add a second colon and then the text for the event. So, you can have one or more events per time period.\ninfo All extra information about Timeline Diagrams can be found in Timeline Diagram Basic Timeline Diagram link ```mermaid\rtimeline\rtitle History of Social Media Platform\r2002 : LinkedIn\r2004 : Facebook : Google\r2005 : Youtube\r2006 : Twitter\r```\rtimeline\rtitle History of Social Media Platform\r2002 : LinkedIn\r2004 : Facebook : Google\r2005 : Youtube\r2006 : Twitter "
+            }
+        );
+    index.add(
+            {
+                id:  11 ,
+                href: "\/docs\/setup\/",
+                title: "Setup",
+                description: "A quick start guide to get started in Lotus Doc and how this page was made",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  12 ,
+                href: "\/docs\/setup\/setup\/",
+                title: "Setup",
+                description: "A quick start guide to get started in Lotus Doc and how this page was made",
+                content: "System Requirements link git Go ≥ v1.19 Hugo ≥ v0.117.0 (Extended Version) Installation linkAuto Installation linkInstall the Hugo CLI, using the specific instructions for your operating system below:\nLinux Homebrew (macOS) Windows (Chocolatey) Windows (Scoop) Your Linux distro’s package manager may include Hugo. If this is the case, install it directly using your distro’s package manager – for instance, in Ubuntu, run the following command. This will install the extended edition of Hugo:\nsudo apt install hugo If you use the package manager Homebrew, run the brew install command in your terminal to install Hugo:\nbrew install hugo If you use the package manager Chocolatey, run the choco install command in your terminal to install Hugo:\nchoco install hugo --confirm If you use the package manager Scoop, run the scoop install command in your terminal to install Hugo:\nscoop install hugo Manual Installation linkThe Hugo GitHub repository contains pre-built versions of the Hugo command-line tool for various operating systems, which can be found on the Releases page\nFor more instruction on installing these releases, refer to Hugo’s documentation\nCreate a New Lotus Docs Site link(Explicar como criar novas paginas e com as configuras inicialmente)\nWith Hugo installed, create a new Hugo project using the hugo new command:\nhugo new site my-docs-site \u0026\u0026 cd my-docs-site Now use the hugo mod init command to initialize your project as a Hugo Module:\nhugo mod init my-docs-site info Note: You may initialize your site using the path to its git repository, for example, hugo mod init github.com///, if it already has one. From the choices below, select your chosen way to apply the Lotus Docs theme to your newly created website:\nAdd as a Hugo Module Add as a Git submodule Clone theme files Lines 5 through 11 below need be edited to add the Hugo Bootstrap module and the Lotus Docs theme to the hugo.toml configuration file:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false Set up Git and create a submodule by cloning the Lotus Docs theme repository:\ngit init\rgit submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs Replace the configuration in your current hugo.toml config file with the following:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r# uncomment line below for temporary local development of module\r# or when using a 'theme' as a git submodule\rreplacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\"\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false You can clone the Lotus Docs theme into the themes subfolder of your project if you would rather modify and update the theme on your own.\nTo clone the Lotus Docs theme into your themes subfolder, use the following command from the root directory of your project:\ngit clone https://github.com/colinwilson/lotusdocs themes/lotusdocs Lines 5 through 14 below need be edited to include the Hugo Bootstrap module and the Lotus Docs theme to the hugo.toml configuration file:\nbaseURL = 'http://example.org/'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r# uncomment line below for temporary local development of module,\r# when using a 'theme' as a git submodule or git cloned files\rreplacements = \"github.com/colinwilson/lotusdocs -\u003e lotusdocs\"\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false info Hugo ≥ v0.110.0 introduced hugo.toml as the default config base filename. Consider rename your config.toml file to hugo.toml if you’re using a previous version of Hugo. Create New Content linkCreate a file in the content/docs directory by navigating to the root of your Hugo project and using the hugo new command:\nhugo new docs/new-page.md This will produce the new-page.md markdown file with the default front matter as follows:\n---\rweight: 999\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\r--- The front matter code that was used to generate this page is displayed in the code below, along with some markdown from the body:\n---\rweight: 200\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rpublishdate: \"2023-05-03T22:37:22+01:00\"\rtags: [\"Beginners\"]\r---\r## Create New Content\rNavigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:\r```shell\rhugo new docs/examplepage.md\r```\r...\rPreview your Site linkUsing the hugo server -D command, you can now examine your new Lotus Documents website after creating some sample content:\nhugo server -D When you go to localhost:1313/docs/, a card link to the previously generated New Page should appear: Configure Content linkOrdering Content linkFor content ordering and menu creation, Lotus Docs use a straightforward weighting system.\nAll content is arranged in a certain sequence and the menu structure (which includes the sidebar menu and page navigation buttons) is automatically generated using the front matter weight variable. Higher priority is assigned to lower weight values. Lower weight items are prioritized and arranged in this manner on the menu.\nFor example:\nNew Page:\n---\rweight: 200\rtitle: \"New Page\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rtags: [\"Beginners\"]\rpublishdate: \"2023-05-03T22:37:22+01:00\"\r--- New Page 2:\n---\rweight: 100\rtitle: \"New Page 2\"\ricon: \"article\"\rdate: \"2024-04-17T18:19:36Z\"\rlastmod: \"2024-04-17T18:19:36Z\"\rdescription: \"This new page has the Lotus Documents theme\"\rdraft: true toc: true\rtags: [\"Beginners\"]\rpublishdate: \"2023-05-03T22:37:22+01:00\"\r--- Result: Content description linkIt is imperative that the website provides readers with an understandable summary of its contents, complete with an educational headline and succinct explanation. The ’title’ and ‘description’ variables can be changed to do this based on the theme of your website. For instance, the website may look something like this if its goal is to demonstrate how to use Lotus Docs to build up a basic configuration for documentation:\n---\rweight: 300\rtitle: \"Setup\"\ricon: \"article\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"A quick start guide to get started in Lotus Doc and how this page was made\"\rdraft: true toc: true\r--- And this would be the result: Content icon linkYou may alter the symbol that shows up in your page’s layout to make it stand out from the rest and make the pages easier to distinguish from one another.\n---\rweight: 300\rtitle: \"Setup\"\ricon: \"rocket_launch\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"A quick start guide to get started in Lotus Doc and how this page was made\"\rdraft: true toc: true\r--- And this would be the result: If you want to see more about icons in Lotus Docs, you can consult the Customization page\nDocument title linkYou can create a file called “_index.md” if you need to rename your document’s title from the “Docs” default to something more pertinent:\nhugo new docs/_index.md And now all you have to do is access the file _index.md and change the title:\n---\rweight: 999\rtitle: \"New Docs Title\"\rdescription: \"\"\ricon: \"article\"\rdate: \"2024-04-19T16:14:44+01:00\"\rlastmod: \"2024-04-19T16:14:44+01:00\"\rdraft: true\rtoc: true\r--- And this is how it appears visually: info Keep in mind that _index.md files are only meant to be used to modify header settings. It won’t make a difference if you add any material that isn’t among the variables allowed in the header. Second Level Menu Items linkCreate Second Level linkTo build second level menu items, first create a directory called “parent” that has a file called _index.md. For example:\nhugo new docs/parent-directory/_index.md An _index.md file is created by the aforementioned command within the content/docs/parent-directory directory:\ncontent/\r└── docs/\r├── parent-directory/\r│ └── _index.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md Add new page to second level linkAs before, second level items can now be created inside the parent directory. To make a post within the newly established parent-directory, use the hugo new command once more:\nhugo new docs/parent-directory/new-page-3.md Your directory/file structure should now look like this:\ncontent/\r└── docs/\r├── parent-directory/\r│ ├── _index.md\r│ └── new-page-3.md\r├── new-page.md\r├── new-page-2.md\r├── setup.md\r└── _index.md And visually it will look like this:\nOverall: In the parent-directory directory: Config second level content linkTo configure content for the second level, the process is similar to that for the first level. Simply access the second level’s _index.md file and adjust the title and description to provide more information about the specific content present at that level, helping the user with navigation and location.\n---\rweight: 999\rtitle: \"New Parent Directory\"\rdescription: \"This is an example of how to create a second level\"\ricon: \"article\"\rdate: \"2024-04-19T15:22:56+01:00\"\rlastmod: \"2024-04-19T15:22:56+01:00\"\rdraft: true\rtoc: true\r--- And the result is like this: And to order the second level menu items is the same way as for the other contents, just change the weight of the _index.md file:\n---\rweight: 150\rtitle: \"New Parent Directory\"\rdescription: \"This is an example of how to create a second level\"\ricon: \"article\"\rdate: \"2024-04-19T15:22:56+01:00\"\rlastmod: \"2024-04-19T15:22:56+01:00\"\rdraft: true\rtoc: true\r--- And with that, it changes position in the menu items Publish pages linkDuring the earlier stages of the process, we worked with draft pages. However, once a page is finished, you need to transform it from a draft into a ready-to-publish version. This process is simple: just modify the draft variable to false or, alternatively, remove this variable completely. This ensures that the page is ready to publish.\nShowing an example with the Setup page:\n---\rweight: 300\rtitle: \"Setup\"\ricon: \"rocket_launch\"\rdate: \"2024-03-20T18:19:36Z\"\rlastmod: \"2024-03-20T18:19:36Z\"\rdescription: \"A quick start guide to get started in Lotus Doc and how this page was made\"\rdraft: false toc: true\r--- From this moment on, the page will be considered published. This means that when viewing the site preview, it will no longer be necessary to enter the hugo server -D command. Now, you can use the hugo server command to view all published pages, excluding those that are in draft.\nBefore proceeding, it is important to confirm that you have made changes to the first level _index.md file. If you have changed it, make sure the draft variable is set to false. In our example, since we changed the title and the draft is marked as true, we will need to modify this variable as well.\n---\rweight: 999\rtitle: \"New Docs Title\"\rdescription: \"\"\ricon: \"article\"\rdate: \"2024-04-19T16:14:44+01:00\"\rlastmod: \"2024-04-19T16:14:44+01:00\"\rdraft: false\rtoc: true\r--- info Note: If you did not create a _index.md file for the first level because you did not need to modify any information, you do not need to create it to set the draft to false, as this is already the default value if _index.md does not have been created. Showing what the page preview looks like:\nWhen doing hugo server -D: Here you can see that DRAFT has already disappeared from the setup page content, as well as from the document title\nWhen doing hugo server: This is a very important step to later be able to Deployed your document\nLicense linkLotus Docs is distributed under the MIT license, which is an extremely flexible and permissive software license. Colin Wilson, the inventor of Lotus Docs, offers unrestricted freedom to anybody to use, modify, and distribute the program, provided that the copyright notice and license are included with all copies. Users can use the program for any purpose, including selling, without incurring any costs or royalties. There are no specific promises that the program will operate, and the authors are not liable for any harm caused by its usage. In brief, the MIT License gives users total freedom to use the program whatever they choose, with little duties or limits.\nAdditional Resources link Lotus Docs Lotus Docs GitHub FAQs link1. Question: How do I install Lotus Docs?\nAnswer: You can install Lotus Docs by following the instructions provided in the installation section of the documentation. Make sure to meet the system requirements and follow the appropriate installation method for your operating system.\n2. Question: How do I create a new site using Lotus Docs?\nAnswer: The process of creating a new site with Lotus Docs is detailed in the “Create a New Lotus Docs Site” section. Follow the provided steps, including installing Hugo, initializing the project, and applying the Lotus Docs theme.\n3. Question: How do I add new content to my Lotus Docs site?\nAnswer: You can add new content to your Lotus Docs site by creating new Markdown files in the content/docs folder. Use the hugo new command followed by the file path to create new content.\n4. Question: How can I customize the appearance of my Lotus Docs site?\nAnswer: This question can be answered by viewing the Customization page.\n5. Question: How do I publish a page on my Lotus Docs site?\nAnswer: Once a page is ready to be published, you need to change the draft variable to false in the corresponding Markdown file. This marks the page as ready for publishing and is detailed in the “Publish pages” section of the documentation.\n6. Question: How was this page made?\nAnswer: You can see how this page was made by turning on the page: Creation process Setup\n"
+            }
+        );
+    index.add(
+            {
+                id:  13 ,
+                href: "\/docs\/customisation\/customisation-explanation\/",
+                title: "Explanation",
+                description: "Explanation of the creation of the Customisation page.",
+                content: "This page serves the purpose to showcase how the customization page was made. The customization page already explains a great part of the code utilized to create the page. However, this page will serve as a overview.\nText linkThe descriptive texts are written normally without any tags, labels or areas. E.g\nThe code: Simple text.\rRenderizes as: Simple text.\nTitles linkTitles and headings are defined using # as prefixes. The more #the lower the position in the hierarchy of titles. Hugo also intrepret the headings and respective hierarchy to create the Table of Contents for the page.\nHighlights, Emphasis, Links linkTo achieve bold text, the text needs to have two asterisks or underscores before and after.\n**BOLD**\r__BOLD__\rTo achieve ITALIC text, the text needs to have one asterisk or underscore before and after.\n*ITALIC*\r_ITALIC_\rTo achieve STRIKETHROUGH text, the text needs to have two tildes before and after.\n~~STRIKETHROUGH~~\rFor website links:\n[Name to display](https://website.com)\rFor image links:\n![Create Content](https://tania1998.sirv.com/images_tecaa/green.png)\rI hosted my images in Sirv to be able to include the links in the website.\nSeparators linkTo separate areas, I used three -\nTo create alerts linkTo create alerts, I added the following code between double curled {{. The context of alerts can be info, success, danger, warning, primary, light and dark.\n\u003c alert context= \"dark\" text=\"alert context\"/\u003e\rTo create tab areas linkTo create a multi tab naviagation in the pages with a certain number os tabs:\n{ {\u003c tabs tabTotal=\"nr of tabs\"\u003e}} --\u003e open tabs, define number of tabs\r{ {% tab tabName=\"Tab One\" %}} --\u003e name of the first tab\rContent\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Two\" %}} --\u003e name of the second tab\rContent\r{ {% /tab %}}\r{ {% tab tabName=\"Tab Three\" %}} --\u003e name of the third tab\rContent\r{ {% /tab %}}\r{ {\u003c /tabs \u003e}} --\u003e close tabs\rTo add code blocks link ```codelanguage\rcode\r```\rTo create tags linkAdded text between two `\n`tag`\r"
+            }
+        );
+    index.add(
+            {
+                id:  14 ,
+                href: "\/docs\/page-developments\/deployment\/",
+                title: "Deployment",
+                description: "Documention for Deployment Pages",
+                content: "1. Tabs link Add tabs to your content To add tabs, in the following format:\nTab example #1 Contents of Tab 1\rExample code:\nYou will need the following structure:\n2. Images linkHow to add images.\nFirst, you’ll need to select a cloud hosting service for your image. Follow our example and choose SIRV.com.\nCreate a free account and upload your image\nCopy your image path:\nIn your code, copy and paste the following code:\n![Create image content](/images/yourimage.png \"Image Description\") Code Description ![image description] This is the alt text for the image. (image_url) This is the URL or the path to your image. \"\" This is the image deescription 3.Code Blocks: linkFenced code blocks (code contained by triple backticks above and below) that specify a code language (specified right of the opening fence) will automatically highlight the code content as HTML, eg: '''yaml, '''toml, '''bash:\nHugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.github.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site' baseURL: 'https://colinwilson.github.io'\rlanguageCode: en-us\rtitle: My New Hugo Site {\r\"baseURL\": \"https://colinwilson.github.io\",\r\"languageCode\": \"en-us\",\r\"title\": \"My New Hugo Site\",\r} Example for this:\nHugo.toml Hugo.yaml Hugo.json ```toml\rbaseURL = 'https://colinwilson.github.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r``` ```yaml\rbaseURL: 'https://colinwilson.github.io'\rlanguageCode: en-us\rtitle: My New Hugo Site\r``` ```json\r{\r\"baseURL\": \"https://colinwilson.github.io\",\r\"languageCode\": \"en-us\",\r\"title\": \"My New Hugo Site\",\r}\r``` 3.1. Code Fence: linkCode fences significantly enhance the clarity and readability of code snippets within your technical documentation. They ensure that code blocks are presented in a visually distinct and easily scannable format. We employ this technique in section 4 of the “Deployment: GitHub” page to highlight the line containing the draft.\nCode Fences Description linenos configure line numbers. Valid values are true, false, table, or inline. hl_lines lists a set of line numbers or line number ranges to be highlighted. linenostart=1 starts the line number count from 1. anchorlinenos Configure anchors on line numbers. Valid values are true or false. So the following example:\n```toml {linenos=table,hl_lines=[3,\"1-2\"],linenostart=1,anchorlinenos=true}\rbaseURL = 'https://colinwilson.github.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r``` It will render as:\nbaseURL = 'https://colinwilson.github.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site' 4. Alerts: linkOn deployment pages, we utilize alerts with an “info” context, like this:\ninfo This is an alert with an info context. {{ \u003c alert context=\"info\" text=\"This is an alert with an info context. It consists of the info theme colour and icon.\" /\u003e}} Additionally, we have other context options available: success, danger, warning, primary, light, and dark.\ncheck_circle This is an alert with an success context. report This is an alert with an danger context. warning This is an alert with an warning context. info This is an alert with an primary context. This is an alert with an light context. This is an alert with an dark context. 5. Links: linkDuring the development of the prerequisites on the two pages, links were utilized to direct users to relevant resources.\nTo create a simple hyperlink to a website, use the following syntax: [Link Text](URL) Replace Link Text with the text you want to display for the link [A GitHub Account](https://github.com/) Final result: A GitHub Account 6. Treeview: linkWe utilized treeviews in point 8 to illustrate the expected project hierarchy structure.\n```shell\r├── archetypes\r├── assets\r├── content\r│ └── docs\r│ └── example-page.md\r├── data\r├── i18n\r├── layouts\r├── static\r├── themes\r├── .gitignore\r├── .gitlab-ci.yml\r├── .hugo_build.lock\r├── go.mod\r├── go.sum\r└── hugo.toml\r``` "
+            }
+        );
+    index.add(
+            {
+                id:  15 ,
+                href: "\/docs\/deployment\/github\/",
+                title: "GitHub Pages Deployment",
+                description: "How to make deployment to a gitlab repository",
+                content: "Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.\nPrerequisites link A GitHub Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository\nCreate a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git\nChange GitHub Pages Source to GitHub Actions\nVisit your GitHub repository and navigate to Settings \u003e Pages. Change the Source to GitHub Actions.\nBuild and deployment-Before Build and deployment-After Create a Hugo server locally\nhugo new site collinwilson.github.io cd colinwilson.github.io Update your site’s config file (hugo.toml / hugo.yaml / hugo.json) to include the required theme modules and update your baseURL to your intended GitHub Pages Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.github.io' languageCode = 'en-us' title = 'My New Hugo Site' [module] [[module.imports]] path = \"github.com/colinwilson/lotusdocs\" disable = false [[module.imports]] path = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\" disable = false [markup.goldmark.renderer] unsafe = true [[menu.primary]] name = \"Docs\" url = \"/docs/\" identifier = \"docs\" weight = 10 baseURL: 'https://colinwilson.github.io' languageCode: en-us title: My New Hugo Site module: imports: - path: github.com/colinwilson/lotusdocs disable: false - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5 disable: false markup: goldmark: renderer: unsafe: true menu: primary: - name: Docs url: /docs/ identifier: docs weight: 10 { \"baseURL\": \"https://colinwilson.github.io\", \"languageCode\": \"en-us\", \"title\": \"My New Hugo Site\", \"module\": { \"imports\": [ { \"path\": \"github.com/colinwilson/lotusdocs\", \"disable\": false }, { \"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/ v5\", \"disable\": false } ] }, \"markup\": { \"goldmark\": { \"renderer\": { \"unsafe\": true } } }, \"menu\": { \"primary\": [ { \"name\": \"Docs\", \"url\": \"/docs/\", \"identifier\": \"docs\", \"weight\": 10 } ] } } Create an example page\nhugo new docs/example-page.md If the draft is true, then make it false.\n--- title: \"Example Page\" date: 2023-08-25T23:36:29+01:00 draft: false --- Create an empty hugo.yaml file in your local repository\n.github/workflows/hugo.yaml Copy and paste the YAML below into the hugo.yaml you created. Change the branch name and Hugo version as needed.\n# Sample workflow for building and deploying a Hugo site to GitHub Pages name: Deploy Hugo site to Pages on: # Runs on pushes targeting the default branch push: branches: - main # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages permissions: contents: read pages: write id-token: write # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete. concurrency: group: \"pages\" cancel-in-progress: false # Default to bash defaults: run: shell: bash jobs: # Build job build: runs-on: ubuntu-latest env: HUGO_VERSION: 0.118.2 steps: - name: Install Hugo CLI run: | wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \\ \u0026\u0026 sudo dpkg -i ${{ runner.temp }}/hugo.deb - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 - name: Setup Pages id: pages uses: actions/configure-pages@v3 - name: Install Node.js dependencies run: \"[[ -f package-lock.json || -f npm-shrinkwrap. json ]] \u0026\u0026 npm ci || true\" - name: Build with Hugo env: # For maximum backward compatibility with Hugo modules HUGO_ENVIRONMENT: production HUGO_ENV: production run: | hugo \\ --gc \\ --minify \\ --baseURL \"${{ steps.pages.outputs.base_url }}/\" - name: Upload artifact uses: actions/upload-pages-artifact@v1 with: path: ./public # Deployment job deploy: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} runs-on: ubuntu-latest needs: build steps: - name: Deploy to GitHub Pages id: deployment uses: actions/deploy-pages@v2 Commit all the changes to your local repository with a commit message of something like “New site \u0026 workflow”.\ngit commit -m \"New site \u0026 workflow\" And push your local repo to the repository you created on GitHub\ngit push -u origin main git commit -m \"New site \u0026 workflow\" git push -u origin main From GitHub’s main menu, choose Actions.\nUnder the deploy step, you will see a link to your live site 🎉. "
+            }
+        );
+    index.add(
+            {
+                id:  16 ,
+                href: "\/docs\/deployment\/gitlab\/",
+                title: "GitLab Pages Deployment",
+                description: "How to make deployment to a gitlab repository",
+                content: "Overview linkGitLab provides a comprehensive DevOps platform delivered as a single application, enabling teams to collaborate, manage, and accelerate the software development lifecycle. With built-in CI/CD, version control, and issue tracking, GitLab streamlines the development process and enhances team productivity.\nPrerequisites link A GitLab Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository on GitLab, e.g., [https://gitlab.com/lordcodex/lotustheme_tecaa].\nSelect GitLab Pages as the Project deployment target:\nGitlabs blank repository Create a new Hugo project using the hugo new command:\nhugo new site collinwilson.github.io\rcd colinwilson.github.io Initialize your project as a Hugo Module using the hugo mod init command:\nhugo mod init my-docs-site Update your site’s config file (hugo.toml / hugo.yaml / hugo.json) to include the required theme modules and update your baseURL to your intended GitLab Pages domain e.g. colinwilson.gitlab.io. You can also configure a [[menu.primary]] item. This creates a link on the landing page to the docs/ section.\ninfo You can access the site’s files via your command line interface. Various code editors, such as Notepad and VS Code, are available for use. To open, for example, in Visual Studio Code:\ncode hugo.toml Or to open on notepad:\nnote hugo.toml Hugo.toml Hugo.yaml Hugo.json baseURL = 'https://colinwilson.gitlab.io'\rlanguageCode = 'en-us'\rtitle = 'My New Hugo Site'\r[module]\r[[module.imports]]\rpath = \"github.com/colinwilson/lotusdocs\"\rdisable = false\r[[module.imports]]\rpath = \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\"\rdisable = false\r[markup.goldmark.renderer]\runsafe = true\r[[menu.primary]]\rname = \"Docs\"\rurl = \"/docs/\"\ridentifier = \"docs\"\rweight = 10 baseURL: 'https://colinwilson.gitlab.io'\rlanguageCode: en-us\rtitle: My New Hugo Site\rmodule:\rimports:\r- path: github.com/colinwilson/lotusdocs\rdisable: false\r- path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5\rdisable: false\rmarkup:\rgoldmark:\rrenderer:\runsafe: true\rmenu:\rprimary:\r- name: Docs\rurl: /docs/\ridentifier: docs\rweight: 10 {\r\"baseURL\": \"https://colinwilson.gitlab.io\",\r\"languageCode\": \"en-us\",\r\"title\": \"My New Hugo Site\",\r\"module\": {\r\"imports\": [\r{\r\"path\": \"github.com/colinwilson/lotusdocs\",\r\"disable\": false\r},\r{\r\"path\": \"github.com/gohugoio/hugo-mod-bootstrap-scss/v5\",\r\"disable\": false\r}\r]\r},\r\"markup\": {\r\"goldmark\": {\r\"renderer\": {\r\"unsafe\": true\r}\r}\r},\r\"menu\": {\r\"primary\": [\r{\r\"name\": \"Docs\",\r\"url\": \"/docs/\",\r\"identifier\": \"docs\",\r\"weight\": 10\r}\r]\r}\r} Create some example content.\nhugo new docs/example-page.md ---\rtitle: \"Example Page\"\rdate: 2023-08-25T23:36:29+01:00\rdraft: false\r--- Create an empty .gitlab-ci.yml file at the root of your local repository.\n/.gitlab-ci.aml Copy and paste the YAML below into the job file you created.\nimage: registry.gitlab.com/pages/hugo/hugo_extended:0.118.2\rvariables:\rHUGO_ENV: production\rdefault:\rtags:\r- docker\r- linux\rbefore_script:\r- apk add --no-cache go curl bash nodejs\r# - hugo mod get -u $THEME_URL\r## Uncomment the following if you use PostCSS. See https://gohugo.io/hugo-pipes/postcss/\r#- npm install postcss postcss-cli autoprefixer\rtest:\rtags:\r- docker\r- linux\rscript:\r- hugo\rrules:\r- if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH\rpages:\rtags:\r- docker\r- linux\rscript:\r- hugo\rartifacts:\rpaths:\r- public\rrules:\r- if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH Create a .gitignore file. Copy the contents below into it. This prevents your local /public directory (and other resources) being committed to to your GitLab repository.\n/public\r/assets/jsconfig.json\rresources/_gen/\r.hugo_build.lock Your site structure should now look similar to the one below:\ncolinwilson.gitlab.io\r├── archetypes\r├── assets\r├── content\r│ └── docs\r│ └── example-page.md\r├── data\r├── i18n\r├── layouts\r├── static\r├── themes\r├── .gitignore\r├── .gitlab-ci.yml\r├── .hugo_build.lock\r├── go.mod\r├── go.sum\r└── hugo.toml Use git int to initialize your project as a repository, then commit all the changes to your local repository with a commit message of something like “🎉 initial commit”. Push your local repo to the repository you created on GitLab in step 1.\nRevisit your repository on GitLab, navigate to Build \u003e Pipelines, and you should see that your Hugo site was successfully built.\nYou should now be able to see your site at the baseURL (e.g. https://colinwilson.gitlab.io) defined in your hugo.toml / hugo.yaml / hugo.json config file\n"
+            }
+        );
+    index.add(
+            {
+                id:  17 ,
+                href: "\/docs\/deployment\/",
+                title: "Deployment",
+                description: "Deploy Lotus Docs on various hosting plataforms",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  18 ,
+                href: "\/docs\/mermaid\/",
+                title: "Mermaid",
+                description: "Learn everything about Mermaid implementation",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  19 ,
+                href: "\/docs\/page-developments\/",
+                title: "Page Developments",
+                description: "Here you can see how all the pages were created",
+                content: ""
+            }
+        );
+    index.add(
+            {
+                id:  20 ,
+                href: "\/docs\/",
+                title: "Docs",
+                description: "",
+                content: ""
+            }
+        );
+    search.addEventListener('input', show_results, true);
+
+    function show_results(){
+        const maxResult =  5 ;
+        const minlength =  0 ;
+        var searchQuery = sanitizeHTML(this.value);
+        var results = index.search(searchQuery, {limit: maxResult, enrich: true});
+
+        
+        const flatResults = new Map(); 
+        for (const result of results.flatMap(r => r.result)) {
+        if (flatResults.has(result.doc.href)) continue;
+        flatResults.set(result.doc.href, result.doc);
+        }
+
+        suggestions.innerHTML = "";
+        suggestions.classList.remove('d-none');
+
+        
+        if (searchQuery.length < minlength) {
+            const minCharMessage = document.createElement('div')
+            minCharMessage.innerHTML = `Please type at least <strong>${minlength}</strong> characters`
+            minCharMessage.classList.add("suggestion__no-results");
+            suggestions.appendChild(minCharMessage);
+            return;
+        } else {
+            
+            if (flatResults.size === 0 && searchQuery) {
+                const noResultsMessage = document.createElement('div')
+                noResultsMessage.innerHTML = "No results for" + ` "<strong>${searchQuery}</strong>"`
+                noResultsMessage.classList.add("suggestion__no-results");
+                suggestions.appendChild(noResultsMessage);
+                return;
+            }
+        }
+
+        
+        for(const [href, doc] of flatResults) {
+            const entry = document.createElement('div');
+            suggestions.appendChild(entry);
+
+            const a = document.createElement('a');
+            a.href = href;
+            entry.appendChild(a);
+
+            const title = document.createElement('span');
+            title.textContent = doc.title;
+            title.classList.add("suggestion__title");
+            a.appendChild(title);
+
+            const description = document.createElement('span');
+            description.textContent = doc.description;
+            description.classList.add("suggestion__description");
+            a.appendChild(description);
+
+            suggestions.appendChild(entry);
+
+            if(suggestions.childElementCount == maxResult) break;
+        }
+    }
+    }());
+</script>
+    
+</body>
+
+<div class="modal fade" id="lang-selector-popup" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded shadow border-0">
+            <div class="modal-header">
+                <h5 class="modal-title">Select your language</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="container-fluid p-2">
+                    <div class="row">
+                        
+
+
+
+
+
+
+
+    <div class="d-flex col-md-4 col-6 py-1 justify-content-center">
+        <a class="btn btn-link-modal" role="button" rel="alternate" href="/pt/docs/setup/" hreflang="pt" lang="pt">
+            <span>
+                Poruguês
+            </span>
+        </a>
+    </div>
+
+
+
+
+    
+
+    
+        
+        
+        
+    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

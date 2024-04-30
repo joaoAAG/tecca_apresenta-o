@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customisation on Lotus Docs Example Site</title>
+    <link>//localhost:1313/docs/customisation/</link>
+    <description>Recent content in Customisation on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Apr 2024 19:20:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/customisation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customisation</title>
+      <link>//localhost:1313/docs/customisation/customisation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:39 +0000</pubDate>
+      <guid>//localhost:1313/docs/customisation/customisation/</guid>
+      <description>💡 A quick and basic guide to personalizing your documentation site with the Theme Lotus Docs to better suit your needs. Requirements linkBefore you begin customizing your Hugo documentation site, it is essential to have a basic understanding of the following:&#xA;HTML CSS Markdown Text Personalization linkTo create your page, you will likely use basic highlighting mechanisms for your text.&#xA;You might want to create a header, and for that, you need to use the following code:</description>
+    </item>
+    <item>
+      <title>Explanation</title>
+      <link>//localhost:1313/docs/customisation/customisation-explanation/</link>
+      <pubDate>Wed, 20 Mar 2024 18:19:15 +0000</pubDate>
+      <guid>//localhost:1313/docs/customisation/customisation-explanation/</guid>
+      <description>This page serves the purpose to showcase how the customization page was made. The customization page already explains a great part of the code utilized to create the page. However, this page will serve as a overview.&#xA;Text linkThe descriptive texts are written normally without any tags, labels or areas. E.g&#xA;The code: Simple text.&#xD;Renderizes as: Simple text.&#xA;Titles linkTitles and headings are defined using # as prefixes. The more #the lower the position in the hierarchy of titles.</description>
+    </item>
+  </channel>
+</rss>

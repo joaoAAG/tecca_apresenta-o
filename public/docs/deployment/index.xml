@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deployment on Lotus Docs Example Site</title>
+    <link>//localhost:1313/docs/deployment/</link>
+    <description>Recent content in Deployment on Lotus Docs Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 18:20:03 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Pages Deployment</title>
+      <link>//localhost:1313/docs/deployment/github/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/deployment/github/</guid>
+      <description>Overview linkGitHub Pages provides quick, SSL-secured static hosting for personal, organizational, or project pages directly from a GitHub repository. Using GitHub Actions, this service simplifies development workflows and builds.&#xA;Prerequisites link A GitHub Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository&#xA;Create a new repository on GitHub, e.g., https://github.com/joaoAAG/Tecaa.git&#xA;Change GitHub Pages Source to GitHub Actions&#xA;Visit your GitHub repository and navigate to Settings &amp;gt; Pages.</description>
+    </item>
+    <item>
+      <title>GitLab Pages Deployment</title>
+      <link>//localhost:1313/docs/deployment/gitlab/</link>
+      <pubDate>Wed, 20 Mar 2024 18:20:03 +0000</pubDate>
+      <guid>//localhost:1313/docs/deployment/gitlab/</guid>
+      <description>Overview linkGitLab provides a comprehensive DevOps platform delivered as a single application, enabling teams to collaborate, manage, and accelerate the software development lifecycle. With built-in CI/CD, version control, and issue tracking, GitLab streamlines the development process and enhances team productivity.&#xA;Prerequisites link A GitLab Account Git Create a Hugo site using the Lotus Docs theme Procedure link Create a new repository on GitLab, e.g., [https://gitlab.com/lordcodex/lotustheme_tecaa].&#xA;Select GitLab Pages as the Project deployment target:</description>
+    </item>
+  </channel>
+</rss>
